@@ -10,6 +10,8 @@ public class CharCont : MonoBehaviour
 
     private Vector3 moveVelocity;
 
+    [SerializeField] private GameObject playerCameraSwivel;
+
     [SerializeField] private float movementSpeed = 5;
     [SerializeField] private float sprintMultiplier = 1.46666f;
     //[SerializeField] private float ;
@@ -18,6 +20,7 @@ public class CharCont : MonoBehaviour
     {
         gm = GameManager.Instance;
         rb = gameObject.GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame

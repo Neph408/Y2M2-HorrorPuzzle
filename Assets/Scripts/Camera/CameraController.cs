@@ -37,15 +37,28 @@ public class CameraController : MonoBehaviour
     }
 
 
+
     public void SetNewMount(GameObject mount)
     {
         if (mount.GetComponent<CameraMount>() != false)
         {
-            currentMount = mount;
+            if (mount != currentMount)
+            {
+                if(currentMount != null)
+                {
+                    currentMount.GetComponent<CameraMount>().setActiveMount(false);
+                }
+                currentMount = mount;
+                currentMount.GetComponent<CameraMount>().setActiveMount(true);
+            }
+            else
+            {
+                Debug.LogWarning("Camera mount set to currently active mount, you are likely finding the wrong mount");
+            }
         }
         else
         {
-            Debug.LogWarning("Camera SNM pointing to non-camera mount, not moving");
+            Debug.LogWarning("CameraController.SetNewMount() pointing to non-camera mount, not moving");
         }
     }
 
