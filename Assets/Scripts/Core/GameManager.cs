@@ -8,8 +8,13 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     private GameObject settingsCanvas;
+    private GameObject escapeCanvas;
     private SettingsMenuController smc;
+    private EscapeMenuController emc;
 
+    private LevelManager currentLevelManager;
+
+    private GameObject playerObject;
 
     [SerializeField] private string titleScene;
     [SerializeField] private string gameScene;
@@ -53,6 +58,7 @@ public class GameManager : MonoBehaviour
 
 
     private bool isSettingsOpen = false;
+    private bool isEscapeOpen = false;
 
 
 
@@ -67,9 +73,12 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            Debug.Log("*poof*");
         }
         smc = gameObject.GetComponentInChildren<SettingsMenuController>();
+        emc = gameObject.GetComponentInChildren<EscapeMenuController>();
         settingsCanvas = smc.gameObject;
+        escapeCanvas = emc.gameObject;
 
     }
 
@@ -77,6 +86,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
        SetSettingsVisibility(false);
+        SetEscapeMenuVisibility(false);
     }
 
     // Update is called once per frame
@@ -96,12 +106,24 @@ public class GameManager : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("TitleScreenEventManager").GetComponent<TitleScreenManager>().setMenuVisibility(true);
         }
+
+        if (val && SceneManager.GetActiveScene().name != "MainMenu")
+        {
+            CloseEscapeMenu(true);
+        }
+        else
+        {
+            OpenEscapeMenu(true);
+        }
     }
 
     public bool isSettingOpen()
     {
         return isSettingsOpen; 
     }
+
+
+
     public void CloseGame()
     {
         Application.Quit();
@@ -121,6 +143,77 @@ public class GameManager : MonoBehaviour
     }
 
 
+
+
+    public void OpenEscapeMenu(bool isTemporaryHide = false)
+    {
+        SetEscapeMenuVisibility(true, isTemporaryHide);
+        gamePaused = 0;
+    }
+
+    public void CloseEscapeMenu(bool isTemporaryHide = false)
+    {
+        SetEscapeMenuVisibility(false, isTemporaryHide);
+        gamePaused = 1;
+    }
+
+    private void SetEscapeMenuVisibility(bool val, bool isTemporaryHide = false)// the actually, and actually, actually method, works 40% of the time, 70% of the time
+    {
+        escapeCanvas.SetActive(val);
+        if (!isTemporaryHide)
+        {
+            isEscapeOpen = val;
+        }
+        
+    }
+
+    public bool getEscapeOpen()
+        { return isEscapeOpen; }
+
+
+
+
+
+    private void OnLevelWasLoaded(int level)
+    {
+        if(SceneManager.GetActiveScene().name == "TestScene")
+        {
+            ClearLevelManager();
+        }
+    }
+
+
+    public void AssignPlayer(GameObject go)
+    {
+        if (playerObject == null)
+        {
+            playerObject = go;
+        }
+        else
+        {
+            Debug.LogWarning("Player already assigned, this is likely bad");
+        }
+    }
+
+    public GameObject GetPlayer() 
+    {
+        return playerObject; 
+    }
+
+    public void AssignLevelManager(LevelManager lm)
+    {
+        currentLevelManager = lm;
+    }
+
+    public LevelManager getLevelManager()
+    {
+        return currentLevelManager;
+    }
+
+    private void ClearLevelManager()
+    {
+        currentLevelManager = null;
+    }
     public void setMaxFPS(int val)
     {
         targetFPS = val;

@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|d:\\unity projects\\upy2m2 horrorpuzzle\\y2m2-horrorpuzzle\\assets\\charcont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\charcont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|d:\\unity projects\\upy2m2 horrorpuzzle\\y2m2-horrorpuzzle\\assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\core\\settingskeycodeselectcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\settingskeycodeselectcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\core\\settingsslidercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\settingsslidercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\camera\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|d:\\unity projects\\upy2m2 horrorpuzzle\\y2m2-horrorpuzzle\\assets\\warningcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\warningcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|d:\\unity projects\\upy2m2 horrorpuzzle\\y2m2-horrorpuzzle\\assets\\scripts\\core\\escapemenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\escapemenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\core\\settingsmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\settingsmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|d:\\unity projects\\upy2m2 horrorpuzzle\\y2m2-horrorpuzzle\\assets\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\camera\\cameramount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\cameramount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\title screen\\titlescreenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\title screen\\titlescreenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|d:\\unity projects\\upy2m2 horrorpuzzle\\y2m2-horrorpuzzle\\assets\\scripts\\core\\settingsmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\settingsmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\disableonregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\disableonregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,57 +46,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "warningController.cs",
-              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\warningController.cs",
-              "RelativeDocumentMoniker": "Assets\\warningController.cs",
-              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\warningController.cs",
-              "RelativeToolTip": "Assets\\warningController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA2AAAA",
+              "DocumentIndex": 0,
+              "Title": "CharCont.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\CharCont.cs",
+              "RelativeDocumentMoniker": "Assets\\CharCont.cs",
+              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\CharCont.cs",
+              "RelativeToolTip": "Assets\\CharCont.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAgwEcAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T17:46:40.246Z",
+              "WhenOpened": "2024-10-21T12:32:59.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EscapeMenuController.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\EscapeMenuController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\EscapeMenuController.cs",
+              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\EscapeMenuController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\EscapeMenuController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T11:45:24.868Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "disableOnRegister.cs",
-              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\disableOnRegister.cs",
-              "RelativeDocumentMoniker": "Assets\\disableOnRegister.cs",
-              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\disableOnRegister.cs",
-              "RelativeToolTip": "Assets\\disableOnRegister.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
+              "Title": "LevelManager.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\LevelManager.cs",
+              "RelativeDocumentMoniker": "Assets\\LevelManager.cs",
+              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\LevelManager.cs",
+              "RelativeToolTip": "Assets\\LevelManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T17:31:36.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SettingsSliderControl.cs",
-              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\SettingsSliderControl.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\SettingsSliderControl.cs",
-              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\SettingsSliderControl.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Core\\SettingsSliderControl.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAqwDkAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T17:05:54.48Z",
+              "WhenOpened": "2024-10-21T11:14:45.422Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SettingsKeycodeSelectControl.cs",
-              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\SettingsKeycodeSelectControl.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\SettingsKeycodeSelectControl.cs",
-              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\SettingsKeycodeSelectControl.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Core\\SettingsKeycodeSelectControl.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAcwEIAAAAsAQAA",
+              "DocumentIndex": 2,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\PlayerController.cs",
+              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\PlayerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T14:48:54.266Z",
+              "WhenOpened": "2024-10-21T11:08:11.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CameraController.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Camera\\CameraController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\CameraController.cs",
+              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Camera\\CameraController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Camera\\CameraController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T11:01:32.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CameraMount.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Camera\\CameraMount.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\CameraMount.cs",
+              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Camera\\CameraMount.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Camera\\CameraMount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:50:59.87Z",
               "EditorCaption": ""
             },
             {
@@ -99,27 +134,27 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\SettingsMenuController.cs",
               "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\SettingsMenuController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\SettingsMenuController.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAowFkAAABQAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAowFkAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-20T13:48:44.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\GameManager.cs",
               "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\GameManager.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAAwDgAAAAAAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAwwI0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-20T12:26:16.059Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "TitleScreenManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Title Screen\\TitleScreenManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Title Screen\\TitleScreenManager.cs",
@@ -127,8 +162,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Title Screen\\TitleScreenManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T12:29:36.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T12:29:36.303Z"
             }
           ]
         }
