@@ -253,4 +253,9 @@ public class GameManager : MonoBehaviour
     {
         return new KeyCode[] { kc_Forward, kc_Backward, kc_Left, kc_Right, kc_Crouch, kc_Sprint, kc_OpenInventory, kc_SkipAudio, kc_AltTextView, kc_DropItem, kc_Interact };
     }
+
+    public float getMouseSens() 
+    {
+        return mouseSens; 
+    }
 }

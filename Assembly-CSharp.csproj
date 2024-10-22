@@ -63,23 +63,25 @@
     <Compile Include="Assets\Scripts\Title Screen\TitleScreenManager.cs" />
     <Compile Include="Assets\Scripts\Core\disableOnRegister.cs" />
     <Compile Include="Assets\Scripts\Core\warningController.cs" />
-    <Compile Include="Assets\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Core\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraMountLocator.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMount.cs" />
-    <Compile Include="Assets\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsKeycodeSelectControl.cs" />
     <Compile Include="Assets\Scripts\Core\EscapeMenuController.cs" />
-    <Compile Include="Assets\CameraMountLocator.cs" />
+    <Compile Include="Assets\Scripts\Player\WallCollisionDetection.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsBoolControl.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsMenuController.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsSliderControl.cs" />
-    <Compile Include="Assets\CharCont.cs" />
+    <Compile Include="Assets\Scripts\Player\CharCont.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\figure out fixing rotating against walls.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
