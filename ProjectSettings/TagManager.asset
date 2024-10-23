@@ -7,6 +7,7 @@ TagManager:
   - TitleScreenEventManager
   - Camera Mount
   - Camera Swivel
+  - HoldPoint
   layers:
   - Default
   - TransparentFX

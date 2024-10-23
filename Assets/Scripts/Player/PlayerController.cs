@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
      */
     GameManager gm;
     [SerializeField] private GameObject playerCameraMount;
-
+    [SerializeField] private GameObject hp;
 
     private void Awake()
     {
@@ -27,6 +27,11 @@ public class PlayerController : MonoBehaviour
     {
         hideMouse(!gm.getEscapeOpen());
         CheckForMenuOpen();
+    }
+
+    public GameObject ghp()
+    {
+        return hp;
     }
 
     public GameObject getPlayerCameraMount()
