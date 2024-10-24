@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private string gameScene;
     [SerializeField] private string testScene;
 
-
+    private GameObject[] inventoryBackup;
 
 
     private int gamePaused = 1; // 1 = no, 0 = yes
@@ -142,7 +142,15 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void backupInventory(GameObject[] goa)
+    {
+        inventoryBackup = goa;
+    }
 
+    public GameObject[] pullInventory()
+    {
+        return inventoryBackup; 
+    }
 
 
     public void OpenEscapeMenu(bool isTemporaryHide = false)

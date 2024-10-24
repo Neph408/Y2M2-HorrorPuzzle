@@ -14,6 +14,12 @@ public class InteractCaster : MonoBehaviour
     [SerializeField] private LayerMask raycastMask;
     [SerializeField] private float raycastDistance;
 
+    [SerializeField] private float pickupHoldTime = 0.75f;
+    private float currentHoldTime = 0f;
+    private bool isKeyDown = false;
+
+    private GameObject currentRaycastHit;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,13 +40,33 @@ public class InteractCaster : MonoBehaviour
             //Debug.Log(hit.collider.tag);
             if (hit.collider.CompareTag("Holdable"))
             {
-                if(Input.GetKeyDown(gm.kc_Interact))
-                {
-                    targetHoldable = hit.collider.GetComponent<Holdable>();
-                    targetHoldable.pickup();
-                }
+
+                getVariableObjectInput(hit);
             }
+            /*
+            else if (hit.collider.CompareTag("Keypad"))
+            {
+
+            }
+            else if (hit.collider.CompareTag("Button"))
+            {
+
+            }
+            */
         }
+        else
+        {
+            if (currentRaycastHit != null)
+            {
+                currentRaycastHit.GetComponent<Holdable>().Glow(false);
+            }
+            currentRaycastHit = null;
+            currentHoldTime = 0f;
+        }
+
+        
+
+
         if(Input.GetKeyUp(gm.kc_Interact) && targetHoldable != null)
         {
             targetHoldable.drop();
@@ -55,7 +81,68 @@ public class InteractCaster : MonoBehaviour
         
     }
 
+    void getVariableObjectInput(RaycastHit hit) /// peak jank
+    {
+        if(currentRaycastHit != null)
+        {
+            if (currentRaycastHit != hit.collider.gameObject)
+            {
+                currentRaycastHit.GetComponent<Holdable>().Glow(false);
+                currentHoldTime = 0f;
+            }
+            hit.collider.gameObject.GetComponent<Holdable>().Glow(true);
+        }
+        
+
+        
+
+        if (Input.GetKeyDown(gm.kc_Interact))
+        {
+            isKeyDown = true;
+        }
+        else if( Input.GetKey(gm.kc_Interact) && isKeyDown)
+        {
+            currentHoldTime += Time.deltaTime;
+            if(currentHoldTime > pickupHoldTime)
+            {
+                targetHoldable = hit.collider.GetComponent<Holdable>();
+                targetHoldable.pickup();
+                isKeyDown = false;
+            }
+        }
+        if(Input.GetKeyUp(gm.kc_Interact))
+        { 
+            isKeyDown = false;
+            
+            if(currentHoldTime < pickupHoldTime)
+            {
+                if(checkForPickup(hit.collider.gameObject))
+                {
+                    pickupObject(hit.collider.gameObject);
+                }
+            }
+
+            currentHoldTime = 0f;
+        }
+        currentRaycastHit = hit.collider.gameObject;
+    }
 
 
 
+    bool checkForPickup(GameObject go)
+    {
+        if (go.GetComponent<ObjectPickup>() != null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public void pickupObject(GameObject go)
+    {
+        pc.GetPlayerInventory().AddToInventory(go);
+    }    
 }

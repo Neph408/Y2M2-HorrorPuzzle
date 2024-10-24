@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject playerCameraMount;
     [SerializeField] private GameObject holdPoint;
     [SerializeField] private GameObject playerCameraSwivel;
+    private PlayerInventory playerInventory;
 
     private void Awake()
     {
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         gm = GameManager.Instance;
         gm.AssignPlayer(gameObject);
+        playerInventory = gameObject.GetComponent<PlayerInventory>();
     }
 
     // Update is called once per frame
@@ -33,6 +35,11 @@ public class PlayerController : MonoBehaviour
     public GameObject getCameraSwivel()
     {
         return playerCameraSwivel; 
+    }
+
+    public PlayerInventory GetPlayerInventory()
+    {
+        return playerInventory;
     }
 
     public GameObject getHoldPoint()

@@ -7,6 +7,8 @@ public class Holdable : MonoBehaviour
 {
     private GameManager gameManager;
     private Rigidbody rb;
+    private Outline ol;
+
     private Vector3 prevvec;
 
     private Vector3 pauseVelocity;
@@ -22,6 +24,8 @@ public class Holdable : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         rb = GetComponent<Rigidbody>();
+        ol = GetComponent<Outline>();
+        ol.enabled = false;
     }
 
     // Update is called once per frame
@@ -62,6 +66,12 @@ public class Holdable : MonoBehaviour
         
 
     }
+
+    public void Glow(bool val)
+    {
+        ol.enabled = val;
+    }
+
 
     public void pickup()
     {
