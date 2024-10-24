@@ -15,7 +15,6 @@ public class CharCont : MonoBehaviour
     private bool isSprint = false;
     private bool isCrouch = false;
 
-    private WallCollisionDetection wallCollider;
 
     [SerializeField] private GameObject playerCameraSwivel;
 
@@ -28,7 +27,6 @@ public class CharCont : MonoBehaviour
     {
         gm = GameManager.Instance;
         rb = gameObject.GetComponent<Rigidbody>();
-        wallCollider = gameObject.GetComponentInChildren<WallCollisionDetection>();
     }
 
     // Update is called once per frame
@@ -39,10 +37,18 @@ public class CharCont : MonoBehaviour
             LookControl();
             MovementControl();
         }
+        else
+        {
+            pauseMovement();
+        }
         
     }
 
-
+    private void pauseMovement()
+    {
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+    }
 
     private void LookControl()
     {
@@ -82,13 +88,13 @@ public class CharCont : MonoBehaviour
 
 
 
-
         ApplyForce();
     }
 
 
     private void ApplyForce()
     {
+
         if(Input.GetKey(gm.kc_Sprint))
         {
             isSprint = true;
@@ -107,6 +113,7 @@ public class CharCont : MonoBehaviour
             isCrouch = false;
         }
         moveVelocity.y = rb.velocity.y;
+
         rb.velocity = moveVelocity;
         rb.angularVelocity = Vector3.zero;
     }

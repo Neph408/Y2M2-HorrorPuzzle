@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
      */
     GameManager gm;
     [SerializeField] private GameObject playerCameraMount;
-    [SerializeField] private GameObject hp;
+    [SerializeField] private GameObject holdPoint;
+    [SerializeField] private GameObject playerCameraSwivel;
 
     private void Awake()
     {
@@ -29,9 +30,14 @@ public class PlayerController : MonoBehaviour
         CheckForMenuOpen();
     }
 
-    public GameObject ghp()
+    public GameObject getCameraSwivel()
     {
-        return hp;
+        return playerCameraSwivel; 
+    }
+
+    public GameObject getHoldPoint()
+    {
+        return holdPoint;
     }
 
     public GameObject getPlayerCameraMount()
