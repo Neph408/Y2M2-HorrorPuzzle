@@ -16,7 +16,6 @@ public class Holdable : MonoBehaviour
 
     private const float speedLimit = 35f;
 
-    //public Dictionary<string, Color> colourAssignment = new(4);
 
 
 
@@ -30,11 +29,8 @@ public class Holdable : MonoBehaviour
         gameManager = GameManager.Instance;
         rb = GetComponent<Rigidbody>();
         ol = GetComponent<Outline>();
-        ol.enabled = false;
-        //colourAssignment.Add("Hover", Color.blue);
-        //colourAssignment.Add("Hold", Color.yellow);
-        //colourAssignment.Add("Interact", Color.green);
-        //colourAssignment.Add("Disabled", Color.red);
+        ol.OutlineMode = Outline.Mode.SilhouetteOnly;
+
     }
 
     // Update is called once per frame
@@ -78,7 +74,7 @@ public class Holdable : MonoBehaviour
 
     public void Glow(bool val, Color col)
     {
-        ol.enabled = val;
+        ol.OutlineMode = (val) ? Outline.Mode.OutlineAll : Outline.Mode.SilhouetteOnly;
         ol.OutlineColor = col;
     }
 
@@ -98,14 +94,14 @@ public class Holdable : MonoBehaviour
     {
         
 
-        rb.excludeLayers = (Input.GetKey(gameManager.kc_Interact) && !IsApproxInRange(transform.position, gameManager.GetPlayer().GetComponent<PlayerController>().getHoldPoint().transform.position, 5f)) ? maskAll : maskNone;
+        rb.excludeLayers = (Input.GetKey(gameManager.kc_Interact) && !IsApproxInRange(transform.position, gameManager.GetPlayer().GetComponent<PlayerController>().GetHoldPoint().transform.position, 5f)) ? maskAll : maskNone;
 
         if (Input.GetKey(gameManager.kc_Interact))
         {
 
-            rb.velocity = (gameManager.GetPlayer().GetComponent<PlayerController>().getHoldPoint().transform.position - gameObject.transform.position) * 5f;
+            rb.velocity = (gameManager.GetPlayer().GetComponent<PlayerController>().GetHoldPoint().transform.position - gameObject.transform.position) * 5f;
 
-            prevvec = (gameManager.GetPlayer().GetComponent<PlayerController>().getHoldPoint().transform.position - gameObject.transform.position).normalized;
+            prevvec = (gameManager.GetPlayer().GetComponent<PlayerController>().GetHoldPoint().transform.position - gameObject.transform.position).normalized;
         }
 
 

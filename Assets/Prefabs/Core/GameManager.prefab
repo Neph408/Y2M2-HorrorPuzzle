@@ -632,6 +632,7 @@ MonoBehaviour:
   kc_DropItem: 113
   kc_OpenMenu: 282
   kc_SkipAudio: 13
+  placeholderSprite: {fileID: 21300000, guid: 60ba320954c043c4a805bb40b686a62d, type: 3}
 --- !u!1 &1280518466509005251
 GameObject:
   m_ObjectHideFlags: 0

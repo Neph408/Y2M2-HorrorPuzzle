@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
     private bool isEscapeOpen = false;
     private bool isInventoryOpen = false;
 
-
+    [SerializeField] private Sprite placeholderSprite;
 
 
 
@@ -299,5 +299,10 @@ public class GameManager : MonoBehaviour
     public float getMouseSens() 
     {
         return mouseSens; 
+    }
+
+    public Sprite GetPlaceholderSprite()
+    {
+        return placeholderSprite; 
     }
 }

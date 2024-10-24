@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         CheckForMenuOpen();
     }
 
-    public GameObject getCameraSwivel()
+    public GameObject GetCameraSwivel()
     {
         return playerCameraSwivel; 
     }
@@ -42,12 +42,12 @@ public class PlayerController : MonoBehaviour
         return playerInventory;
     }
 
-    public GameObject getHoldPoint()
+    public GameObject GetHoldPoint()
     {
         return holdPoint;
     }
 
-    public GameObject getPlayerCameraMount()
+    public GameObject GetPlayerCameraMount()
     {
         return playerCameraMount;
     }

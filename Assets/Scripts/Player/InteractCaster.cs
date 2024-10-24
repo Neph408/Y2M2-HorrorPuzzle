@@ -25,7 +25,7 @@ public class InteractCaster : MonoBehaviour
     {
         gm = GameManager.Instance;
         pc = gameObject.GetComponent<PlayerController>();
-        camSwivel = pc.getCameraSwivel();
+        camSwivel = pc.GetCameraSwivel();
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class InteractCaster : MonoBehaviour
             if (hit.collider.CompareTag("Holdable"))
             {
 
-                getVariableObjectInput(hit);
+                GetVariableObjectInput(hit);
             }
             /*
             else if (hit.collider.CompareTag("Keypad"))
@@ -82,7 +82,7 @@ public class InteractCaster : MonoBehaviour
         
     }
 
-    void getVariableObjectInput(RaycastHit hit) /// peak jank
+    void GetVariableObjectInput(RaycastHit hit) /// peak jank
     {
         if(currentRaycastHit != null)
         {
@@ -117,9 +117,9 @@ public class InteractCaster : MonoBehaviour
             
             if(currentHoldTime < pickupHoldTime)
             {
-                if(checkForPickup(hit.collider.gameObject))
+                if(CheckForPickup(hit.collider.gameObject))
                 {
-                    pickupObject(hit.collider.gameObject);
+                    PickupObject(hit.collider.gameObject);
                 }
             }
 
@@ -130,9 +130,9 @@ public class InteractCaster : MonoBehaviour
 
 
 
-    bool checkForPickup(GameObject go)
+    bool CheckForPickup(GameObject go)
     {
-        if (go.GetComponent<ObjectPickup>() != null)
+        if (go.GetComponent<PickupObjectData>() != null)
         {
             return true;
         }
@@ -142,8 +142,16 @@ public class InteractCaster : MonoBehaviour
         }
     }
 
-    public void pickupObject(GameObject go)
+    public void PickupObject(GameObject go)
     {
-        pc.GetPlayerInventory().AddToInventory(go);
+        if (pc.GetPlayerInventory().CheckForSpace())
+        {
+            pc.GetPlayerInventory().AddToInventory(go.GetComponent<PickupObjectData>().GetInventoryItem());
+        }
+        else
+        {
+            //play sound
+        }
+
     }    
 }

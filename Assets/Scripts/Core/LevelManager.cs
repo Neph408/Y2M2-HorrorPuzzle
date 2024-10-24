@@ -14,7 +14,7 @@ public class LevelManager : MonoBehaviour
         gm.AssignLevelManager(this);
         if(Camera.main.GetComponent<CameraController>().GetMount() == null)
         {
-            Camera.main.GetComponent<CameraController>().SetNewMount(gm.GetPlayer().GetComponent<PlayerController>().getPlayerCameraMount());
+            Camera.main.GetComponent<CameraController>().SetNewMount(gm.GetPlayer().GetComponent<PlayerController>().GetPlayerCameraMount());
         }
         gm.SetHUDVisibility(true);
     }
