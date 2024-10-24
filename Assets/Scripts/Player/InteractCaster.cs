@@ -58,25 +58,26 @@ public class InteractCaster : MonoBehaviour
         {
             if (currentRaycastHit != null)
             {
-                currentRaycastHit.GetComponent<Holdable>().Glow(false);
+                currentRaycastHit.GetComponent<Holdable>().Glow(false, Color.blue);
             }
             currentRaycastHit = null;
             currentHoldTime = 0f;
         }
 
-        
 
-
-        if(Input.GetKeyUp(gm.kc_Interact) && targetHoldable != null)
+        if (targetHoldable != null)
         {
-            targetHoldable.drop();
+            targetHoldable.Hold();
+            targetHoldable.Glow(true, Color.green);
+        }
+
+        if (Input.GetKeyUp(gm.kc_Interact) && targetHoldable != null)
+        {
+            targetHoldable.Drop();
             targetHoldable=null;
         }
 
-        if(targetHoldable != null)
-        {
-            targetHoldable.hold();
-        }
+        
 
         
     }
@@ -87,10 +88,10 @@ public class InteractCaster : MonoBehaviour
         {
             if (currentRaycastHit != hit.collider.gameObject)
             {
-                currentRaycastHit.GetComponent<Holdable>().Glow(false);
+                currentRaycastHit.GetComponent<Holdable>().Glow(false, Color.blue);
                 currentHoldTime = 0f;
             }
-            hit.collider.gameObject.GetComponent<Holdable>().Glow(true);
+            hit.collider.gameObject.GetComponent<Holdable>().Glow(true, Color.blue);
         }
         
 
@@ -106,7 +107,7 @@ public class InteractCaster : MonoBehaviour
             if(currentHoldTime > pickupHoldTime)
             {
                 targetHoldable = hit.collider.GetComponent<Holdable>();
-                targetHoldable.pickup();
+                targetHoldable.Pickup();
                 isKeyDown = false;
             }
         }

@@ -32,7 +32,7 @@ public class CharCont : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!gm.getEscapeOpen())
+        if(!gm.GetEscapeOpen())
         {
             LookControl();
             MovementControl();

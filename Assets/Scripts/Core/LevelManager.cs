@@ -16,6 +16,7 @@ public class LevelManager : MonoBehaviour
         {
             Camera.main.GetComponent<CameraController>().SetNewMount(gm.GetPlayer().GetComponent<PlayerController>().getPlayerCameraMount());
         }
+        gm.SetHUDVisibility(true);
     }
 
     // Update is called once per frame

@@ -14,9 +14,14 @@ public class Holdable : MonoBehaviour
     private Vector3 pauseVelocity;
     private Vector3 pauseAngVelocity;
 
+    private const float speedLimit = 35f;
+
+    //public Dictionary<string, Color> colourAssignment = new(4);
 
 
 
+
+    
     [SerializeField] private LayerMask maskAll;
     [SerializeField] private LayerMask maskNone;
     // Start is called before the first frame update
@@ -26,13 +31,17 @@ public class Holdable : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         ol = GetComponent<Outline>();
         ol.enabled = false;
+        //colourAssignment.Add("Hover", Color.blue);
+        //colourAssignment.Add("Hold", Color.yellow);
+        //colourAssignment.Add("Interact", Color.green);
+        //colourAssignment.Add("Disabled", Color.red);
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        checkForPause();
+        CapSpeed();
+        CheckForPause();
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             rb.velocity = Vector3.zero;
@@ -43,19 +52,19 @@ public class Holdable : MonoBehaviour
     }
 
 
-    private void checkForPause()
+    private void CheckForPause()
     { 
-        if(rb.isKinematic != gameManager.getEscapeOpen())
+        if(rb.isKinematic != gameManager.GetEscapeOpen())
         {
             if(!rb.isKinematic)
             {
                 pauseAngVelocity = rb.angularVelocity;
                 pauseVelocity = rb.velocity;
-                rb.isKinematic = gameManager.getEscapeOpen();
+                rb.isKinematic = gameManager.GetEscapeOpen();
             }
             else
             {
-                rb.isKinematic = gameManager.getEscapeOpen();
+                rb.isKinematic = gameManager.GetEscapeOpen();
                 rb.angularVelocity = pauseAngVelocity;
                 rb.velocity = pauseVelocity;
                 pauseAngVelocity = Vector3.zero;
@@ -67,28 +76,29 @@ public class Holdable : MonoBehaviour
 
     }
 
-    public void Glow(bool val)
+    public void Glow(bool val, Color col)
     {
         ol.enabled = val;
+        ol.OutlineColor = col;
     }
 
 
-    public void pickup()
+    public void Pickup()
     {
         rb.useGravity = false;
     }
 
-    public void drop()
+    public void Drop()
     {
         rb.useGravity = true;   
     }
 
 
-    public void hold()
+    public void Hold()
     {
         
 
-        rb.excludeLayers = (Input.GetKey(gameManager.kc_Interact) && !isApproxInRange(transform.position, gameManager.GetPlayer().GetComponent<PlayerController>().getHoldPoint().transform.position, 5f)) ? maskAll : maskNone;
+        rb.excludeLayers = (Input.GetKey(gameManager.kc_Interact) && !IsApproxInRange(transform.position, gameManager.GetPlayer().GetComponent<PlayerController>().getHoldPoint().transform.position, 5f)) ? maskAll : maskNone;
 
         if (Input.GetKey(gameManager.kc_Interact))
         {
@@ -99,18 +109,16 @@ public class Holdable : MonoBehaviour
         }
 
 
-        if (speedCap())
-        {
-            rb.velocity = rb.velocity.normalized * 100;
-        }
+        //CapSpeed();
 
-        rb.angularVelocity *= 0.99f;
+        rb.angularVelocity *= 0.99f; // rbs are in fixedUpdate so this shouldnt cause a massive amount of issues 
+                                    // famous last words
     }
 
 
 
 
-    bool isApproxInRange(Vector3 v1, Vector3 v2, float dis)
+    bool IsApproxInRange(Vector3 v1, Vector3 v2, float dis)
     {
         if(Mathf.Abs(v1.x - v2.x) < dis && Mathf.Abs(v1.y - v2.y) < dis && Mathf.Abs(v1.z - v2.z) < dis)
         {
@@ -121,9 +129,20 @@ public class Holdable : MonoBehaviour
             return false;
         }
     }
-    bool speedCap() // oh yeah peak jank
+
+    void CapSpeed()
     {
-        if (Mathf.Abs(rb.velocity.magnitude) > 100f)
+        if (CheckIfExceedingSpeedCap())
+        {
+            rb.velocity = rb.velocity.normalized * speedLimit;
+        }
+    }
+
+
+    bool CheckIfExceedingSpeedCap()
+    {
+        //Debug.Log("Current Velocity for Object " + gameObject.name + " : " + rb.velocity.magnitude.ToString());
+        if (Mathf.Abs(rb.velocity.magnitude) > speedLimit)
         {
             return true;
         }

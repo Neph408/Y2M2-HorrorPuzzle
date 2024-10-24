@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hideMouse(!gm.getEscapeOpen());
+        hideMouse(!gm.GetEscapeOpen());
         CheckForMenuOpen();
     }
 
@@ -55,11 +55,21 @@ public class PlayerController : MonoBehaviour
 
     private void CheckForMenuOpen()
     {
+        if(Input.GetKeyDown(gm.kc_OpenInventory) && !gm.GetEscapeOpen() && !gm.GetSettingsOpen())
+        {
+            gm.SetInventoryVisibility(!gm.GetInventoryOpen());
+        }
+
+
         if(Input.GetKeyDown(gm.kc_OpenMenu))
         {
-            if(gm.getEscapeOpen())
+            if (gm.GetInventoryOpen())
             {
-                if(gm.isSettingOpen())
+                gm.SetInventoryVisibility(false);
+            }
+            else if (gm.GetEscapeOpen())
+            {
+                if(gm.GetSettingsOpen())
                 {
                     gm.SetSettingsVisibility(false);
                 }

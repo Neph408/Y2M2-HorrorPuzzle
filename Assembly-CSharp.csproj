@@ -61,7 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Title Screen\TitleScreenManager.cs" />
-    <Compile Include="Assets\Scripts\Core\disableOnRegister.cs" />
     <Compile Include="Assets\Scripts\Core\warningController.cs" />
     <Compile Include="Assets\Scripts\Core\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMountLocator.cs" />
@@ -75,6 +74,7 @@
     <Compile Include="Assets\Scripts\Core\HUDController.cs" />
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
+    <Compile Include="Assets\Scripts\Core\DisableOnRegister.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsBoolControl.cs" />
     <Compile Include="Assets\Scripts\Interactable Ground Object\ObjectPickup.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsMenuController.cs" />

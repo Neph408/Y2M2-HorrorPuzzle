@@ -4,14 +4,27 @@ using UnityEngine;
 
 public class ObjectPickup : MonoBehaviour
 {
-
-    // stores info on the object for pickup
     private GameManager gameManager;
+    // stores info on the object for pickup
+    private string objName;
+    private int objID;
+
+    [SerializeField] private string displayName;
+    [SerializeField] private string displayDescription;
+    [SerializeField] private Sprite displaySprite;
+    [SerializeField] private GameObject prefabAsset;
+    
+
+
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameManager.Instance;
+        objName = gameObject.name;
+        objID = gameObject.GetInstanceID();
     }
 
     // Update is called once per frame
@@ -20,5 +33,12 @@ public class ObjectPickup : MonoBehaviour
         
     }
 
+    public void SetParameters(string n_displayName, string n_displayDescription, Sprite n_displaySprite, GameObject n_prefabAsset)
+    {
+        displayName = n_displayName;
+        displayDescription = n_displayDescription;
+        displaySprite = n_displaySprite;
+        prefabAsset = n_prefabAsset;
+    }
 
 }

@@ -9,8 +9,12 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     private GameObject settingsCanvas;
     private GameObject escapeCanvas;
+    private GameObject inventoryCanvas;
+    private GameObject HUDCanvas;
     private SettingsMenuController smc;
     private EscapeMenuController emc;
+    private InventoryMenuController imc;
+    private HUDController hudc;
 
     private LevelManager currentLevelManager;
 
@@ -59,10 +63,12 @@ public class GameManager : MonoBehaviour
 
     private bool isSettingsOpen = false;
     private bool isEscapeOpen = false;
+    private bool isInventoryOpen = false;
 
 
 
-    
+
+
     private void Awake()
     {
         if (Instance == null)
@@ -77,22 +83,28 @@ public class GameManager : MonoBehaviour
         }
         smc = gameObject.GetComponentInChildren<SettingsMenuController>();
         emc = gameObject.GetComponentInChildren<EscapeMenuController>();
+        imc = gameObject.GetComponentInChildren<InventoryMenuController>();
+        hudc = gameObject.GetComponentInChildren<HUDController>();
         settingsCanvas = smc.gameObject;
         escapeCanvas = emc.gameObject;
+        inventoryCanvas = imc.gameObject;
+        HUDCanvas = hudc.gameObject;
 
     }
 
     // Start is called before the first frame update
     void Start()
     {
-       SetSettingsVisibility(false);
+        SetSettingsVisibility(false);
         SetEscapeMenuVisibility(false);
+        SetHUDVisibility(false);
+        SetInventoryVisibility(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
 
@@ -107,19 +119,22 @@ public class GameManager : MonoBehaviour
             GameObject.FindGameObjectWithTag("TitleScreenEventManager").GetComponent<TitleScreenManager>().setMenuVisibility(true);
         }
 
-        if (val && SceneManager.GetActiveScene().name != "MainMenu")
+        if(SceneManager.GetActiveScene().name != "MainMenu") // this pissed me off for reasons i wont go in to, but fuccit
         {
-            CloseEscapeMenu(true);
-        }
-        else
-        {
-            OpenEscapeMenu(true);
+            if(val)
+            {
+                CloseEscapeMenu(true);
+            }
+            else
+            {
+                OpenEscapeMenu(true);
+            }
         }
     }
 
-    public bool isSettingOpen()
+    public bool GetSettingsOpen()
     {
-        return isSettingsOpen; 
+        return isSettingsOpen;
     }
 
 
@@ -149,10 +164,12 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] pullInventory()
     {
-        return inventoryBackup; 
+        return inventoryBackup;
     }
 
-
+    // --------------------------------------------
+    // This has seperate open close because 1. idk why i just did, 2. its got some wacky condtions to keep the UI open whilst having another UI on top of it, tyopically i keep only 1 UI open at once (ignoring HUD)
+    // --------------------------------------------
     public void OpenEscapeMenu(bool isTemporaryHide = false)
     {
         SetEscapeMenuVisibility(true, isTemporaryHide);
@@ -172,13 +189,30 @@ public class GameManager : MonoBehaviour
         {
             isEscapeOpen = val;
         }
-        
+
+    }
+    // --------------------------------------------
+
+    public bool GetEscapeOpen()
+    { return isEscapeOpen; }
+
+
+    public void SetInventoryVisibility(bool val)
+    {
+        inventoryCanvas.SetActive(val);
+        isInventoryOpen = val;
     }
 
-    public bool getEscapeOpen()
-        { return isEscapeOpen; }
+    public bool GetInventoryOpen()
+    {
+        return isInventoryOpen;
+    }
 
 
+    public void SetHUDVisibility(bool val)
+    {
+        HUDCanvas.SetActive(val);
+    }
 
 
 
