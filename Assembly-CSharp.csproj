@@ -64,9 +64,11 @@
     <Compile Include="Assets\Scripts\Title Screen\TitleScreenManager.cs" />
     <Compile Include="Assets\Scripts\Core\disableOnRegister.cs" />
     <Compile Include="Assets\Scripts\Core\warningController.cs" />
+    <Compile Include="Assets\InventorySlotController.cs" />
     <Compile Include="Assets\Scripts\Core\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMountLocator.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMount.cs" />
+    <Compile Include="Assets\Scripts\Player\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsKeycodeSelectControl.cs" />
     <Compile Include="Assets\Scripts\Player\InteractCaster.cs" />

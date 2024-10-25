@@ -8,6 +8,7 @@ public class InteractCaster : MonoBehaviour
     private GameManager gm;
     private PlayerController pc;
     private GameObject camSwivel;
+    private InventoryManager inventoryManager;
 
     private Holdable targetHoldable;
 
@@ -26,6 +27,7 @@ public class InteractCaster : MonoBehaviour
         gm = GameManager.Instance;
         pc = gameObject.GetComponent<PlayerController>();
         camSwivel = pc.GetCameraSwivel();
+        inventoryManager = GetComponent<InventoryManager>();
     }
 
     // Update is called once per frame
@@ -144,15 +146,14 @@ public class InteractCaster : MonoBehaviour
 
     public void PickupObject(GameObject go)
     {
-        if (pc.GetPlayerInventory().CheckForSpace())
+        if (pc.GetInventoryManager().CheckForSpace())
         {
-            pc.GetPlayerInventory().AddToInventory(go.GetComponent<PickupObjectData>().GetInventoryItem());
+            pc.GetInventoryManager().AddToInventory(go.GetComponent<PickupObjectData>().GetInventoryItem());
             Destroy(go);
         }
         else
         {
             //play sound
         }
-
     }    
 }

@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject playerCameraMount;
     [SerializeField] private GameObject holdPoint;
     [SerializeField] private GameObject playerCameraSwivel;
-    private PlayerInventory playerInventory;
+    private InventoryManager inventoryManager;
 
     private void Awake()
     {
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         gm = GameManager.Instance;
         gm.AssignPlayer(gameObject);
-        playerInventory = gameObject.GetComponent<PlayerInventory>();
+        inventoryManager = gameObject.GetComponent<InventoryManager>();
     }
 
     // Update is called once per frame
@@ -30,16 +30,27 @@ public class PlayerController : MonoBehaviour
     {
         hideMouse(!gm.GetEscapeOpen());
         CheckForMenuOpen();
+
+        tempDropItem();
     }
+
+    void tempDropItem()
+    {
+        if(Input.GetKeyDown(KeyCode.Q) && inventoryManager.CheckForOccSlot())
+        {
+            inventoryManager.drop(inventoryManager.GetFirstOccupiedSlot());
+        }
+    }
+
 
     public GameObject GetCameraSwivel()
     {
         return playerCameraSwivel; 
     }
 
-    public PlayerInventory GetPlayerInventory()
+    public InventoryManager GetInventoryManager()
     {
-        return playerInventory;
+        return inventoryManager;
     }
 
     public GameObject GetHoldPoint()

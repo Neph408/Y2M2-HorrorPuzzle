@@ -15,11 +15,11 @@ public class PlayerInventory : MonoBehaviour
         private string displayName;
         private string displayDescription;
         private Sprite displaySprite;
-        private GameObject prefabGameObject;
+        private string prefabGameObject;
         private bool entry;
 
 
-        public InventoryItem(string n_objName, int n_ID, string n_displayName, string n_displayDescription, Sprite n_displaySprite, GameObject n_prefabGameObject)
+        public InventoryItem(string n_objName, int n_ID, string n_displayName, string n_displayDescription, Sprite n_displaySprite, string n_prefabGameObject)
         {
             objName = n_objName;
             id = n_ID;
@@ -30,7 +30,7 @@ public class PlayerInventory : MonoBehaviour
             entry = true;
         }
 
-        public InventoryItem(string n_objName, int n_ID, GameObject n_prefabGameObject)
+        public InventoryItem(string n_objName, int n_ID, string n_prefabGameObject)
         {
             objName = n_objName;
             id = n_ID;
@@ -49,7 +49,7 @@ public class PlayerInventory : MonoBehaviour
             temp += "DName: " + displayName+ " | ";
             temp += "DDesc: " + displayDescription+ " | ";
             temp += "SpriteName: " + displaySprite.name + " | ";
-            temp += "PrefabName: " + prefabGameObject.name ; 
+            temp += "PrefabName: " + prefabGameObject ; 
             return temp;
         }
 
@@ -66,11 +66,37 @@ public class PlayerInventory : MonoBehaviour
             entry = false;
         }
 
-
+        public string getObjName()
+        {
+            return objName; 
+        }
         public bool GetEntry()
         {
             return entry;
         }
+
+        public string GetObjPath()
+        {
+            return prefabGameObject;
+        }
+
+        public string GetDisplayName()
+        {
+            return displayName; 
+        }
+
+        public string getDisplayDescription()
+        {
+            return displayDescription;
+        }
+
+        public Sprite GetDisplaySprite()
+        {
+            return displaySprite;
+        }
+
+
+
 }
 
     public InventoryItem[] inventory;
@@ -100,7 +126,7 @@ public class PlayerInventory : MonoBehaviour
     {
 
     }
-
+    /*
     public bool CheckForSpace()
     {
         for (int i = 0; i < inventorySize; i++)
@@ -111,6 +137,16 @@ public class PlayerInventory : MonoBehaviour
             }
         }
         return false;
+    }
+    */
+    public InventoryItem[] GetInventory()
+    {
+        return inventory; 
+    }
+
+    public int GetInventorySize()
+    {
+        return inventorySize; 
     }
 
     private int GetFirstFreeSlot()
@@ -125,6 +161,21 @@ public class PlayerInventory : MonoBehaviour
         Debug.LogWarning("PlayerInventory : GetFirstFreeSlot failed to find free slot");
         return -1; // will cause error, thats the plan
     }
+
+
+    public int GetFirstOccupiedSlot()
+    {
+        for (int i = 0; i < inventorySize; i++)
+        {
+            if (inventory[i].GetEntry() )
+            {
+                return i;
+            }
+        }
+        Debug.LogWarning("PlayerInventory : GetFirstOccupiedSlot failed to find occupied slot");
+        return -1; // will cause error, thats the plan
+    }
+
 
     public void AddToInventory(InventoryItem iI)
     {
@@ -148,5 +199,14 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
+    public InventoryItem GetItemAtSlot(int val)
+    {
+        return inventory[val];
+    }
+
+    public void ClearSlot(int val)
+    {
+        inventory[val].ClearEntry();
+    }
 }
 

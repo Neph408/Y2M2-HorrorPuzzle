@@ -214,6 +214,10 @@ public class GameManager : MonoBehaviour
         HUDCanvas.SetActive(val);
     }
 
+    public void UpdateInventoryDisplay(PlayerInventory.InventoryItem[] inv)
+    {
+        imc.UpdateInventoryDisplay(inv);
+    }
 
 
     private void OnLevelWasLoaded(int level)

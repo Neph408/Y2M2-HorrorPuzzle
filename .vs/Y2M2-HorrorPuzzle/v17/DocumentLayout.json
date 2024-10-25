@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\player\\interactcaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\interactcaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|d:\\unity projects\\upy2m2 horrorpuzzle\\y2m2-horrorpuzzle\\assets\\scripts\\core\\inventorymenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\inventorymenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|d:\\unity projects\\upy2m2 horrorpuzzle\\y2m2-horrorpuzzle\\assets\\scripts\\player\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\player\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\interactable ground object\\pickupobjectdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactable ground object\\pickupobjectdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\player\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|d:\\unity projects\\upy2m2 horrorpuzzle\\y2m2-horrorpuzzle\\assets\\inventoryslotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\inventoryslotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +29,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\player\\interactcaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\interactcaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE35E1AC-A254-E22C-4031-8E98BD5268CE}|Assembly-CSharp.csproj|D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\assets\\scripts\\interactable ground object\\holdable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,39 +79,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowCIAAAAfAAAA",
+              "Title": "InventorySlotController.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\InventorySlotController.cs",
+              "RelativeDocumentMoniker": "Assets\\InventorySlotController.cs",
+              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\InventorySlotController.cs",
+              "RelativeToolTip": "Assets\\InventorySlotController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T15:07:35.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InteractCaster.cs",
-              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\InteractCaster.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\InteractCaster.cs",
-              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\InteractCaster.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\InteractCaster.cs",
-              "ViewState": "AQIAAJEAAAAAAAAAAAAqwJUAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T09:08:14.824Z",
+              "WhenOpened": "2024-10-25T10:15:08.595Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerInventory.cs",
-              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\PlayerInventory.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerInventory.cs",
-              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\PlayerInventory.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerInventory.cs",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAYwIQAAAAIAAAA",
+              "DocumentIndex": 0,
+              "Title": "InventoryMenuController.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\InventoryMenuController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\InventoryMenuController.cs",
+              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\InventoryMenuController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\InventoryMenuController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAmwDYAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T12:54:11Z",
+              "WhenOpened": "2024-10-25T10:13:35.277Z",
               "EditorCaption": ""
             },
             {
@@ -110,7 +110,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Interactable Ground Object\\PickupObjectData.cs",
               "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Interactable Ground Object\\PickupObjectData.cs",
               "RelativeToolTip": "Assets\\Scripts\\Interactable Ground Object\\PickupObjectData.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAA1wC4AAAB4AAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwDUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T12:54:03.17Z",
               "EditorCaption": ""
@@ -118,18 +118,69 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "InventoryManager.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\InventoryManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\InventoryManager.cs",
+              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\InventoryManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\InventoryManager.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAswBwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T08:58:55.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerInventory.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\PlayerInventory.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerInventory.cs",
+              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\PlayerInventory.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerInventory.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAUwEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T12:54:11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T15:07:35.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InteractCaster.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\InteractCaster.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\InteractCaster.cs",
+              "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\InteractCaster.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\InteractCaster.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAD4v5oAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T09:08:14.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\GameManager.cs",
               "ToolTip": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\GameManager.cs",
-              "ViewState": "AQIAAOIAAAAAAAAAAAAQwDIBAAAEAAAA",
+              "ViewState": "AQIAALkAAAAAAAAAAAAmwNgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T12:26:16.059Z"
+              "WhenOpened": "2024-10-20T12:26:16.059Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Holdable.cs",
               "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Interactable Ground Object\\Holdable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Interactable Ground Object\\Holdable.cs",
@@ -141,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "EscapeMenuController.cs",
               "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\EscapeMenuController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\EscapeMenuController.cs",
@@ -153,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "CameraController.cs",
               "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Camera\\CameraController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\CameraController.cs",
@@ -165,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "SettingsMenuController.cs",
               "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\SettingsMenuController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\SettingsMenuController.cs",
@@ -177,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "LevelManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Core\\LevelManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\LevelManager.cs",
@@ -189,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "TitleScreenManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Title Screen\\TitleScreenManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Title Screen\\TitleScreenManager.cs",
@@ -201,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "CameraMount.cs",
               "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Camera\\CameraMount.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\CameraMount.cs",
@@ -213,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "CharCont.cs",
               "DocumentMoniker": "D:\\Unity Projects\\UPY2M2 HorrorPuzzle\\Y2M2-HorrorPuzzle\\Assets\\Scripts\\Player\\CharCont.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\CharCont.cs",

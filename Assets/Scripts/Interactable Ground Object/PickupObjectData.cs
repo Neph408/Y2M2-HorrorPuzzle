@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class PickupObjectData : MonoBehaviour
@@ -12,8 +14,9 @@ public class PickupObjectData : MonoBehaviour
     [SerializeField] private string displayName;
     [SerializeField] private string displayDescription;
     [SerializeField] private Sprite displaySprite;
-    [SerializeField] private GameObject prefabAsset;
-    
+    [SerializeField] private string prefabAsset;
+
+
 
 
 
@@ -30,10 +33,10 @@ public class PickupObjectData : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void SetParameters(string n_displayName, string n_displayDescription, Sprite n_displaySprite, GameObject n_prefabAsset)
+    public void SetParameters(string n_displayName, string n_displayDescription, Sprite n_displaySprite, string n_prefabAsset)
     {
         displayName = n_displayName;
         displayDescription = n_displayDescription;
