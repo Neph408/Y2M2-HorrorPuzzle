@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsBoolControl.cs" />
+    <Compile Include="Assets\OutlineOnHover.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsMenuController.cs" />
     <Compile Include="Assets\Scripts\Interactable Ground Object\Holdable.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInventory.cs" />

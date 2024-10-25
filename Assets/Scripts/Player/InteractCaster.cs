@@ -19,6 +19,8 @@ public class InteractCaster : MonoBehaviour
     private float currentHoldTime = 0f;
     private bool isKeyDown = false;
 
+    private bool isHolding = false;
+
     private GameObject currentRaycastHit;
 
     // Start is called before the first frame update
@@ -60,22 +62,27 @@ public class InteractCaster : MonoBehaviour
         {
             if (currentRaycastHit != null)
             {
-                currentRaycastHit.GetComponent<Holdable>().Glow(false, Color.blue);
+                currentRaycastHit.GetComponent<OutlineOnHover>().Glow(false, Color.blue);
             }
             currentRaycastHit = null;
-            currentHoldTime = 0f;
+            if(!isHolding)
+            {
+                currentHoldTime = 0f;
+            }
+            
         }
 
 
         if (targetHoldable != null)
         {
             targetHoldable.Hold();
-            targetHoldable.Glow(true, Color.green);
+            targetHoldable.GetComponent<OutlineOnHover>().Glow(true, Color.green);
         }
 
         if (Input.GetKeyUp(gm.kc_Interact) && targetHoldable != null)
         {
             targetHoldable.Drop();
+            isHolding = false;
             targetHoldable=null;
         }
 
@@ -90,10 +97,10 @@ public class InteractCaster : MonoBehaviour
         {
             if (currentRaycastHit != hit.collider.gameObject)
             {
-                currentRaycastHit.GetComponent<Holdable>().Glow(false, Color.blue);
+                currentRaycastHit.GetComponent<OutlineOnHover>().Glow(false, Color.blue);
                 currentHoldTime = 0f;
             }
-            hit.collider.gameObject.GetComponent<Holdable>().Glow(true, Color.blue);
+            hit.collider.gameObject.GetComponent<OutlineOnHover>().Glow(true, Color.blue);
         }
         
 
@@ -109,7 +116,8 @@ public class InteractCaster : MonoBehaviour
             if(currentHoldTime > pickupHoldTime)
             {
                 targetHoldable = hit.collider.GetComponent<Holdable>();
-                targetHoldable.Pickup();
+                targetHoldable.Grab();
+                isHolding = true;
                 isKeyDown = false;
             }
         }

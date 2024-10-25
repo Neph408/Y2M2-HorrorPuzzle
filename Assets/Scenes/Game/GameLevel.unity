@@ -206,6 +206,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4223709613947535816, guid: fbc35e8a528367246bb0ff7587352555, type: 3}
+      propertyPath: holdableCollisionDisableDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4732160011378123174, guid: fbc35e8a528367246bb0ff7587352555, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

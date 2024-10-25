@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
     //Gameplay
     private bool autoAltText;
 
-
+    [SerializeField] private float holdableCollisionDisableDistance = 10f;
 
     private bool isSettingsOpen = false;
     private bool isEscapeOpen = false;
@@ -308,5 +308,10 @@ public class GameManager : MonoBehaviour
     public Sprite GetPlaceholderSprite()
     {
         return placeholderSprite; 
+    }
+
+    public float GetHoldableCollisionDisableDistance()
+    {
+        return holdableCollisionDisableDistance;
     }
 }

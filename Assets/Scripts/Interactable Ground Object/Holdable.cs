@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +8,7 @@ public class Holdable : MonoBehaviour
 {
     private GameManager gameManager;
     private Rigidbody rb;
-    private Outline ol;
+    private OutlineOnHover oloh;
 
     private Vector3 prevvec;
 
@@ -17,7 +18,7 @@ public class Holdable : MonoBehaviour
     private const float speedLimit = 35f;
 
 
-
+    private bool movingToHoldPoint = false;
 
 
     
@@ -28,8 +29,8 @@ public class Holdable : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         rb = GetComponent<Rigidbody>();
-        ol = GetComponent<Outline>();
-        ol.OutlineMode = Outline.Mode.SilhouetteOnly;
+        oloh = GetComponent<OutlineOnHover>();
+        /*ol.OutlineMode = Outline.Mode.SilhouetteOnly;*/
 
     }
 
@@ -45,9 +46,17 @@ public class Holdable : MonoBehaviour
             transform.position = new Vector3(Random.Range(0,10), Random.Range(0, 10), Random.Range(0, 10));
             transform.rotation = Quaternion.identity;
         }
+
+        ForceRespawn();
     }
 
-
+    private void ForceRespawn()
+    {
+        if(transform.position.y < -100f)
+        {
+            transform.position = new Vector3(0, 10, 0);
+        }
+    }
     private void CheckForPause()
     { 
         if(rb.isKinematic != gameManager.GetEscapeOpen())
@@ -71,30 +80,51 @@ public class Holdable : MonoBehaviour
         
 
     }
-
+    /*
     public void Glow(bool val, Color col)
     {
         ol.OutlineMode = (val) ? Outline.Mode.OutlineAll : Outline.Mode.SilhouetteOnly;
         ol.OutlineColor = col;
     }
+    */
 
-
-    public void Pickup()
+    public void Grab()
     {
         rb.useGravity = false;
     }
 
     public void Drop()
     {
-        rb.useGravity = true;   
+        rb.useGravity = true;
+        oloh.Glow(false, Color.blue);
     }
 
 
     public void Hold()
     {
         
+        if (GetDistance(transform.position, gameManager.GetPlayer().GetComponent<PlayerController>().GetHoldPoint().transform.position) > gameManager.GetHoldableCollisionDisableDistance())
+        {
+            movingToHoldPoint = true;
+        }
+        if (GetDistance(transform.position, gameManager.GetPlayer().GetComponent<PlayerController>().GetHoldPoint().transform.position) < 2.5f)
+        {
+            movingToHoldPoint = false;
+        }
 
-        rb.excludeLayers = (Input.GetKey(gameManager.kc_Interact) && !IsApproxInRange(transform.position, gameManager.GetPlayer().GetComponent<PlayerController>().GetHoldPoint().transform.position, 5f)) ? maskAll : maskNone;
+
+        //rb.excludeLayers = (Input.GetKey(gameManager.kc_Interact) && !IsApproxInRange(transform.position, gameManager.GetPlayer().GetComponent<PlayerController>().GetHoldPoint().transform.position, gameManager.GetHoldableCollisionDisableDistance())) ? maskAll : maskNone;
+        if (Input.GetKey(gameManager.kc_Interact) && movingToHoldPoint)
+        {
+            rb.excludeLayers = maskAll;
+            oloh.Glow(true, Color.red);
+        }
+        else
+        {
+            rb.excludeLayers = maskNone;
+            oloh.Glow(true, oloh.GetCurrentColour());
+        }
+
 
         if (Input.GetKey(gameManager.kc_Interact))
         {
@@ -116,7 +146,8 @@ public class Holdable : MonoBehaviour
 
     bool IsApproxInRange(Vector3 v1, Vector3 v2, float dis)
     {
-        if(Mathf.Abs(v1.x - v2.x) < dis && Mathf.Abs(v1.y - v2.y) < dis && Mathf.Abs(v1.z - v2.z) < dis)
+        //if(Mathf.Abs(v1.x - v2.x) < dis && Mathf.Abs(v1.y - v2.y) < dis && Mathf.Abs(v1.z - v2.z) < dis)
+        if(Mathf.Abs(new Vector3(v2.x - v1.x, v2.y - v1.y, v2.z - v1.z).magnitude) < dis)
         {
             return true;
         }
@@ -124,6 +155,11 @@ public class Holdable : MonoBehaviour
         {
             return false;
         }
+    }
+
+    float GetDistance(Vector3 v1, Vector3 v2)
+    {
+        return Mathf.Abs(Vector3.Distance(v2, v1));
     }
 
     void CapSpeed()
