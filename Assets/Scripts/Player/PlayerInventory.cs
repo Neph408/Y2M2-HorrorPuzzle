@@ -122,13 +122,15 @@ public class PlayerInventory : MonoBehaviour
                 return i; 
             }
         }
-        return -1;
+        Debug.LogWarning("PlayerInventory : GetFirstFreeSlot failed to find free slot");
+        return -1; // will cause error, thats the plan
     }
 
     public void AddToInventory(InventoryItem iI)
     {
         inventory[GetFirstFreeSlot()] = iI;
         Vomit();
+        
     }
 
     public void Vomit()

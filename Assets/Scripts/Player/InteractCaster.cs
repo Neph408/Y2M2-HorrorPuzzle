@@ -147,6 +147,7 @@ public class InteractCaster : MonoBehaviour
         if (pc.GetPlayerInventory().CheckForSpace())
         {
             pc.GetPlayerInventory().AddToInventory(go.GetComponent<PickupObjectData>().GetInventoryItem());
+            Destroy(go);
         }
         else
         {
