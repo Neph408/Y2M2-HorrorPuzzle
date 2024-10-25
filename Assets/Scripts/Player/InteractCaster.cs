@@ -30,6 +30,7 @@ public class InteractCaster : MonoBehaviour
         pc = gameObject.GetComponent<PlayerController>();
         camSwivel = pc.GetCameraSwivel();
         inventoryManager = GetComponent<InventoryManager>();
+        
     }
 
     // Update is called once per frame
@@ -42,9 +43,9 @@ public class InteractCaster : MonoBehaviour
         if(hit.collider != null)
         {
             //Debug.Log(hit.collider.tag);
-            if (hit.collider.CompareTag("Holdable"))
+            if (CheckForHoldable(hit.collider.gameObject))
             {
-
+                gm.GetHUDController().DisplayTooltip(true, gm.kc_Interact, hit.collider.GetComponent<Holdable>().GetInteractionInfo(), hit.collider.GetComponent<Holdable>().GetObjectName());
                 GetVariableObjectInput(hit);
             }
             /*
@@ -60,6 +61,7 @@ public class InteractCaster : MonoBehaviour
         }
         else
         {
+            gm.GetHUDController().DisplayTooltip(false);
             if (currentRaycastHit != null)
             {
                 currentRaycastHit.GetComponent<OutlineOnHover>().Glow(false, Color.blue);
@@ -110,7 +112,8 @@ public class InteractCaster : MonoBehaviour
         {
             isKeyDown = true;
         }
-        else if( Input.GetKey(gm.kc_Interact) && isKeyDown)
+
+        else if( Input.GetKey(gm.kc_Interact) && isKeyDown && CheckForHoldable(hit.collider.gameObject))
         {
             currentHoldTime += Time.deltaTime;
             if(currentHoldTime > pickupHoldTime)
@@ -121,6 +124,7 @@ public class InteractCaster : MonoBehaviour
                 isKeyDown = false;
             }
         }
+
         if(Input.GetKeyUp(gm.kc_Interact))
         { 
             isKeyDown = false;
@@ -135,7 +139,9 @@ public class InteractCaster : MonoBehaviour
 
             currentHoldTime = 0f;
         }
+
         currentRaycastHit = hit.collider.gameObject;
+
     }
 
 
@@ -143,6 +149,18 @@ public class InteractCaster : MonoBehaviour
     bool CheckForPickup(GameObject go)
     {
         if (go.GetComponent<PickupObjectData>() != null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    bool CheckForHoldable(GameObject go)
+    {
+        if (go.GetComponent<Holdable>() != null)
         {
             return true;
         }

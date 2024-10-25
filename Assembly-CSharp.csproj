@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\Core\SettingsMenuController.cs" />
     <Compile Include="Assets\Scripts\Interactable Ground Object\Holdable.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInventory.cs" />
+    <Compile Include="Assets\TooltipController.cs" />
     <Compile Include="Assets\Scripts\Core\InventoryMenuController.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsSliderControl.cs" />
     <Compile Include="Assets\Scripts\Player\CharCont.cs" />

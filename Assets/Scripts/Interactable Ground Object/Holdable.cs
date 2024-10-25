@@ -20,10 +20,15 @@ public class Holdable : MonoBehaviour
 
     private bool movingToHoldPoint = false;
 
+    [SerializeField] private string objectName = "[DefaultName]";
+    [SerializeField] private bool usePickupObjectDataDisplayName = true;
+    [SerializeField] private string interactInfo = "[Press]";
+    [SerializeField] private bool useDefaultInteractionInfo = true;
 
     
-    [SerializeField] private LayerMask maskAll;
-    [SerializeField] private LayerMask maskNone;
+    private LayerMask maskAll = ~0; 
+    private LayerMask maskNone = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +36,20 @@ public class Holdable : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         oloh = GetComponent<OutlineOnHover>();
         /*ol.OutlineMode = Outline.Mode.SilhouetteOnly;*/
+
+        if (gameObject.GetComponent<PickupObjectData>() != null && usePickupObjectDataDisplayName)
+        {
+            objectName = gameObject.GetComponent<PickupObjectData>().GetDisplayName();
+        }
+
+        if(gameObject.GetComponent<PickupObjectData>() != null)
+        {
+            interactInfo = "Press";
+        }
+        else
+        {
+            interactInfo = "Hold";
+        }
 
     }
 
@@ -87,6 +106,16 @@ public class Holdable : MonoBehaviour
         ol.OutlineColor = col;
     }
     */
+
+    public string GetInteractionInfo()
+    {
+        return interactInfo;
+    }
+
+    public string GetObjectName()
+    {
+        return objectName;
+    }
 
     public void Grab()
     {

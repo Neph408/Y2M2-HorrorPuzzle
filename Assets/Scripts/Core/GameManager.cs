@@ -167,6 +167,12 @@ public class GameManager : MonoBehaviour
         return inventoryBackup;
     }
 
+
+    public HUDController GetHUDController()
+    {
+        return hudc;
+    }
+
     // --------------------------------------------
     // This has seperate open close because 1. idk why i just did, 2. its got some wacky condtions to keep the UI open whilst having another UI on top of it, tyopically i keep only 1 UI open at once (ignoring HUD)
     // --------------------------------------------

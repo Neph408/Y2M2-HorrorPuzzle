@@ -44,6 +44,10 @@ public class PickupObjectData : MonoBehaviour
         prefabAsset = n_prefabAsset;
     }
 
+    public string GetDisplayName()
+    { 
+        return displayName; 
+    }
 
     public PlayerInventory.InventoryItem GetInventoryItem()
     {
