@@ -64,7 +64,6 @@
     <Compile Include="Assets\Scripts\Title Screen\TitleScreenManager.cs" />
     <Compile Include="Assets\Scripts\Core\disableOnRegister.cs" />
     <Compile Include="Assets\Scripts\Core\warningController.cs" />
-    <Compile Include="Assets\InventorySlotController.cs" />
     <Compile Include="Assets\Scripts\Core\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMountLocator.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMount.cs" />
@@ -79,11 +78,12 @@
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsBoolControl.cs" />
-    <Compile Include="Assets\OutlineOnHover.cs" />
+    <Compile Include="Assets\Scripts\Core\InventorySlotController.cs" />
+    <Compile Include="Assets\Scripts\Interactbale Mechanic Objects\OutlineOnHover.cs" />
+    <Compile Include="Assets\Scripts\Core\TooltipController.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsMenuController.cs" />
     <Compile Include="Assets\Scripts\Interactable Ground Object\Holdable.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInventory.cs" />
-    <Compile Include="Assets\TooltipController.cs" />
     <Compile Include="Assets\Scripts\Core\InventoryMenuController.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsSliderControl.cs" />
     <Compile Include="Assets\Scripts\Player\CharCont.cs" />
