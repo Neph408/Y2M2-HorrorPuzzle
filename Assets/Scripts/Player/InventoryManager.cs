@@ -9,6 +9,9 @@ public class InventoryManager : MonoBehaviour
     private GameManager gameManager;
     private PlayerInventory playerInventory;
     private PlayerController playerController;
+    private InteractCaster interactCaster;
+
+    [SerializeField] private LayerMask placementRayCastLayerMask;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +19,8 @@ public class InventoryManager : MonoBehaviour
         gameManager = GameManager.Instance;
         playerInventory = GetComponent<PlayerInventory>();
         playerController = GetComponent<PlayerController>();
+        interactCaster = GetComponent<InteractCaster>();
+        gameManager.GetInventoryMenuController().AssignInventoryManager(this);
     }
 
     // Update is called once per frame
@@ -53,6 +58,12 @@ public class InventoryManager : MonoBehaviour
         return false;
     }
 
+    public PlayerInventory.InventoryItem GetItemAtSlot(int val)
+    {
+        return playerInventory.GetItemAtSlot(val);
+    }
+
+
     public bool CheckForOccSlot()
     {
         if(playerInventory.GetFirstOccupiedSlot() != -1)
@@ -68,15 +79,27 @@ public class InventoryManager : MonoBehaviour
     }
 
 
-    public void drop(int val)
+    public void Drop(int val)
     {
         PlayerInventory.InventoryItem item = playerInventory.GetItemAtSlot(val);
         GameObject objToGen = Resources.Load(item.GetObjPath()).GameObject();
 
-        // HOLDPOINT TRANSFORM POS NEEDS TO BE RAYCAST HERE, OTHERWISE YOU CAN PLACE UNDER THE GROUND
-        GameObject objGenned = Instantiate(objToGen, playerController.GetHoldPoint().transform.position, Quaternion.identity);
+        // NNED TO ADD VERTICAL OFFSET PER OBJECTY TO ENSURE OBJ IS NOT PLACED IN GROUND
+        RaycastHit hit;
+        Vector3 dropPoint;
+        if(Physics.Raycast(transform.position, playerController.GetCameraSwivel().transform.forward, out hit, interactCaster.getInteractDistance(), placementRayCastLayerMask))
+        {
+            dropPoint = hit.point + transform.up * 0.5f; //temp
+            Debug.Log("ray pouint");
+        }
+        else
+        {
+            dropPoint = playerController.GetHoldPoint().transform.position;
+            Debug.Log("no ray");
+        }
+        GameObject objGenned = Instantiate(objToGen, dropPoint, Quaternion.identity);
 
-        objGenned.GetComponent<PickupObjectData>().SetParameters(item.GetDisplayName(), item.getDisplayDescription(), item.GetDisplaySprite(), item.GetObjPath());
+        objGenned.GetComponent<PickupObjectData>().SetParameters(item.GetDisplayName(), item.getDisplayDescription(), item.GetDisplaySpriteSmall(),item.GetDisplaySpriteLarge(), item.GetObjPath(), item.GetIsReadable(), item.GetReadableSprite(), item.GetReadableString());
         objGenned.name  = item.getObjName();
 
         playerInventory.ClearSlot(val);

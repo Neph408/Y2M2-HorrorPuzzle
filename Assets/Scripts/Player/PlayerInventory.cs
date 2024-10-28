@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class PlayerInventory : MonoBehaviour
 {
@@ -14,30 +15,70 @@ public class PlayerInventory : MonoBehaviour
         private int id;
         private string displayName;
         private string displayDescription;
-        private Sprite displaySprite;
+        private Sprite displaySpriteSmall;
+        private Sprite displaySpriteLarge;
         private string prefabGameObject;
+        private bool isReadable;
+        private Sprite readableSprite;
+        private string readableString;
         private bool entry;
 
 
-        public InventoryItem(string n_objName, int n_ID, string n_displayName, string n_displayDescription, Sprite n_displaySprite, string n_prefabGameObject)
+        public InventoryItem(string n_objName, int n_ID, string n_displayName, string n_displayDescription, Sprite n_displaySpriteSmall, Sprite n_displaySpriteLarge, string n_prefabGameObject, bool n_isReadable, Sprite n_readableSprite, string n_readableString)
         {
             objName = n_objName;
             id = n_ID;
             displayName = n_displayName;
             displayDescription = n_displayDescription; 
-            displaySprite = n_displaySprite;
+            displaySpriteSmall = n_displaySpriteSmall;
+            displaySpriteLarge = n_displaySpriteLarge;
             prefabGameObject = n_prefabGameObject;
+            isReadable = n_isReadable;
+            readableSprite = n_readableSprite;
+            readableString = n_readableString;
             entry = true;
-        }
-
-        public InventoryItem(string n_objName, int n_ID, string n_prefabGameObject)
+        } 
+        public InventoryItem(string n_objName, int n_ID, string n_displayName, string n_displayDescription, Sprite n_displaySpriteSmall, Sprite n_displaySpriteLarge, string n_prefabGameObject, bool n_isReadable)
         {
             objName = n_objName;
             id = n_ID;
-            displayName = "$DISPLAY_NAME$";
-            displayDescription = "$DISPLAY_DESCRIPTION$";
-            displaySprite = GameManager.Instance.GetPlaceholderSprite();
+            displayName = n_displayName;
+            displayDescription = n_displayDescription; 
+            displaySpriteSmall = n_displaySpriteSmall;
+            displaySpriteLarge = n_displaySpriteLarge;
             prefabGameObject = n_prefabGameObject;
+            isReadable = n_isReadable;
+            readableSprite = GameManager.Instance.getPlaceholderReadableSprite();
+            readableString = "{NO READABLE STRING}";
+            entry = true;
+        }
+
+        public InventoryItem(string n_objName, int n_ID, string n_prefabGameObject, bool n_isReadable, Sprite n_readableSprite, string n_readableString)
+        {
+            objName = n_objName;
+            id = n_ID;
+            displayName = "{NO DISPLAY NAME}";
+            displayDescription = "{NO DISPLAY DESCRIPTION}";
+            displaySpriteSmall = GameManager.Instance.GetPlaceholderSpriteSmall();
+            displaySpriteLarge = GameManager.Instance.GetPlaceholderSpriteLarge();
+            prefabGameObject = n_prefabGameObject;
+            isReadable = n_isReadable;
+            readableSprite = n_readableSprite;
+            readableString = n_readableString;
+            entry = true;
+        }
+        public InventoryItem(string n_objName, int n_ID, string n_prefabGameObject, bool n_isReadable)
+        {
+            objName = n_objName;
+            id = n_ID;
+            displayName = "{NO DISPLAY NAME}";
+            displayDescription = "{NO DISPLAY DESCRIPTION}";
+            displaySpriteSmall = GameManager.Instance.GetPlaceholderSpriteSmall();
+            displaySpriteLarge = GameManager.Instance.GetPlaceholderSpriteLarge();
+            prefabGameObject = n_prefabGameObject;
+            isReadable = n_isReadable;
+            readableSprite = GameManager.Instance.getPlaceholderReadableSprite();
+            readableString = "{NO READABLE STRING}";
             entry = true;
         }
 
@@ -48,8 +89,15 @@ public class PlayerInventory : MonoBehaviour
             temp += "ID: " + id.ToString()+ " | ";
             temp += "DName: " + displayName+ " | ";
             temp += "DDesc: " + displayDescription+ " | ";
-            temp += "SpriteName: " + displaySprite.name + " | ";
-            temp += "PrefabName: " + prefabGameObject ; 
+            temp += "SpriteNameSmall: " + displaySpriteSmall.name + " | ";
+            temp += "SpriteNameLarge: " + displaySpriteLarge.name + " | ";
+            temp += "PrefabName: " + prefabGameObject + " | ";
+            temp += "isReadable: " + isReadable.ToString();
+            if(isReadable)
+            {
+                temp += " | ReadableSprite: " + readableSprite.name + " | ";
+                temp += " | ReadableString: " + readableString;
+            }
             return temp;
         }
 
@@ -61,8 +109,12 @@ public class PlayerInventory : MonoBehaviour
             id = -1;
             displayName = null;
             displayDescription = null;
-            displaySprite = null;
+            displaySpriteSmall = null;
+            displaySpriteLarge = null;
             prefabGameObject = null;
+            isReadable = false;
+            readableSprite = null;
+            readableString = null;
             entry = false;
         }
 
@@ -90,14 +142,32 @@ public class PlayerInventory : MonoBehaviour
             return displayDescription;
         }
 
-        public Sprite GetDisplaySprite()
+        public Sprite GetDisplaySpriteSmall()
         {
-            return displaySprite;
+            return displaySpriteSmall;
+        }
+
+        public Sprite GetDisplaySpriteLarge()
+        {
+            return displaySpriteLarge;
+        }
+
+        public bool GetIsReadable()
+        {
+            return isReadable;
+        }
+
+        public Sprite GetReadableSprite()
+        {
+            return readableSprite;
+        }
+        public string GetReadableString()
+        {
+            return readableString;
         }
 
 
-
-}
+    }
 
     public InventoryItem[] inventory;
 
@@ -177,9 +247,9 @@ public class PlayerInventory : MonoBehaviour
     }
 
 
-    public void AddToInventory(InventoryItem iI)
+    public void AddToInventory(InventoryItem item)
     {
-        inventory[GetFirstFreeSlot()] = iI;
+        inventory[GetFirstFreeSlot()] = item;
         Vomit();
         
     }

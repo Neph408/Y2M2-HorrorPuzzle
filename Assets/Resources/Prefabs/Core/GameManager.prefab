@@ -709,7 +709,9 @@ MonoBehaviour:
   kc_OpenMenu: 282
   kc_SkipAudio: 13
   holdableCollisionDisableDistance: 10
-  placeholderSprite: {fileID: 21300000, guid: 60ba320954c043c4a805bb40b686a62d, type: 3}
+  placeholderSpriteSmall: {fileID: 21300000, guid: 60ba320954c043c4a805bb40b686a62d, type: 3}
+  placeholderSpriteLarge: {fileID: 21300000, guid: 60ba320954c043c4a805bb40b686a62d, type: 3}
+  placeholderReadableSprite: {fileID: 21300000, guid: 04261004367dc8940ad9d404e111c879, type: 3}
 --- !u!1 &1230649432827180636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,7 +1670,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4008306140432013796}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2751113847782605861}
+        m_TargetAssemblyTypeName: LargeSelectionDisplayController, Assembly-CSharp
+        m_MethodName: PressDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2116127182135063635
 GameObject:
   m_ObjectHideFlags: 0
@@ -2920,7 +2934,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6463473302660854288}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2751113847782605861}
+        m_TargetAssemblyTypeName: LargeSelectionDisplayController, Assembly-CSharp
+        m_MethodName: PressRead
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3858983356094974501
 GameObject:
   m_ObjectHideFlags: 0
@@ -5131,8 +5157,9 @@ GameObject:
   - component: {fileID: 6740346034165447535}
   - component: {fileID: 8528867527919523335}
   - component: {fileID: 2534115689458242626}
+  - component: {fileID: 2751113847782605861}
   m_Layer: 0
-  m_Name: Panel
+  m_Name: Large Selection Display
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5201,6 +5228,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2751113847782605861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6985220885161686622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d9f8daba29228a49ba22b1dec63cdd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemLargeSpriteDisplay: {fileID: 800110374794438400}
+  itemTitleDisplay: {fileID: 5813103658305328765}
+  itemDescriptionDisplay: {fileID: 635957978946490096}
 --- !u!1 &7005684326039235806
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,12 +19,13 @@ public class GameManager : MonoBehaviour
     private LevelManager currentLevelManager;
 
     private GameObject playerObject;
+    private InventoryManager inventoryManager;
 
     [SerializeField] private string titleScene;
     [SerializeField] private string gameScene;
     [SerializeField] private string testScene;
 
-    private GameObject[] inventoryBackup;
+    private PlayerInventory.InventoryItem[] inventoryBackup;
 
 
     private int gamePaused = 1; // 1 = no, 0 = yes
@@ -65,7 +66,9 @@ public class GameManager : MonoBehaviour
     private bool isEscapeOpen = false;
     private bool isInventoryOpen = false;
 
-    [SerializeField] private Sprite placeholderSprite;
+    [SerializeField] private Sprite placeholderSpriteSmall;
+    [SerializeField] private Sprite placeholderSpriteLarge;
+    [SerializeField] private Sprite placeholderReadableSprite;
 
 
 
@@ -157,12 +160,12 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void backupInventory(GameObject[] goa)
+    public void backupInventory(PlayerInventory.InventoryItem[] goa)
     {
         inventoryBackup = goa;
     }
 
-    public GameObject[] pullInventory()
+    public PlayerInventory.InventoryItem[] pullInventory()
     {
         return inventoryBackup;
     }
@@ -171,6 +174,11 @@ public class GameManager : MonoBehaviour
     public HUDController GetHUDController()
     {
         return hudc;
+    }
+
+    public InventoryMenuController GetInventoryMenuController()
+    {
+        return imc;
     }
 
     // --------------------------------------------
@@ -240,6 +248,7 @@ public class GameManager : MonoBehaviour
         if (playerObject == null)
         {
             playerObject = go;
+            inventoryManager = playerObject.GetComponent<InventoryManager>();
         }
         else
         {
@@ -260,6 +269,11 @@ public class GameManager : MonoBehaviour
     public LevelManager getLevelManager()
     {
         return currentLevelManager;
+    }
+
+    public InventoryManager GetInventoryManager()
+    {
+        return inventoryManager;
     }
 
     private void ClearLevelManager()
@@ -311,11 +325,20 @@ public class GameManager : MonoBehaviour
         return mouseSens; 
     }
 
-    public Sprite GetPlaceholderSprite()
+    public Sprite GetPlaceholderSpriteSmall()
     {
-        return placeholderSprite; 
+        return placeholderSpriteSmall; 
     }
 
+    public Sprite GetPlaceholderSpriteLarge()
+    {
+        return placeholderSpriteLarge;
+    }
+
+    public Sprite getPlaceholderReadableSprite()
+    {
+        return placeholderReadableSprite; 
+    }
     public float GetHoldableCollisionDisableDistance()
     {
         return holdableCollisionDisableDistance;

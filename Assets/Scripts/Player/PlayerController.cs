@@ -21,24 +21,24 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         gm = GameManager.Instance;
-        gm.AssignPlayer(gameObject);
         inventoryManager = gameObject.GetComponent<InventoryManager>();
+        gm.AssignPlayer(gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
-        hideMouse(!gm.GetEscapeOpen());
+        hideMouse(!(gm.GetEscapeOpen() || gm.GetInventoryOpen()));
         CheckForMenuOpen();
 
-        tempDropItem();
+        //tempDropItem();
     }
 
     void tempDropItem()
     {
         if(Input.GetKeyDown(KeyCode.Q) && inventoryManager.CheckForOccSlot())
         {
-            inventoryManager.drop(inventoryManager.GetFirstOccupiedSlot());
+            inventoryManager.Drop(inventoryManager.GetFirstOccupiedSlot());
         }
     }
 
@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private void hideMouse(bool val)
-    {
+    { 
         Cursor.lockState = val ? CursorLockMode.Locked : CursorLockMode.None;
         Cursor.visible = !val;
     }

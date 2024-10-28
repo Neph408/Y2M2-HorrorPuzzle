@@ -181,5 +181,10 @@ public class InteractCaster : MonoBehaviour
         {
             //play sound
         }
-    }    
+    }
+
+    public float getInteractDistance()
+    {
+        return raycastDistance;
+    }
 }

@@ -13,8 +13,12 @@ public class PickupObjectData : MonoBehaviour
 
     [SerializeField] private string displayName;
     [SerializeField] private string displayDescription;
-    [SerializeField] private Sprite displaySprite;
+    [SerializeField] private Sprite displaySpriteSmall;
+    [SerializeField] private Sprite displaySpriteLarge;
     [SerializeField] private string prefabAsset;
+    [SerializeField] private bool isReadable;
+    [SerializeField] private Sprite readableSprite;
+    [SerializeField] private string readableString;
 
 
 
@@ -36,12 +40,16 @@ public class PickupObjectData : MonoBehaviour
 
     }
 
-    public void SetParameters(string n_displayName, string n_displayDescription, Sprite n_displaySprite, string n_prefabAsset)
+    public void SetParameters(string n_displayName, string n_displayDescription, Sprite n_displaySpriteSmall, Sprite n_displaySpriteLarge, string n_prefabAsset, bool n_isReadable, Sprite n_readableSprite, string n_readableString)
     {
         displayName = n_displayName;
         displayDescription = n_displayDescription;
-        displaySprite = n_displaySprite;
+        displaySpriteSmall = n_displaySpriteSmall;
+        displaySpriteLarge = n_displaySpriteLarge;
         prefabAsset = n_prefabAsset;
+        isReadable = n_isReadable;
+        readableSprite = n_readableSprite;
+        readableString = n_readableString;
     }
 
     public string GetDisplayName()
@@ -51,7 +59,7 @@ public class PickupObjectData : MonoBehaviour
 
     public PlayerInventory.InventoryItem GetInventoryItem()
     {
-        return new PlayerInventory.InventoryItem(objName,objID,displayName,displayDescription,displaySprite,prefabAsset);
+        return new PlayerInventory.InventoryItem(objName,objID,displayName,displayDescription,displaySpriteSmall,displaySpriteLarge,prefabAsset, isReadable, readableSprite, readableString);
     }
 
 }

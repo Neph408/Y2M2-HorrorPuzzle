@@ -167,12 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d684bda5278ded349b008ca8864a9215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maskAll:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  maskNone:
-    serializedVersion: 2
-    m_Bits: 0
+  objectName: '[DefaultName]'
+  usePickupObjectDataDisplayName: 1
+  interactInfo: '[Press]'
+  useDefaultInteractionInfo: 1
 --- !u!114 &7435052354750162157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,8 +185,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: TestCube Default Name
   displayDescription: Test Cube Default Description
-  displaySprite: {fileID: 21300000, guid: 60ba320954c043c4a805bb40b686a62d, type: 3}
+  displaySpriteSmall: {fileID: 0}
+  displaySpriteLarge: {fileID: 0}
   prefabAsset: Prefabs\IPO\testCube
+  isReadable: 0
 --- !u!114 &-6451670874970238809
 MonoBehaviour:
   m_ObjectHideFlags: 0
