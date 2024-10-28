@@ -82,6 +82,7 @@ public class PlayerInventory : MonoBehaviour
             entry = true;
         }
 
+
         public string GetDataAsReadableString()
         {
             string temp = string.Empty;

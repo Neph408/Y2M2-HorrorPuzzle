@@ -84,17 +84,16 @@ public class InventoryMenuController : MonoBehaviour
     public void SetCurrentHover(int val)
     {
         currentHover = val;
-        if (currentHover != -1)
-        {
-            UpdateLargeDisplay();
-        }
+        UpdateLargeDisplay();
     }
 
     public void SetLastSelected(int val)
     {
         if (inventoryManager.GetItemAtSlot(val).GetEntry())
         {
+            //inventorySlotControllers[lastSelected].SetOverlayImageTransparency(255);
             lastSelected = val;
+            //inventorySlotControllers[lastSelected].SetOverlayImageTransparency(128);
             UpdateLargeDisplay();
         }
         else
@@ -108,11 +107,15 @@ public class InventoryMenuController : MonoBehaviour
         PlayerInventory.InventoryItem item = inventoryManager.GetItemAtSlot((currentHover == -1) ? lastSelected : currentHover);
         if(item.GetEntry())
         {
-            lsdc.UpdateDisplay(item.GetDisplayName(), item.getDisplayDescription(), item.GetDisplaySpriteLarge());
+            lsdc.UpdateDisplay(item.GetDisplayName(), item.getDisplayDescription(), item.GetDisplaySpriteLarge(), item.GetIsReadable());
         }
+        /*else
+        {
+            lsdc.UpdateDisplay(emptySlotName, emptySlotDescription, emptySlotSprite, false);
+        }*/
         if(wasDropped)
         {
-            lsdc.UpdateDisplay(emptySlotName, emptySlotDescription, emptySlotSprite);
+            lsdc.UpdateDisplay(emptySlotName, emptySlotDescription, emptySlotSprite, false);
         }
        
     }

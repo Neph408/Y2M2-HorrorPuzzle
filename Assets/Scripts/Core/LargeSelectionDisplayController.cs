@@ -11,6 +11,8 @@ public class LargeSelectionDisplayController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI itemTitleDisplay;
     [SerializeField] private TextMeshProUGUI itemDescriptionDisplay;
 
+    [SerializeField] private Button readButton;
+
     private InventoryMenuController inventoryMenuController;
 
     // Start is called before the first frame update
@@ -30,11 +32,12 @@ public class LargeSelectionDisplayController : MonoBehaviour
         
     }
 
-    public void UpdateDisplay(string title, string description, Sprite largeSprite)
+    public void UpdateDisplay(string title, string description, Sprite largeSprite, bool readable)
     {
         itemTitleDisplay.text = title;
         itemDescriptionDisplay.text = description;
         itemLargeSpriteDisplay.sprite = largeSprite;
+        readButton.interactable = readable;
     }
 
     public void PressRead()

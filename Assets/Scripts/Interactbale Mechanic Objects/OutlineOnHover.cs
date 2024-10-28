@@ -6,11 +6,16 @@ public class OutlineOnHover : MonoBehaviour
 {
     private Outline ol;
     // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
         ol = GetComponent<Outline>();
         ol.OutlineMode = Outline.Mode.OutlineVisible;
         ol.enabled = false;
+    }
+    void Start()
+    {
+        
     }
 
     // Update is called once per frame
@@ -28,7 +33,6 @@ public class OutlineOnHover : MonoBehaviour
 
     public Color GetCurrentColour()
     {
-
-    return ol.OutlineColor; 
-}
+        return ol.OutlineColor; 
+    }
 }

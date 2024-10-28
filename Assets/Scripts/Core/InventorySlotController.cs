@@ -13,6 +13,8 @@ public class InventorySlotController : MonoBehaviour
     private Image spriteImage;
     private TextMeshProUGUI text;
 
+    [SerializeField] private Image overlayImage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,5 +62,10 @@ public class InventorySlotController : MonoBehaviour
     {
         Debug.Log("click on inv slot " + slotIndex.ToString());
         imc.SetLastSelected(slotIndex);
+    }
+
+    public void SetOverlayImageTransparency(float val)
+    {
+        overlayImage.color = new Color(192, 192, 192, val);
     }
 }
