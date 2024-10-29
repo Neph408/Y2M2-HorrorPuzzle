@@ -62,4 +62,9 @@ public class PickupObjectData : MonoBehaviour
         return new PlayerInventory.InventoryItem(objName,objID,displayName,displayDescription,displaySpriteSmall,displaySpriteLarge,prefabAsset, isReadable, readableSprite, readableString);
     }
 
+
+    public bool GetIsReadable()
+    {
+        return isReadable; 
+    }
 }

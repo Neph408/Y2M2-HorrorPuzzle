@@ -46,7 +46,11 @@ public class InteractCaster : MonoBehaviour
             if (CheckForHoldable(hit.collider.gameObject))
             {
                 gm.GetHUDController().DisplayTooltip(true, gm.kc_Interact, hit.collider.GetComponent<Holdable>().GetInteractionInfo(), hit.collider.GetComponent<Holdable>().GetObjectName());
-                GetVariableObjectInput(hit);
+                if(!(gm.GetInventoryOpen() || gm.GetEscapeOpen()))
+                {
+                    GetVariableObjectInput(hit);
+                }
+                
             }
             /*
             else if (hit.collider.CompareTag("Keypad"))

@@ -76,7 +76,15 @@ public class PlayerController : MonoBehaviour
         {
             if (gm.GetInventoryOpen())
             {
-                gm.SetInventoryVisibility(false);
+                if(gm.GetInventoryMenuController().GetRPCVisibility())
+                { 
+                    gm.GetInventoryMenuController().SetRPCVisibility(false);
+                }
+                else
+                {
+                    gm.SetInventoryVisibility(false);
+                }
+                
             }
             else if (gm.GetEscapeOpen())
             {

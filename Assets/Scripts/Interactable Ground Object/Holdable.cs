@@ -51,6 +51,19 @@ public class Holdable : MonoBehaviour
             interactInfo = "Hold";
         }
 
+
+        if(GetComponent<PickupObjectData>() == null)
+        {
+            GetComponent<MeshRenderer>().material.color = Color.red;
+        }
+        else if(GetComponent<PickupObjectData>().GetIsReadable())
+        {
+            GetComponent<MeshRenderer>().material.color = Color.blue;
+        }
+        else
+        {
+            GetComponent<MeshRenderer>().material.color = Color.green;
+        }
     }
 
     // Update is called once per frame

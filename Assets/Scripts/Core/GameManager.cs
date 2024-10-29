@@ -213,6 +213,10 @@ public class GameManager : MonoBehaviour
 
     public void SetInventoryVisibility(bool val)
     {
+        if (!val)
+        {
+            imc.SetRPCVisibility(false);
+        }
         inventoryCanvas.SetActive(val);
         isInventoryOpen = val;
     }
@@ -313,6 +317,11 @@ public class GameManager : MonoBehaviour
     public void setMouseSens(float val)
     {
         mouseSens = val; 
+    }
+
+    public bool getAutoAltText()
+    {
+        return autoAltText; 
     }
 
     public KeyCode[] getActiveKeycodes()

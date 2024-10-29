@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class InventoryMenuController : MonoBehaviour
 {
     private GameManager gameManager;
     private LargeSelectionDisplayController lsdc;
     private InventoryManager inventoryManager;
+
+    private GameObject rpcgo;
+    private ReadPanelController rpc;
 
     private InventorySlotController[] inventorySlotControllers;
 
@@ -22,9 +26,12 @@ public class InventoryMenuController : MonoBehaviour
     void Start()
     {
         gameManager = GameManager.Instance;
+        rpc = GetComponentInChildren<ReadPanelController>();
+        rpcgo = rpc.gameObject;
         lsdc = GetComponentInChildren<LargeSelectionDisplayController>();
         lsdc.AssignIMC(this);
-
+        rpc.AssignIMC(this);//, gameManager);
+        SetRPCVisibility(false);
 
         inventorySlotControllers = new InventorySlotController[12];
 
@@ -45,6 +52,10 @@ public class InventoryMenuController : MonoBehaviour
         {
             currentHover = -1;
             UpdateLargeDisplay();
+        }
+        if(Input.GetKeyDown(gameManager.kc_AltTextView))
+        {
+            rpc.ToggleAltTextPanel();
         }
     }
 
@@ -140,6 +151,8 @@ public class InventoryMenuController : MonoBehaviour
         if (inventoryManager.GetItemAtSlot(lastSelected).GetEntry() && inventoryManager.GetItemAtSlot(lastSelected).GetIsReadable())
         {
             Debug.Log("reads");
+            SetRPCVisibility(true);
+            rpc.SetRPCDisplay(inventoryManager.GetItemAtSlot(lastSelected).GetReadableSprite(), inventoryManager.GetItemAtSlot(lastSelected).GetReadableString(), gameManager.getAutoAltText(), gameManager.kc_AltTextView);
         }
         else if (inventoryManager.GetItemAtSlot(lastSelected).GetEntry())
         {
@@ -150,4 +163,17 @@ public class InventoryMenuController : MonoBehaviour
             Debug.Log("slot empty");
         }
     }
+
+
+    public bool GetRPCVisibility()
+    {
+        return rpc.GetVisibility();
+    }
+
+    public void SetRPCVisibility(bool val)
+    {
+        rpc.SetVisibility(val);
+        rpcgo.SetActive(val);
+    }
+
 }
