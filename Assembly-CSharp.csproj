@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Core\EscapeMenuController.cs" />
     <Compile Include="Assets\Scripts\Player\WallCollisionDetection.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+    <Compile Include="Assets\SubtitleController.cs" />
     <Compile Include="Assets\Scripts\Core\HUDController.cs" />
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
