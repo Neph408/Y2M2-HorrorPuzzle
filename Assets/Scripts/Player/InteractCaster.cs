@@ -33,8 +33,25 @@ public class InteractCaster : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
+    {
+        if(gm.GetPlayer().GetComponent<CameraMountLocator>().getMount() == Camera.main.GetComponent<CameraController>().GetMount())
+        {
+            RunRaycast();
+        }
+        else
+        {
+            if(Input.GetKeyDown(gm.kc_Interact))
+            {
+                Camera.main.GetComponent<CameraController>().SetNewMount(gm.GetPlayer().GetComponent<CameraMountLocator>().getMount(), true); // exit when interact again
+                gm.GetHUDController().SetKeypadKeybindReminderVisibility(false);
+            }
+        }
+    }
+
+
+ 
+    private void RunRaycast()
     {
         RaycastHit hit;
 
@@ -103,9 +120,12 @@ public class InteractCaster : MonoBehaviour
     {
         currentRaycastHit = hit.collider.gameObject;
         currentRaycastHit.GetComponent<OutlineOnHover>().Glow(true, Color.yellow);
+        gm.GetHUDController().DisplayTooltip(true, gm.kc_Interact, "Press to interact", "Keypad");
         if (Input.GetKeyDown(gm.kc_Interact))
         {
-
+            gm.GetHUDController().DisplayTooltip(false);
+            Camera.main.GetComponent<CameraController>().SetNewMount(currentRaycastHit.GetComponent<CameraMountLocator>().getMount(), true);
+            gm.GetHUDController().SetKeypadKeybindReminderVisibility(true);
         }
     }
 

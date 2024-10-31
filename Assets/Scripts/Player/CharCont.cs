@@ -34,8 +34,16 @@ public class CharCont : MonoBehaviour
     {
         if(!(gm.GetEscapeOpen() || gm.GetInventoryOpen()))
         {
-            LookControl();
-            MovementControl();
+            if(Camera.main.GetComponent<CameraController>().GetMount() == gm.GetPlayer().GetComponent<CameraMountLocator>().getMount() && !Camera.main.GetComponent<CameraController>().GetIsMoving())
+            {
+                LookControl();
+                MovementControl();
+            }
+            else
+            {
+                rb.velocity = Vector3.zero;
+            }
+            
         }
         else
         {

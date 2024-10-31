@@ -18,11 +18,14 @@ public class CameraMount : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Camera.main.GetComponent<CameraController>().GetMount() == this)
+        {
+            isInUse = true;
+        }
+        else
+        {
+            isInUse=false;
+        }
     }
 
-    public void setActiveMount(bool val)
-    {
-        isInUse = val;
-    }
 }

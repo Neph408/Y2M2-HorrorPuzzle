@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,12 +10,15 @@ public class HUDController : MonoBehaviour
 
     private GameObject TooltipOverlay;
     private TooltipController ttc;
+    [SerializeField] private TextMeshProUGUI keypadKeybindReminder;
+
     // Start is called before the first frame update
     void Start()
     {
         ttc = GetComponentInChildren<TooltipController>();
         TooltipOverlay = ttc.gameObject;
         TooltipOverlay.SetActive(false);
+        SetKeypadKeybindReminderVisibility(false);
     }
 
     // Update is called once per frame
@@ -32,4 +37,10 @@ public class HUDController : MonoBehaviour
 
     }
 
+
+    public void SetKeypadKeybindReminderVisibility(bool val)
+    {
+        keypadKeybindReminder.gameObject.SetActive(val);
+        keypadKeybindReminder.text = "Press [" + GameManager.Instance.kc_Interact.ToString() + "] to exit";
+    }
 }

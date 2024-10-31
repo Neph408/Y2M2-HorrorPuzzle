@@ -85,6 +85,7 @@
     <Compile Include="Assets\temp.cs" />
     <Compile Include="Assets\Scripts\Core\LargeSelectionDisplayController.cs" />
     <Compile Include="Assets\Scripts\Interactbale Mechanic Objects\OutlineOnHover.cs" />
+    <Compile Include="Assets\KeypadController.cs" />
     <Compile Include="Assets\Scripts\Core\TooltipController.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsMenuController.cs" />
     <Compile Include="Assets\KeypadKeyData.cs" />
