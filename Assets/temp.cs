@@ -9,7 +9,7 @@ public class temp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //GetComponent<Material>().color = Color.cyan;
     }
 
     // Update is called once per frame

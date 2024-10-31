@@ -48,15 +48,17 @@ public class InteractCaster : MonoBehaviour
                 gm.GetHUDController().DisplayTooltip(true, gm.kc_Interact, hit.collider.GetComponent<Holdable>().GetInteractionInfo(), hit.collider.GetComponent<Holdable>().GetObjectName());
                 if(!(gm.GetInventoryOpen() || gm.GetEscapeOpen()))
                 {
-                    GetVariableObjectInput(hit);
+                    GetHoldableVariableObjectInput(hit);
                 }
                 
             }
-            /*
             else if (hit.collider.CompareTag("Keypad"))
             {
+                KeypadInteraction(hit);
+
 
             }
+            /*
             else if (hit.collider.CompareTag("Button"))
             {
 
@@ -97,7 +99,37 @@ public class InteractCaster : MonoBehaviour
         
     }
 
-    void GetVariableObjectInput(RaycastHit hit) /// peak jank
+    private void KeypadInteraction(RaycastHit hit)
+    {
+        currentRaycastHit = hit.collider.gameObject;
+        currentRaycastHit.GetComponent<OutlineOnHover>().Glow(true, Color.yellow);
+        if (Input.GetKeyDown(gm.kc_Interact))
+        {
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    private void GetHoldableVariableObjectInput(RaycastHit hit) /// peak jank
     {
         if(currentRaycastHit != null)
         {

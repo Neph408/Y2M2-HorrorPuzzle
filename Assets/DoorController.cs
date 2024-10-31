@@ -25,7 +25,7 @@ public class DoorController : MonoBehaviour
 
     public void OpenDoor()
     {
-        lowerAnimator.Play("DoorLowerOpen",0,0.0f);
+        lowerAnimator.Play("DoorLowerOpen", 0, 0.0f);
         upperAnimator.Play("DoorUpperOpen", 0, 0.0f);
     }
 

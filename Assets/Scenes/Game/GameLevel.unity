@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 80388568}
   - component: {fileID: 80388567}
   m_Layer: 0
-  m_Name: obj
+  m_Name: Door Trigger Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1963,6 +1963,122 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a56ca67442348043bdca260f18dc865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &2920602396169900694
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1107281907082543693, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107281907082543693, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.422
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107281907082543693, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.099
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634231041038478880, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3203430367464574914, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780396640268566438, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780396640268566438, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780396640268566438, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780396640268566438, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780396640268566438, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780396640268566438, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780396640268566438, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780396640268566438, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780396640268566438, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780396640268566438, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7067035530172296001, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      propertyPath: m_Name
+      value: Keypad
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7037211758316115915, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1174650001524302228, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 94058076259410902, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7885030871283831902, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3145780696765661189, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8524455070403170910, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6600843063294311103, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8285408790887702225, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 131627236926880746, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5325185279491928477, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4651752132447116077, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8837907070760453127, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2983897751969243537, guid: 9757df875553e254a93583c286ac8a96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: 9757df875553e254a93583c286ac8a96, type: 3}
 --- !u!1001 &7955068962405822275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2120,3 +2236,4 @@ SceneRoots:
   - {fileID: 383586400}
   - {fileID: 7955068962405822275}
   - {fileID: 80388571}
+  - {fileID: 2920602396169900694}
