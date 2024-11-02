@@ -340,6 +340,8 @@ MonoBehaviour:
   imc: {fileID: 0}
   gm: {fileID: 0}
   overlayImage: {fileID: 1109613623265174941}
+  audio_Hover: {fileID: 8300000, guid: 2987cf07a085f0b4da1642dba5b4c63e, type: 3}
+  audio_Click: {fileID: 8300000, guid: 3ca17098fb1b1fe468a8e55e3ff14d02, type: 3}
 --- !u!1 &8537179131066334563
 GameObject:
   m_ObjectHideFlags: 0

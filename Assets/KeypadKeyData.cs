@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class KeypadKeyData : MonoBehaviour
 {
+    private KeypadKeyController controller;
     public enum e_KeyFunction { K_1, K_2, K_3, K_4, K_5, K_6, K_7, K_8, K_9, K_Clear, K_0, K_Hash }
 
     [SerializeField] private e_KeyFunction KeyFunction;
@@ -14,7 +15,7 @@ public class KeypadKeyData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        controller = GetComponentInParent<KeypadKeyController>();
     }
 
     // Update is called once per frame

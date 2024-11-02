@@ -65,10 +65,12 @@ public class GameManager : MonoBehaviour
     private bool isSettingsOpen = false;
     private bool isEscapeOpen = false;
     private bool isInventoryOpen = false;
+    private bool isInKeypad = false;
 
     [SerializeField] private Sprite placeholderSpriteSmall;
     [SerializeField] private Sprite placeholderSpriteLarge;
     [SerializeField] private Sprite placeholderReadableSprite;
+    [SerializeField] private AudioClip placeholderAudioClip;
 
 
 
@@ -265,6 +267,17 @@ public class GameManager : MonoBehaviour
         return playerObject; 
     }
 
+    public bool GetIsInKeypad()
+    {
+        return isInKeypad;
+    }
+
+    public void SetIsInKeypad(bool val)
+    {
+        isInKeypad = val; 
+    }
+
+
     public void AssignLevelManager(LevelManager lm)
     {
         currentLevelManager = lm;
@@ -352,4 +365,23 @@ public class GameManager : MonoBehaviour
     {
         return holdableCollisionDisableDistance;
     }
+
+    public AudioSource GetPlayerAudioSource()
+    {
+        return playerObject.GetComponent<PlayerController>().GetPlayerAudioSource();
+    }
+
+
+    public void PlayAudioClip(AudioSource source, AudioClip clip, bool randomPitch, int priority = 0)
+    {
+        if(clip == null)
+        {
+            clip = placeholderAudioClip;
+        }
+        source.clip = clip;
+        source.priority += priority;
+        source.pitch = randomPitch ? Random.Range(0.9f, 1.1f) : 1f;
+        source.Play();
+    }
+
 }

@@ -5,6 +5,14 @@ using UnityEngineInternal;
 
 public class InteractCaster : MonoBehaviour
 {
+    /*
+     
+     need to move tooltips to being own component, not something hard set in this
+     
+     */
+    
+    
+    
     private GameManager gm;
     private PlayerController pc;
     private GameObject camSwivel;
@@ -45,6 +53,7 @@ public class InteractCaster : MonoBehaviour
             {
                 Camera.main.GetComponent<CameraController>().SetNewMount(gm.GetPlayer().GetComponent<CameraMountLocator>().getMount(), true); // exit when interact again
                 gm.GetHUDController().SetKeypadKeybindReminderVisibility(false);
+                gm.SetIsInKeypad(false);
             }
         }
     }
@@ -71,8 +80,10 @@ public class InteractCaster : MonoBehaviour
             }
             else if (hit.collider.CompareTag("Keypad"))
             {
-                KeypadInteraction(hit);
-
+                if (hit.collider.GetComponent<KeypadController>().GetIsInteractable())
+                {
+                    KeypadInteraction(hit);
+                }
 
             }
             /*
@@ -126,6 +137,7 @@ public class InteractCaster : MonoBehaviour
             gm.GetHUDController().DisplayTooltip(false);
             Camera.main.GetComponent<CameraController>().SetNewMount(currentRaycastHit.GetComponent<CameraMountLocator>().getMount(), true);
             gm.GetHUDController().SetKeypadKeybindReminderVisibility(true);
+            gm.SetIsInKeypad(true);
         }
     }
 

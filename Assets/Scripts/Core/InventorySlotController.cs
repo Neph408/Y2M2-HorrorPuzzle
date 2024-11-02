@@ -15,6 +15,8 @@ public class InventorySlotController : MonoBehaviour
 
     [SerializeField] private Image overlayImage;
 
+    [SerializeField] private AudioClip audio_Hover;
+    [SerializeField] private AudioClip audio_Click;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,20 +50,22 @@ public class InventorySlotController : MonoBehaviour
 
     public void Hover()
     {
-        Debug.Log("hover over inv slot " + slotIndex.ToString());
+        //Debug.Log("hover over inv slot " + slotIndex.ToString());
+        gm.PlayAudioClip(gm.GetPlayerAudioSource(), audio_Hover, true);
         imc.SetCurrentHover(slotIndex);
     }
 
     public void UnHover()
     {
-        Debug.Log("no longer over inv slot " + slotIndex.ToString());
+        //Debug.Log("no longer over inv slot " + slotIndex.ToString());
         imc.SetCurrentHover(-1);
     }
 
     public void Select()
     {
-        Debug.Log("click on inv slot " + slotIndex.ToString());
+        //Debug.Log("click on inv slot " + slotIndex.ToString());
         imc.SetLastSelected(slotIndex);
+        gm.PlayAudioClip(gm.GetPlayerAudioSource(), audio_Click, true);
     }
 
     public void SetOverlayImageTransparency(float val)

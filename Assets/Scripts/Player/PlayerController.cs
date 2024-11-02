@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject playerCameraMount;
     [SerializeField] private GameObject holdPoint;
     [SerializeField] private GameObject playerCameraSwivel;
+    private AudioSource playerAudioSource;
     private InventoryManager inventoryManager;
 
     private void Awake()
@@ -23,12 +24,13 @@ public class PlayerController : MonoBehaviour
         gm = GameManager.Instance;
         inventoryManager = gameObject.GetComponent<InventoryManager>();
         gm.AssignPlayer(gameObject);
+        playerAudioSource = GetComponentInChildren<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        hideMouse(!(gm.GetEscapeOpen() || gm.GetInventoryOpen()));
+        hideMouse(!(gm.GetEscapeOpen() || gm.GetInventoryOpen() || gm.GetIsInKeypad()));
         CheckForMenuOpen();
 
         //tempDropItem();
@@ -63,6 +65,10 @@ public class PlayerController : MonoBehaviour
         return playerCameraMount;
     }
 
+    public AudioSource GetPlayerAudioSource()
+    {
+        return playerAudioSource;
+    }
 
     private void CheckForMenuOpen()
     {

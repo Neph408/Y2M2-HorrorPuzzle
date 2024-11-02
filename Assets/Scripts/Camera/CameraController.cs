@@ -39,15 +39,18 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!gm.GetEscapeOpen())
+        {
+            if (IsMoving)
+            {
+                SmoothMove();
+            }
+            else
+            {
+                UpdatePosition();
+            }
+        }
         
-        if (IsMoving) 
-        {
-            SmoothMove();
-        }
-        else
-        {
-            UpdatePosition();
-        }
     }
 
 

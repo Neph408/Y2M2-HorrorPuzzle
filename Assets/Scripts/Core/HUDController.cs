@@ -10,12 +10,14 @@ public class HUDController : MonoBehaviour
 
     private GameObject TooltipOverlay;
     private TooltipController ttc;
+    private SubtitleController stc;
     [SerializeField] private TextMeshProUGUI keypadKeybindReminder;
 
     // Start is called before the first frame update
     void Start()
     {
         ttc = GetComponentInChildren<TooltipController>();
+        stc = GetComponentInChildren<SubtitleController>();
         TooltipOverlay = ttc.gameObject;
         TooltipOverlay.SetActive(false);
         SetKeypadKeybindReminderVisibility(false);
@@ -42,5 +44,10 @@ public class HUDController : MonoBehaviour
     {
         keypadKeybindReminder.gameObject.SetActive(val);
         keypadKeybindReminder.text = "Press [" + GameManager.Instance.kc_Interact.ToString() + "] to exit";
+    }
+
+    public SubtitleController GetSubtitleController()
+    {
+        return stc;
     }
 }
