@@ -29,6 +29,7 @@ public class InteractCaster : MonoBehaviour
 
     private bool isHolding = false;
 
+    private GameObject currentGlow;
     private GameObject currentRaycastHit;
 
     // Start is called before the first frame update
@@ -63,7 +64,8 @@ public class InteractCaster : MonoBehaviour
      i regret putting the olog as some weird random thing to check for, it shouldve been merged with tooltip info and treated as its own thing
      fml
     but for now it works, so it stays a lost cause
-     
+    Update: did that, its sooo much better 
+
      */
  
     private void RunRaycast()
@@ -74,10 +76,24 @@ public class InteractCaster : MonoBehaviour
 
         if(hit.collider != null)
         {
+            if (hit.collider.gameObject.GetComponent<OutlineAndTooltipOnHover>() != null)
+            {
+                if (currentGlow == null)
+                {
+                    currentGlow = hit.collider.gameObject;
+                }
+                if(currentGlow != hit.collider.gameObject)
+                {
+                    currentGlow.GetComponent<OutlineAndTooltipOnHover>().Glow(false);
+                }
+                currentGlow = hit.collider.gameObject;
+                currentGlow.GetComponent<OutlineAndTooltipOnHover>().Glow(true);
+            }
+
+
             //Debug.Log(hit.collider.tag);
             if (CheckForHoldable(hit.collider.gameObject))
             {
-                gm.GetHUDController().DisplayTooltip(true, gm.kc_Interact, hit.collider.GetComponent<Holdable>().GetInteractionInfo(), hit.collider.GetComponent<Holdable>().GetObjectName());
                 if(!(gm.GetInventoryOpen() || gm.GetEscapeOpen()))
                 {
                     GetHoldableVariableObjectInput(hit);
@@ -92,19 +108,18 @@ public class InteractCaster : MonoBehaviour
                 }
 
             }
-            /*
+            
             else if (hit.collider.CompareTag("Button"))
             {
-
+                ButtonInteract(hit);
             }
-            */
+            
         }
         else
         {
-            gm.GetHUDController().DisplayTooltip(false);
-            if (currentRaycastHit != null)
+            if (currentGlow != null)
             {
-                currentRaycastHit.GetComponent<OutlineOnHover>().Glow(false, Color.blue);
+                currentGlow.GetComponent<OutlineAndTooltipOnHover>().Glow(false);
             }
             currentRaycastHit = null;
             if(!isHolding)
@@ -118,7 +133,6 @@ public class InteractCaster : MonoBehaviour
         if (targetHoldable != null)
         {
             targetHoldable.Hold();
-            targetHoldable.GetComponent<OutlineOnHover>().Glow(true, Color.green);
         }
 
         if (Input.GetKeyUp(gm.kc_Interact) && targetHoldable != null)
@@ -136,18 +150,23 @@ public class InteractCaster : MonoBehaviour
     private void KeypadInteraction(RaycastHit hit)
     {
         currentRaycastHit = hit.collider.gameObject;
-        currentRaycastHit.GetComponent<OutlineOnHover>().Glow(true, Color.yellow);
-        gm.GetHUDController().DisplayTooltip(true, gm.kc_Interact, "Press to interact", "Keypad");
         if (Input.GetKeyDown(gm.kc_Interact))
         {
-            gm.GetHUDController().DisplayTooltip(false);
+            currentRaycastHit.GetComponent<OutlineAndTooltipOnHover>().Glow(false);
             Camera.main.GetComponent<CameraController>().SetNewMount(currentRaycastHit.GetComponent<CameraMountLocator>().getMount(), true);
             gm.GetHUDController().SetKeypadKeybindReminderVisibility(true);
             gm.SetIsInKeypad(true);
         }
     }
 
-
+    private void ButtonInteract(RaycastHit hit)
+    {
+        currentRaycastHit = hit.collider.gameObject;
+        if(Input.GetKeyDown(gm.kc_Interact))
+        {
+            currentRaycastHit.GetComponent<ButtonController>().PressButton();
+        }
+    }
 
 
 
@@ -169,19 +188,6 @@ public class InteractCaster : MonoBehaviour
     
     private void GetHoldableVariableObjectInput(RaycastHit hit) /// peak jank
     {
-        if(currentRaycastHit != null)
-        {
-            if (currentRaycastHit != hit.collider.gameObject)
-            {
-                currentRaycastHit.GetComponent<OutlineOnHover>().Glow(false, Color.blue);
-                currentHoldTime = 0f;
-            }
-            hit.collider.gameObject.GetComponent<OutlineOnHover>().Glow(true, Color.blue);
-        }
-        
-
-        
-
         if (Input.GetKeyDown(gm.kc_Interact))
         {
             isKeyDown = true;

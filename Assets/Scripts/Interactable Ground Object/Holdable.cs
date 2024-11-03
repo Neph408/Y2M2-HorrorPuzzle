@@ -8,7 +8,7 @@ public class Holdable : MonoBehaviour
 {
     private GameManager gameManager;
     private Rigidbody rb;
-    private OutlineOnHover oloh;
+    private OutlineAndTooltipOnHover oloh;
 
     private Vector3 prevvec;
 
@@ -20,13 +20,6 @@ public class Holdable : MonoBehaviour
 
     private bool movingToHoldPoint = false;
 
-
-    // mistakes \/
-    [SerializeField] private string objectName = "[DefaultName]";
-    [SerializeField] private bool usePickupObjectDataDisplayName = true;
-    [SerializeField] private string interactInfo = "[Press]";
-    [SerializeField] private bool useDefaultInteractionInfo = true;
-
     
     private LayerMask maskAll = ~0; 
     private LayerMask maskNone = 0;
@@ -36,22 +29,7 @@ public class Holdable : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         rb = GetComponent<Rigidbody>();
-        oloh = GetComponent<OutlineOnHover>();
-        /*ol.OutlineMode = Outline.Mode.SilhouetteOnly;*/
 
-        if (gameObject.GetComponent<PickupObjectData>() != null && usePickupObjectDataDisplayName)
-        {
-            objectName = gameObject.GetComponent<PickupObjectData>().GetDisplayName();
-        }
-
-        if(gameObject.GetComponent<PickupObjectData>() != null)
-        {
-            interactInfo = "Press";
-        }
-        else
-        {
-            interactInfo = "Hold";
-        }
 
 
         if(GetComponent<PickupObjectData>() == null)
@@ -114,23 +92,6 @@ public class Holdable : MonoBehaviour
         
 
     }
-    /*
-    public void Glow(bool val, Color col)
-    {
-        ol.OutlineMode = (val) ? Outline.Mode.OutlineAll : Outline.Mode.SilhouetteOnly;
-        ol.OutlineColor = col;
-    }
-    */
-
-    public string GetInteractionInfo() // fuc u this
-    {
-        return interactInfo;
-    }
-
-    public string GetObjectName()
-    {
-        return objectName;
-    }
 
     public void Grab()
     {
@@ -140,7 +101,7 @@ public class Holdable : MonoBehaviour
     public void Drop()
     {
         rb.useGravity = true;
-        oloh.Glow(false, Color.blue);
+        oloh.Glow(false,false);
     }
 
 
@@ -161,12 +122,12 @@ public class Holdable : MonoBehaviour
         if (Input.GetKey(gameManager.kc_Interact) && movingToHoldPoint)
         {
             rb.excludeLayers = maskAll;
-            oloh.Glow(true, Color.red);
+            oloh.Glow(true, true);
         }
         else
         {
             rb.excludeLayers = maskNone;
-            oloh.Glow(true, oloh.GetCurrentColour());
+            oloh.Glow(true, true);
         }
 
 

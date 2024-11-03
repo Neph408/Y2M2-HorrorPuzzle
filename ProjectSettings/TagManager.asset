@@ -11,6 +11,7 @@ TagManager:
   - Holdable
   - Keypad
   - KeypadKey
+  - Button
   layers:
   - Default
   - TransparentFX

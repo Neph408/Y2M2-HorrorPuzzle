@@ -13,6 +13,9 @@ public class DoorController : MonoBehaviour
     [SerializeField] private AudioClip openSound;
     [SerializeField] private AudioClip closeSound;
 
+    [SerializeField] private bool defaultState = false;
+
+    private bool state = false;
     private void Awake()
     {
     }
@@ -21,6 +24,10 @@ public class DoorController : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         doordioSource = GetComponentInChildren<AudioSource>();
+        if(defaultState != state)
+        {
+            ToggleDoor(true);
+        }
     }
 
     // Update is called once per frame
@@ -29,18 +36,39 @@ public class DoorController : MonoBehaviour
         
     }
 
+    public void ToggleDoor(bool noSound = false)
+    {
+        if(state)
+        {
+            CloseDoor(noSound);
+        }
+        else
+        {
+            OpenDoor(noSound);
+        }
+    }
 
-    public void OpenDoor()
+    public void OpenDoor(bool noSound = false)
     {
         lowerAnimator.Play("DoorLowerOpen", 0, 0.0f);
         upperAnimator.Play("DoorUpperOpen", 0, 0.0f);
-        gameManager.PlayAudioClip(doordioSource, GameManager.audioType.SFX,openSound,true);
+        if (!noSound)
+        {
+            gameManager.PlayAudioClip(doordioSource, GameManager.audioType.SFX, openSound, true);
+        }
+        
+        state = true;
     }
 
-    public void CloseDoor()
+    public void CloseDoor(bool noSound = false)
     {
         lowerAnimator.Play("DoorLowerClose", 0, 0.0f);
         upperAnimator.Play("DoorUpperClose", 0, 0.0f);
-        gameManager.PlayAudioClip(doordioSource, GameManager.audioType.SFX , closeSound,true);
+        if (!noSound)
+        {
+            gameManager.PlayAudioClip(doordioSource, GameManager.audioType.SFX, closeSound, true);
+        }
+        
+        state=false;
     }
 }
