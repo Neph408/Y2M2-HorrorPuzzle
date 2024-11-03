@@ -150,11 +150,11 @@ public class KeypadController : MonoBehaviour
     {
         if(currentInput.Length >= codeLength)
         {
-            gm.PlayAudioClip(keypadAudioSource, audio_MaxInput, true);
+            gm.PlayAudioClip(keypadAudioSource, GameManager.audioType.SFX, audio_MaxInput, true);
         }
         else
         {
-            gm.PlayAudioClip(keypadAudioSource,audio_KeyPress,true);
+            gm.PlayAudioClip(keypadAudioSource, GameManager.audioType.SFX, audio_KeyPress,true);
             currentInput += val;
             displayController.UpdateText(currentInput);
         }
@@ -168,11 +168,11 @@ public class KeypadController : MonoBehaviour
         {
             currentInput = currentInput.Substring(0, currentInput.Length - 1);
             displayController.UpdateText(currentInput);
-            gm.PlayAudioClip(keypadAudioSource, audio_KeyPress, true);
+            gm.PlayAudioClip(keypadAudioSource, GameManager.audioType.SFX, audio_KeyPress, true);
         }
         else
         {
-            gm.PlayAudioClip(keypadAudioSource, audio_MaxInput, true);
+            gm.PlayAudioClip(keypadAudioSource, GameManager.audioType.SFX, audio_MaxInput, true);
         }
     }
 
@@ -182,7 +182,7 @@ public class KeypadController : MonoBehaviour
         displayController.UpdateText(currentInput);
         if (playAudio)
         {
-            gm.PlayAudioClip(keypadAudioSource, audio_RemoveInput, true);
+            gm.PlayAudioClip(keypadAudioSource, GameManager.audioType.SFX, audio_RemoveInput, true);
         }
         
     }
@@ -193,7 +193,7 @@ public class KeypadController : MonoBehaviour
         {
             lightController.SetLightSuccess();
             displayController.SetSuccessText();
-            gm.PlayAudioClip(keypadAudioSource, audio_Success, true);
+            gm.PlayAudioClip(keypadAudioSource, GameManager.audioType.SFX, audio_Success, true);
             IsInteractable = false;
             Camera.main.GetComponent<CameraController>().SetNewMount(gm.GetPlayer().GetComponent<CameraMountLocator>().getMount(), true); // exit when interact again
             gm.GetHUDController().SetKeypadKeybindReminderVisibility(false);
@@ -206,7 +206,7 @@ public class KeypadController : MonoBehaviour
             displayController.SetFailText();
             displayController.UpdateText(currentInput);
             lightController.SetLightFailure();
-            gm.PlayAudioClip(keypadAudioSource, audio_Failure, true);
+            gm.PlayAudioClip(keypadAudioSource, GameManager.audioType.SFX, audio_Failure, true);
             timeOfLastFailure = Time.time;
             activateOnFailure.Invoke();
         }

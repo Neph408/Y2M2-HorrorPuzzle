@@ -20,6 +20,8 @@ public class Holdable : MonoBehaviour
 
     private bool movingToHoldPoint = false;
 
+
+    // mistakes \/
     [SerializeField] private string objectName = "[DefaultName]";
     [SerializeField] private bool usePickupObjectDataDisplayName = true;
     [SerializeField] private string interactInfo = "[Press]";
@@ -120,7 +122,7 @@ public class Holdable : MonoBehaviour
     }
     */
 
-    public string GetInteractionInfo()
+    public string GetInteractionInfo() // fuc u this
     {
         return interactInfo;
     }

@@ -51,7 +51,7 @@ public class InventorySlotController : MonoBehaviour
     public void Hover()
     {
         //Debug.Log("hover over inv slot " + slotIndex.ToString());
-        gm.PlayAudioClip(gm.GetPlayerAudioSource(), audio_Hover, true);
+        gm.PlayAudioClip(gm.GetPlayerAudioSource(), GameManager.audioType.SFX, audio_Hover, true);
         imc.SetCurrentHover(slotIndex);
     }
 
@@ -65,7 +65,7 @@ public class InventorySlotController : MonoBehaviour
     {
         //Debug.Log("click on inv slot " + slotIndex.ToString());
         imc.SetLastSelected(slotIndex);
-        gm.PlayAudioClip(gm.GetPlayerAudioSource(), audio_Click, true);
+        gm.PlayAudioClip(gm.GetPlayerAudioSource(), GameManager.audioType.SFX, audio_Click, true);
     }
 
     public void SetOverlayImageTransparency(float val)

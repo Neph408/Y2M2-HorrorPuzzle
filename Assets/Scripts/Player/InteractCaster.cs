@@ -58,7 +58,13 @@ public class InteractCaster : MonoBehaviour
         }
     }
 
-
+    /*
+     
+     i regret putting the olog as some weird random thing to check for, it shouldve been merged with tooltip info and treated as its own thing
+     fml
+    but for now it works, so it stays a lost cause
+     
+     */
  
     private void RunRaycast()
     {

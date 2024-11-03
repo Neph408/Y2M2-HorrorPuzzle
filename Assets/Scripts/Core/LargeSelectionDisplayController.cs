@@ -44,13 +44,13 @@ public class LargeSelectionDisplayController : MonoBehaviour
 
     public void PressRead()
     {
-        GameManager.Instance.PlayAudioClip(GameManager.Instance.GetPlayerAudioSource(), audio_Click, true);
+        GameManager.Instance.PlayAudioClip(GameManager.Instance.GetPlayerAudioSource(), GameManager.audioType.SFX, audio_Click, true);
         inventoryMenuController.ReadSelected();
     }
 
     public void PressDrop()
     {
-        GameManager.Instance.PlayAudioClip(GameManager.Instance.GetPlayerAudioSource(), audio_Click, true);
+        GameManager.Instance.PlayAudioClip(GameManager.Instance.GetPlayerAudioSource(), GameManager.audioType.SFX,audio_Click, true);
         inventoryMenuController.DropSelected();
     }
 

@@ -72,7 +72,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Sprite placeholderReadableSprite;
     [SerializeField] private AudioClip placeholderAudioClip;
 
-
+    public enum audioType
+    {
+        SFX,Dialogue, Ambiance, Music
+    }
 
     private void Awake()
     {
@@ -239,6 +242,7 @@ public class GameManager : MonoBehaviour
         imc.UpdateInventoryDisplay(inv);
     }
 
+    
 
     private void OnLevelWasLoaded(int level)
     {
@@ -372,16 +376,45 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void PlayAudioClip(AudioSource source, AudioClip clip, bool randomPitch, int priority = 0)
+    public void PlayAudioClip(AudioSource source, audioType aType,AudioClip clip, bool randomPitch, int priority = 0)
     {
+        if (source == null)
+        {
+            Debug.LogWarning("Audio played was assigned Null source, using player audio source as default, you likely did not assign an audio source, or the audio source no longer exists/can be accessed");
+            source = GetPlayerAudioSource();
+        }
+
         if(clip == null)
         {
+            Debug.LogWarning("Audio played was assigned Null clip, using default clip instead, you likely did not assign an audio clip, or the audio source no longer exists/can be accessed");
             clip = placeholderAudioClip;
         }
         source.clip = clip;
-        source.priority += priority;
-        source.pitch = randomPitch ? Random.Range(0.9f, 1.1f) : 1f;
+
+        switch (aType)
+        {
+            case audioType.SFX:
+                source.volume = sfxVol / 100f;
+                break;
+            case audioType.Dialogue:
+                source.volume = dialogueVol / 100f;
+                priority += 10;
+                break;
+            case audioType.Ambiance:
+                source.volume = ambianceVol / 100f;
+                priority -= 10;
+                break;
+            case audioType.Music:
+                source.volume = musicVol / 100f;
+                priority -= 20;
+                break;
+        }
+        source.volume *= masterVol / 100f;
+        source.priority = Mathf.Clamp(source.priority+priority,0,256);
+        source.pitch = randomPitch ? Random.Range(0.9f, 1.1f) : 1f;   
+
         source.Play();
     }
+
 
 }

@@ -60,44 +60,44 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.44f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Functional\AudioTriggerVolume.cs" />
     <Compile Include="Assets\Scripts\Interactable Ground Object\PickupObjectData.cs" />
     <Compile Include="Assets\Scripts\Title Screen\TitleScreenManager.cs" />
     <Compile Include="Assets\Scripts\Core\disableOnRegister.cs" />
     <Compile Include="Assets\Scripts\Core\warningController.cs" />
     <Compile Include="Assets\Scripts\Core\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMountLocator.cs" />
-    <Compile Include="Assets\DoorController.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMount.cs" />
     <Compile Include="Assets\Scripts\Player\InventoryManager.cs" />
+    <Compile Include="Assets\Scripts\Interactable Mechanic Objects\KeypadKeyController.cs" />
+    <Compile Include="Assets\Scripts\Interactable Mechanic Objects\KeypadController.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsKeycodeSelectControl.cs" />
     <Compile Include="Assets\Scripts\Player\InteractCaster.cs" />
+    <Compile Include="Assets\Scripts\Interactable Mechanic Objects\OutlineOnHover.cs" />
     <Compile Include="Assets\Scripts\Core\EscapeMenuController.cs" />
     <Compile Include="Assets\Scripts\Player\WallCollisionDetection.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
-    <Compile Include="Assets\SubtitleController.cs" />
+    <Compile Include="Assets\Scripts\Core\ReadPanelController.cs" />
     <Compile Include="Assets\Scripts\Core\HUDController.cs" />
-    <Compile Include="Assets\KeypadDisplayController.cs" />
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
-    <Compile Include="Assets\ReadPanelController.cs" />
+    <Compile Include="Assets\Scripts\Functional\AutomaticDoorCollisionBox.cs" />
+    <Compile Include="Assets\Scripts\Interactable Mechanic Objects\KeypadDisplayController.cs" />
     <Compile Include="Assets\Scripts\Core\InventorySlotController.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsBoolControl.cs" />
-    <Compile Include="Assets\AutomaticDoorCollisionBox.cs" />
     <Compile Include="Assets\Scripts\Core\LargeSelectionDisplayController.cs" />
-    <Compile Include="Assets\Scripts\Interactbale Mechanic Objects\OutlineOnHover.cs" />
-    <Compile Include="Assets\KeypadController.cs" />
     <Compile Include="Assets\Scripts\Core\TooltipController.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsMenuController.cs" />
-    <Compile Include="Assets\KeypadKeyData.cs" />
-    <Compile Include="Assets\KeypadKeyController.cs" />
+    <Compile Include="Assets\Scripts\Interactable Mechanic Objects\KeypadKeyData.cs" />
+    <Compile Include="Assets\Scripts\Core\SubtitleController.cs" />
     <Compile Include="Assets\Scripts\Interactable Ground Object\Holdable.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\Core\InventoryMenuController.cs" />
     <Compile Include="Assets\Scripts\Core\SettingsSliderControl.cs" />
-    <Compile Include="Assets\AudioTriggerVolume.cs" />
+    <Compile Include="Assets\Scripts\Functional\DoorController.cs" />
     <Compile Include="Assets\Scripts\Player\CharCont.cs" />
-    <Compile Include="Assets\KeypadLightController.cs" />
+    <Compile Include="Assets\Scripts\Interactable Mechanic Objects\KeypadLightController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

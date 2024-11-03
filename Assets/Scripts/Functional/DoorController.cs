@@ -34,13 +34,13 @@ public class DoorController : MonoBehaviour
     {
         lowerAnimator.Play("DoorLowerOpen", 0, 0.0f);
         upperAnimator.Play("DoorUpperOpen", 0, 0.0f);
-        gameManager.PlayAudioClip(doordioSource, openSound,true);
+        gameManager.PlayAudioClip(doordioSource, GameManager.audioType.SFX,openSound,true);
     }
 
     public void CloseDoor()
     {
         lowerAnimator.Play("DoorLowerClose", 0, 0.0f);
         upperAnimator.Play("DoorUpperClose", 0, 0.0f);
-        gameManager.PlayAudioClip(doordioSource , closeSound,true);
+        gameManager.PlayAudioClip(doordioSource, GameManager.audioType.SFX , closeSound,true);
     }
 }

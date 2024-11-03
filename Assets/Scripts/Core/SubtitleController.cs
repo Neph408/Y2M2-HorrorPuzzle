@@ -61,23 +61,48 @@ public class SubtitleController : MonoBehaviour
         subtitleText.enabled = false;
     }
 
-    public void SetCurrentSubtitleString(string subtitleString, float internalDelay = 0.5f, Color? subtitleColourOverride = null)
+    public void SetCurrentSubtitleString(string subtitleString, float internalDelay = 0.5f, Color? subtitleColourOverride = null, bool isTypewriterStyle = true)
     {
-        isWriting = true;
-        subtitleText.enabled = true;
-        Debug.Log("Set subs to " +  subtitleString);
-        if (subtitleColourOverride != null)
+        if(isTypewriterStyle)
         {
-            subtitleText.color = (Color)subtitleColourOverride;
+            isWriting = true;
+            subtitleText.enabled = true;
+            Debug.Log("Set subs to " + subtitleString + " with typewriter enabled");
+            if (subtitleColourOverride != null)
+            {
+                subtitleText.color = (Color)subtitleColourOverride;
+            }
+            else
+            {
+                subtitleText.color = defaultSubtitleDisplayColour;
+            }
+            subtitleToShow = subtitleString;
+            currentDisplaySubtitle = "";
+            typewriterStyleDelay = internalDelay;
+            positionInQueue = 0;
+            timeOfLastCharacter = Time.time - internalDelay;
         }
         else
         {
-            subtitleText.color = defaultSubtitleDisplayColour;
+            subtitleText.enabled = true;
+            Debug.Log("Set subs to " + subtitleString + " with typewriter disabled");
+            if (subtitleColourOverride != null)
+            {
+                subtitleText.color = (Color)subtitleColourOverride;
+            }
+            else
+            {
+                subtitleText.color = defaultSubtitleDisplayColour;
+            }
+            subtitleText.text = subtitleString;
+            timeOfSubtitleEnd = Time.time;
+
+            //leaving this stuff here for "safety"
+            currentDisplaySubtitle = "";
+            typewriterStyleDelay = internalDelay;
+            positionInQueue = 0;
+            
         }
-        subtitleToShow = subtitleString;
-        currentDisplaySubtitle = "";
-        typewriterStyleDelay = internalDelay;
-        positionInQueue = 0;
-        timeOfLastCharacter = Time.time - internalDelay;
+
     }
 }

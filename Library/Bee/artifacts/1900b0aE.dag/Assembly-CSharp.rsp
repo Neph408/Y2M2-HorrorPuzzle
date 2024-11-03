@@ -109,7 +109,6 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
--define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -326,9 +325,6 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.GradleProject.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
 -r:"Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
@@ -356,12 +352,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/DoorController.cs"
-"Assets/KeypadController.cs"
-"Assets/KeypadKeyController.cs"
-"Assets/KeypadKeyData.cs"
 "Assets/QuickOutline/Scripts/Outline.cs"
-"Assets/ReadPanelController.cs"
 "Assets/Scripts/Camera/CameraController.cs"
 "Assets/Scripts/Camera/CameraMount.cs"
 "Assets/Scripts/Camera/CameraMountLocator.cs"
@@ -373,15 +364,25 @@
 "Assets/Scripts/Core/InventorySlotController.cs"
 "Assets/Scripts/Core/LargeSelectionDisplayController.cs"
 "Assets/Scripts/Core/LevelManager.cs"
+"Assets/Scripts/Core/ReadPanelController.cs"
 "Assets/Scripts/Core/SettingsBoolControl.cs"
 "Assets/Scripts/Core/SettingsKeycodeSelectControl.cs"
 "Assets/Scripts/Core/SettingsMenuController.cs"
 "Assets/Scripts/Core/SettingsSliderControl.cs"
+"Assets/Scripts/Core/SubtitleController.cs"
 "Assets/Scripts/Core/TooltipController.cs"
 "Assets/Scripts/Core/warningController.cs"
+"Assets/Scripts/Functional/AudioTriggerVolume.cs"
+"Assets/Scripts/Functional/AutomaticDoorCollisionBox.cs"
+"Assets/Scripts/Functional/DoorController.cs"
 "Assets/Scripts/Interactable Ground Object/Holdable.cs"
 "Assets/Scripts/Interactable Ground Object/PickupObjectData.cs"
-"Assets/Scripts/Interactbale Mechanic Objects/OutlineOnHover.cs"
+"Assets/Scripts/Interactable Mechanic Objects/KeypadController.cs"
+"Assets/Scripts/Interactable Mechanic Objects/KeypadDisplayController.cs"
+"Assets/Scripts/Interactable Mechanic Objects/KeypadKeyController.cs"
+"Assets/Scripts/Interactable Mechanic Objects/KeypadKeyData.cs"
+"Assets/Scripts/Interactable Mechanic Objects/KeypadLightController.cs"
+"Assets/Scripts/Interactable Mechanic Objects/OutlineOnHover.cs"
 "Assets/Scripts/Player/CharCont.cs"
 "Assets/Scripts/Player/InteractCaster.cs"
 "Assets/Scripts/Player/InventoryManager.cs"
@@ -389,8 +390,6 @@
 "Assets/Scripts/Player/PlayerInventory.cs"
 "Assets/Scripts/Player/WallCollisionDetection.cs"
 "Assets/Scripts/Title Screen/TitleScreenManager.cs"
-"Assets/SubtitleController.cs"
-"Assets/temp.cs"
 -langversion:9.0
 /deterministic
 /optimize+
