@@ -121,6 +121,10 @@ public class InteractCaster : MonoBehaviour
             {
                 currentGlow.GetComponent<OutlineAndTooltipOnHover>().Glow(false);
             }
+            else
+            {
+                gm.OnItemPickupHideTooltip();
+            }
             currentRaycastHit = null;
             if(!isHolding)
             {

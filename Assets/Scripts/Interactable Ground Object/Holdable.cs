@@ -8,7 +8,7 @@ public class Holdable : MonoBehaviour
 {
     private GameManager gameManager;
     private Rigidbody rb;
-    private OutlineAndTooltipOnHover oloh;
+    private OutlineAndTooltipOnHover oatoh;
 
     private Vector3 prevvec;
 
@@ -20,7 +20,8 @@ public class Holdable : MonoBehaviour
 
     private bool movingToHoldPoint = false;
 
-    
+    private Color collisionDisableColour = Color.magenta;
+
     private LayerMask maskAll = ~0; 
     private LayerMask maskNone = 0;
 
@@ -28,8 +29,8 @@ public class Holdable : MonoBehaviour
     void Start()
     {
         gameManager = GameManager.Instance;
-        rb = GetComponent<Rigidbody>();
-
+        rb = gameObject.GetComponent<Rigidbody>();
+        oatoh = gameObject.GetComponent<OutlineAndTooltipOnHover>();
 
 
         if(GetComponent<PickupObjectData>() == null)
@@ -101,7 +102,7 @@ public class Holdable : MonoBehaviour
     public void Drop()
     {
         rb.useGravity = true;
-        oloh.Glow(false,false);
+        oatoh.Glow(false,false);
     }
 
 
@@ -122,12 +123,14 @@ public class Holdable : MonoBehaviour
         if (Input.GetKey(gameManager.kc_Interact) && movingToHoldPoint)
         {
             rb.excludeLayers = maskAll;
-            oloh.Glow(true, true);
+            oatoh.SetAltColour(collisionDisableColour);
+            oatoh.Glow(true, true);
         }
         else
         {
             rb.excludeLayers = maskNone;
-            oloh.Glow(true, true);
+            oatoh.revertAltColour();
+            oatoh.Glow(true, true);
         }
 
 

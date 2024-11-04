@@ -32,6 +32,23 @@ public class PickupObjectData : MonoBehaviour
         gameManager = GameManager.Instance;
         objName = gameObject.name;
         objID = gameObject.GetInstanceID();
+        if(displaySpriteSmall == null)
+        {
+            displaySpriteSmall = gameManager.GetPlaceholderSpriteLarge();
+        }
+        if(displaySpriteLarge == null)
+        {
+            displaySpriteLarge = gameManager.GetPlaceholderSpriteLarge();
+        }
+        if(readableSprite == null && isReadable)
+        {
+            readableSprite = gameManager.getPlaceholderReadableSprite();
+        }
+        if (readableString == null && isReadable)
+        {
+            readableString = "[Placeholder Text, please set if you can raed this]";
+        }
+
     }
 
     // Update is called once per frame

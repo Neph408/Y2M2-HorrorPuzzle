@@ -375,7 +375,10 @@ public class GameManager : MonoBehaviour
         return playerObject.GetComponent<PlayerController>().GetPlayerAudioSource();
     }
 
-
+    public void OnItemPickupHideTooltip() // if you are calling this, you better have a damn good reason, as Glow from OaToH usually handles this itself, and forcably cancelling it early can cause some weired inconsistcies with what UI elements are visibile
+    {
+        hudc.DisplayTooltip(false);
+    }
     public void PlayAudioClip(AudioSource source, audioType aType,AudioClip clip, bool randomPitch, int priority = 0, float volumeScalar = 1f)
     {
         if (source == null)

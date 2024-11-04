@@ -28,6 +28,9 @@ public class OutlineAndTooltipOnHover : MonoBehaviour
     [SerializeField] private Color highlightColour = Color.yellow;
     [SerializeField,Tooltip("For when there is an alternate action on an object (E.g. Hold)")] private Color alternateColour = Color.green;
 
+    private Color startupMainColour;
+    private Color startupAltColour;
+
     // Start is called before the first frame update
 
     private void Awake()
@@ -40,6 +43,8 @@ public class OutlineAndTooltipOnHover : MonoBehaviour
         {
             usePickupObjectDataDisplayName = false;
         }
+        startupMainColour = highlightColour;
+        startupAltColour = alternateColour;
     }
     void Start()
     {
@@ -87,8 +92,36 @@ public class OutlineAndTooltipOnHover : MonoBehaviour
 
     }
 
-    public Color GetCurrentColour()
+    public Color GetCurrentOutlineColour()
     {
         return ol.OutlineColor; 
     }
+
+    public Color GetCurrentAltColour()
+    {
+        return alternateColour;
+    } 
+    public Color GetCurrentMainColour()
+    {
+        return highlightColour;
+    }
+
+    public void revertMainColour()
+    {
+        highlightColour = startupMainColour;
+    }
+    public void revertAltColour()
+    {
+        alternateColour = startupAltColour;
+    }
+
+    public void SetMainColour(Color newCol)
+    {
+        highlightColour = newCol;
+    }
+    public void SetAltColour(Color newCol)
+    {
+        alternateColour = newCol;
+    }
+
 }
