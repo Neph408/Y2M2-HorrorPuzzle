@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.Android;
 
 public class DoorController : MonoBehaviour
 {
@@ -9,11 +10,13 @@ public class DoorController : MonoBehaviour
     [SerializeField] private Animator lowerAnimator;
     [SerializeField] private Animator upperAnimator;
     private AudioSource doordioSource;
-
+    [SerializeField] private GameObject doorIndicator;
     [SerializeField] private AudioClip openSound;
     [SerializeField] private AudioClip closeSound;
 
     [SerializeField] private bool defaultState = false;
+
+    [SerializeField] private bool doorEnabled = true;
 
     private bool state = false;
     private void Awake()
@@ -26,49 +29,95 @@ public class DoorController : MonoBehaviour
         doordioSource = GetComponentInChildren<AudioSource>();
         if(defaultState != state)
         {
-            ToggleDoor(true);
+            ToggleDoor(true, true);
         }
+        SetLightState(doorEnabled);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void ToggleDoor(bool noSound = false)
-    {
-        if(state)
+        if (gameManager.GetEscapeOpen())
         {
-            CloseDoor(noSound);
+            upperAnimator.speed = 0f; lowerAnimator.speed = 0f;
+            doordioSource.Pause();
         }
         else
         {
-            OpenDoor(noSound);
+            upperAnimator.speed = 1f; lowerAnimator.speed = 1f;
+            doordioSource.UnPause();
+        }
+        SetLightState(doorEnabled);
+    }
+
+    private void SetLightState(bool val)
+    {
+        if(!val)
+        {
+            doorIndicator.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
+            doorIndicator.GetComponent<MeshRenderer>().material.color = Color.black;
+            CloseDoor(true);
+        }
+        else
+        {
+            doorIndicator.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
+            doorIndicator.GetComponent<MeshRenderer>().material.color = Color.white;
         }
     }
 
-    public void OpenDoor(bool noSound = false)
+    public void ToggleDoor(bool noSound = false, bool forceOverride = false)
     {
-        lowerAnimator.Play("DoorLowerOpen", 0, 0.0f);
-        upperAnimator.Play("DoorUpperOpen", 0, 0.0f);
-        if (!noSound)
+        if(state)
         {
-            gameManager.PlayAudioClip(doordioSource, GameManager.audioType.SFX, openSound, true);
+            CloseDoor(noSound,forceOverride);
         }
-        
-        state = true;
+        else
+        {
+            OpenDoor(noSound,forceOverride);
+        }
     }
 
-    public void CloseDoor(bool noSound = false)
+    private void OpenDoor(bool noSound = false, bool forceOverride = false)
     {
-        lowerAnimator.Play("DoorLowerClose", 0, 0.0f);
-        upperAnimator.Play("DoorUpperClose", 0, 0.0f);
-        if (!noSound)
+        if ((doorEnabled && !state) || forceOverride)
         {
-            gameManager.PlayAudioClip(doordioSource, GameManager.audioType.SFX, closeSound, true);
+            lowerAnimator.Play("DoorLowerOpen", 0, 0.0f);
+            upperAnimator.Play("DoorUpperOpen", 0, 0.0f);
+            if (!noSound)
+            {
+                gameManager.PlayAudioClip(doordioSource, GameManager.audioType.SFX, openSound, true);
+            }
+
+            state = true;
         }
-        
-        state=false;
+    }
+
+    private void CloseDoor(bool noSound = false, bool forceOverride = false)
+    {
+        if ((doorEnabled && state) || forceOverride)
+        { 
+            lowerAnimator.Play("DoorLowerClose", 0, 0.0f);
+            upperAnimator.Play("DoorUpperClose", 0, 0.0f);
+            if (!noSound)
+            {
+                gameManager.PlayAudioClip(doordioSource, GameManager.audioType.SFX, closeSound, true);
+            }
+
+            state = false;
+        }
+    }
+
+    public void InteractableOpenDoor()
+    {
+        OpenDoor();
+    }
+    public void InteractableCloseDoor()
+    {
+        CloseDoor();
+    }
+
+    public void InteractableToggleDoor()
+    {
+        ToggleDoor();
     }
 }

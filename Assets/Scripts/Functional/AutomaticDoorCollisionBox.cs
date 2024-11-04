@@ -26,7 +26,7 @@ public class AutomaticDoorCollisionBox : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            doorController.OpenDoor();
+            doorController.InteractableOpenDoor();
         }
     }
 
@@ -34,7 +34,7 @@ public class AutomaticDoorCollisionBox : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            doorController.CloseDoor();
+            doorController.InteractableCloseDoor();
         }
     }
 }

@@ -12,7 +12,8 @@ public class SubtitleController : MonoBehaviour
     private int positionInQueue;
     private float typewriterStyleDelay = 0.5f;
     private float timeOfSubtitleEnd;
-    private float autoHideDuration = 5f;
+    [SerializeField] private float lineBreakDelay = 1f;
+    [SerializeField] private float autoHideDuration = 5f;
     private float timeOfLastCharacter;
     private bool isWriting = false;
     private Color defaultSubtitleDisplayColour = Color.magenta * 0.85f;
@@ -38,15 +39,35 @@ public class SubtitleController : MonoBehaviour
 
         if (!gm.GetEscapeOpen() && isWriting && positionInQueue < subtitleToShow.Length && Time.time - timeOfLastCharacter >= typewriterStyleDelay)
         {
-            currentDisplaySubtitle += subtitleToShow[positionInQueue].ToString();
-            positionInQueue++;
-            timeOfLastCharacter = Time.time;
-            subtitleText.text = currentDisplaySubtitle;
+            if (subtitleToShow[positionInQueue].ToString() == "\\" && positionInQueue + 1 < subtitleToShow.Length - 1)
+            {
+                if(subtitleToShow[positionInQueue+1].ToString() == "n")
+                { 
+                    currentDisplaySubtitle = "";
+                    timeOfLastCharacter = Time.time + lineBreakDelay;
+                    positionInQueue += 2;
+                }
+                else
+                {
+                    currentDisplaySubtitle += subtitleToShow[positionInQueue].ToString();
+                    positionInQueue++;
+                    timeOfLastCharacter = Time.time;
+                    subtitleText.text = currentDisplaySubtitle;
+                }
+            }
+            else
+            {
+                currentDisplaySubtitle += subtitleToShow[positionInQueue].ToString();
+                positionInQueue++;
+                timeOfLastCharacter = Time.time;
+                subtitleText.text = currentDisplaySubtitle;
+            }
         }
         else if(positionInQueue == subtitleToShow.Length)
         {
             timeOfSubtitleEnd = Time.time;
             isWriting = false;
+            positionInQueue++;
         }
 
         if(!isWriting && Time.time - timeOfSubtitleEnd > autoHideDuration)
@@ -61,7 +82,7 @@ public class SubtitleController : MonoBehaviour
         subtitleText.enabled = false;
     }
 
-    public void SetCurrentSubtitleString(string subtitleString, float internalDelay = 0.5f, Color? subtitleColourOverride = null, bool isTypewriterStyle = true)
+    public void SetCurrentSubtitleString(string subtitleString, float internalDelay = 0.5f, Color? subtitleColourOverride = null, bool isTypewriterStyle = true, float breakDelay = 1f)
     {
         if(isTypewriterStyle)
         {
@@ -80,6 +101,7 @@ public class SubtitleController : MonoBehaviour
             currentDisplaySubtitle = "";
             typewriterStyleDelay = internalDelay;
             positionInQueue = 0;
+            lineBreakDelay = breakDelay;
             timeOfLastCharacter = Time.time - internalDelay;
         }
         else
@@ -99,6 +121,7 @@ public class SubtitleController : MonoBehaviour
 
             //leaving this stuff here for "safety"
             currentDisplaySubtitle = "";
+            lineBreakDelay = breakDelay;
             typewriterStyleDelay = internalDelay;
             positionInQueue = 0;
             

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6602051247812661571}
   - component: {fileID: 7435052354750162157}
   - component: {fileID: -6451670874970238809}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: testCube
   m_TagString: Holdable
   m_Icon: {fileID: 0}
@@ -167,10 +167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d684bda5278ded349b008ca8864a9215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: '[DefaultName]'
-  usePickupObjectDataDisplayName: 1
-  interactInfo: '[Press]'
-  useDefaultInteractionInfo: 1
 --- !u!114 &7435052354750162157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +185,8 @@ MonoBehaviour:
   displaySpriteLarge: {fileID: 0}
   prefabAsset: Prefabs\IPO\testCube
   isReadable: 0
+  readableSprite: {fileID: 0}
+  readableString: 
 --- !u!114 &-6451670874970238809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,3 +199,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d95f241fddf5b4eb052cd76e10c337, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useTooltipOnHover: 1
+  objectName: '[DefaultName]'
+  usePickupObjectDataDisplayName: 1
+  interactInfo: '[Press]'
+  useDefaultInteractionInfo: 1
+  useOutlineOnHover: 1
+  useCustomOutlineWidth: 0
+  customOutlineWidth: 4
+  highlightColour: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  alternateColour: {r: 0, g: 1, b: 0, a: 1}
