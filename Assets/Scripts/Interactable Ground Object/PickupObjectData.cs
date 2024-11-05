@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
+using UnityEditor.EditorTools;
 using UnityEngine;
 
 public class PickupObjectData : MonoBehaviour
@@ -21,7 +22,13 @@ public class PickupObjectData : MonoBehaviour
     [SerializeField] private string readableString;
 
 
-
+    private void Awake()
+    {
+        if(GetComponent<Holdable>() == null)
+        {
+            Debug.LogError(gameObject.name +" has a PickupObjectData component, but no Holdable component. Please ensure that any PickupObjectData components are accompinied by a Holdable component, as it is a dependency of PickupObjectData");
+        }
+    }
 
 
 

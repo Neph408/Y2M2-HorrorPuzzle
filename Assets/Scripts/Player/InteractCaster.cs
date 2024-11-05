@@ -76,6 +76,7 @@ public class InteractCaster : MonoBehaviour
 
         if(hit.collider != null)
         {
+            //Debug.Log(hit.collider.gameObject.tag);
             if (hit.collider.gameObject.GetComponent<OutlineAndTooltipOnHover>() != null)
             {
                 if (currentGlow == null)

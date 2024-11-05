@@ -52,6 +52,7 @@ public class LargeSelectionDisplayController : MonoBehaviour
     {
         GameManager.Instance.PlayAudioClip(GameManager.Instance.GetPlayerAudioSource(), GameManager.audioType.SFX,audio_Click, true);
         inventoryMenuController.DropSelected();
+        inventoryMenuController.SetRPCVisibility(false);
     }
 
 }

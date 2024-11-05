@@ -120,4 +120,9 @@ public class DoorController : MonoBehaviour
     {
         ToggleDoor();
     }
+
+    public void SetDoorEnabled(bool val)
+    {
+        doorEnabled = val;
+    }
 }

@@ -16,6 +16,8 @@ public class KeypadController : MonoBehaviour
 
     private AudioSource keypadAudioSource;
 
+    //[SerializeField] private bool useRandomCode;
+    //[SerializeField] private int randomCodeCharLength = 5;
     [SerializeField] private string code = "0000";
 
     private int codeLength = 0;
@@ -237,5 +239,10 @@ public class KeypadController : MonoBehaviour
             }
         }
         
+    }
+
+    public string GetCode()
+    {
+        return code;
     }
 }

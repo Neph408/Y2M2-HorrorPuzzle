@@ -88,7 +88,7 @@ public class SubtitleController : MonoBehaviour
         {
             isWriting = true;
             subtitleText.enabled = true;
-            Debug.Log("Set subs to " + subtitleString + " with typewriter enabled");
+            Debug.Log("Set subs to [[" + subtitleString + "]] with typewriter enabled");
             if (subtitleColourOverride != null)
             {
                 subtitleText.color = (Color)subtitleColourOverride;

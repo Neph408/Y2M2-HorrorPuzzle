@@ -90,12 +90,12 @@ public class InventoryManager : MonoBehaviour
         if(Physics.Raycast(transform.position, playerController.GetCameraSwivel().transform.forward, out hit, interactCaster.getInteractDistance(), placementRayCastLayerMask))
         {
             dropPoint = hit.point + transform.up * 0.5f; //temp
-            Debug.Log("ray pouint");
+            //Debug.Log("ray pouint");
         }
         else
         {
             dropPoint = playerController.GetHoldPoint().transform.position;
-            Debug.Log("no ray");
+            //Debug.Log("no ray");
         }
         GameObject objGenned = Instantiate(objToGen, dropPoint, Quaternion.identity);
 

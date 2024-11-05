@@ -33,15 +33,15 @@ public class Holdable : MonoBehaviour
         oatoh = gameObject.GetComponent<OutlineAndTooltipOnHover>();
 
 
-        if(GetComponent<PickupObjectData>() == null)
+        if(GetComponent<PickupObjectData>() == null && GetComponent<MeshRenderer>() != null)
         {
             GetComponent<MeshRenderer>().material.color = Color.red;
         }
-        else if(GetComponent<PickupObjectData>().GetIsReadable())
+        else if(GetComponent<PickupObjectData>().GetIsReadable() && GetComponent<MeshRenderer>() != null)
         {
             GetComponent<MeshRenderer>().material.color = Color.blue;
         }
-        else
+        else if (GetComponent<MeshRenderer>() != null)
         {
             GetComponent<MeshRenderer>().material.color = Color.green;
         }
@@ -67,7 +67,7 @@ public class Holdable : MonoBehaviour
     {
         if(transform.position.y < -100f)
         {
-            transform.position = new Vector3(0, 10, 0);
+            transform.position = new Vector3(transform.position.x, gameManager.GetPlayer().transform.position.y, transform.position.z);
         }
     }
     private void CheckForPause()
