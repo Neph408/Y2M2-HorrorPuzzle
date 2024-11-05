@@ -11,14 +11,15 @@ public class KeypadController : MonoBehaviour
     private bool IsActive = false;
     private bool IsInteractable = true;
 
-    [SerializeField] private UnityEvent activateOnFailure;
-    [SerializeField] private UnityEvent activateOnSuccess;
+
 
     private AudioSource keypadAudioSource;
 
-    //[SerializeField] private bool useRandomCode;
-    //[SerializeField] private int randomCodeCharLength = 5;
+    [SerializeField] private bool useRandomCode;
+    [SerializeField,Range(3,8)] private int randomCodeCharLength = 5;
     [SerializeField] private string code = "0000";
+    [SerializeField] private bool isUsingAlternateTrigger = false;
+    [SerializeField] private string alternateTriggerCode = "3568";
 
     private int codeLength = 0;
 
@@ -26,10 +27,17 @@ public class KeypadController : MonoBehaviour
 
     private float timeOfLastFailure = -2f;
 
+    private bool singleUseToggleForAltTrigger = true;
+
     private KeypadKeyController keyController;
     private KeypadLightController lightController;
     private KeypadDisplayController displayController;
     private CameraMountLocator m_Locator;
+
+    [SerializeField] private UnityEvent activateOnFailure;
+    [SerializeField] private UnityEvent activateOnSuccess;
+    [SerializeField] private bool isAltActivationSingleUse;
+    [SerializeField] private UnityEvent activateOnAlternateInput;
 
     [SerializeField] private LayerMask keypadInteractionLayerMask;
 
@@ -49,7 +57,17 @@ public class KeypadController : MonoBehaviour
         keyController = GetComponentInChildren<KeypadKeyController>();
         lightController = GetComponentInChildren<KeypadLightController>();
         displayController = GetComponentInChildren<KeypadDisplayController>();
-        codeLength = code.Length;
+
+        if(useRandomCode)
+        {
+            codeLength = randomCodeCharLength;
+            GenerateRandomCode();
+        }
+        else
+        {
+            codeLength = code.Length;
+        }
+        
 
         lightController.SetInactiveLights();
         displayController.SetTextToCurrentSetString();
@@ -81,6 +99,23 @@ public class KeypadController : MonoBehaviour
             displayController.SetInactiveText();
             if (IsInteractable) { lightController.SetInactiveLights(); }
             
+        }
+    }
+
+    private void GenerateRandomCode()
+    {
+        string randomCode = ((int)Random.Range(0,1*Mathf.Pow(10,randomCodeCharLength))).ToString();
+        if(randomCode.Length < randomCodeCharLength)
+        {
+            for(int i = 0; i <= randomCodeCharLength - randomCode.Length;i++)
+            {
+                randomCode = "0" + randomCode;
+            }
+            code = randomCode;
+        }
+        else
+        {
+            code = randomCode;
         }
     }
 
@@ -125,6 +160,12 @@ public class KeypadController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Backspace)) { DeleteLastChar(); }
         if (Input.GetKeyDown(KeyCode.Delete)) { WipeInputString(); }
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) { CheckInputAgainstCode(); }
+
+
+        /*
+         * REMOVE WHEN DONE WITH PROTOTYPE
+         */
+        if (Input.GetKeyDown(KeyCode.F7)) { currentInput = code; CheckInputAgainstCode(); }
     }
 
 
@@ -204,13 +245,28 @@ public class KeypadController : MonoBehaviour
         }
         else
         {
+            if(currentInput == alternateTriggerCode && isUsingAlternateTrigger)
+            {
+                if (singleUseToggleForAltTrigger)
+                {
+                    activateOnAlternateInput.Invoke();
+                }
+                if (isAltActivationSingleUse)
+                {
+                    singleUseToggleForAltTrigger = false;
+                }
+            }
+            else
+            {
+                activateOnFailure.Invoke();
+            }
             currentInput = "";
             displayController.SetFailText();
             displayController.UpdateText(currentInput);
             lightController.SetLightFailure();
             gm.PlayAudioClip(keypadAudioSource, GameManager.audioType.SFX, audio_Failure, true);
             timeOfLastFailure = Time.time;
-            activateOnFailure.Invoke();
+            
         }
     }
 

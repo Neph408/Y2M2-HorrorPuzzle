@@ -23,6 +23,8 @@ public class InteractCaster : MonoBehaviour
     [SerializeField] private LayerMask raycastMask;
     [SerializeField] private float raycastDistance;
 
+    [SerializeField] private AudioClip fullInventorySound;
+
     [SerializeField] private float pickupHoldTime = 0.75f;
     private float currentHoldTime = 0f;
     private bool isKeyDown = false;
@@ -264,7 +266,7 @@ public class InteractCaster : MonoBehaviour
         }
         else
         {
-            //play sound
+            gm.PlayAudioClip(gm.GetPlayerAudioSource(),GameManager.audioType.SFX, fullInventorySound,true);
         }
     }
 

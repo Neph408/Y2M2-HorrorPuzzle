@@ -383,13 +383,13 @@ public class GameManager : MonoBehaviour
     {
         if (source == null)
         {
-            Debug.LogWarning("Audio played was assigned Null source, using player audio source as default, you likely did not assign an audio source, or the audio source no longer exists/can be accessed \n Clip played was " + clip.name);
+            Debug.LogWarning("Audio played was assigned Null source, using player audio source as default, you likely did not assign an audio source, or the audio source no longer exists/can be accessed");
             source = GetPlayerAudioSource();
         }
 
         if(clip == null)
         {
-            Debug.LogWarning("Audio played was assigned Null clip, using default clip instead, you likely did not assign an audio clip, or the audio source no longer exists/can be accessed \n Source played to was " + source.name);
+            Debug.LogWarning("Audio played was assigned Null clip, using default clip instead, you likely did not assign an audio clip, or the audio source no longer exists/can be accessed");
             clip = placeholderAudioClip;
         }
         source.clip = clip;
