@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Core\ReadPanelController.cs" />
     <Compile Include="Assets\Scripts\Core\HUDController.cs" />
+    <Compile Include="Assets\ShipAnimationController.cs" />
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\Scripts\Functional\AutomaticDoorCollisionBox.cs" />

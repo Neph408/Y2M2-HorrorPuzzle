@@ -393,6 +393,7 @@
 "Assets/Scripts/Player/PlayerInventory.cs"
 "Assets/Scripts/Player/WallCollisionDetection.cs"
 "Assets/Scripts/Title Screen/TitleScreenManager.cs"
+"Assets/ShipAnimationController.cs"
 -langversion:9.0
 /deterministic
 /optimize+
