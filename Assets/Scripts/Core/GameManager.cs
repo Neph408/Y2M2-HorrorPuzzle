@@ -416,6 +416,10 @@ public class GameManager : MonoBehaviour
         source.volume *= volumeScalar;
         source.priority = Mathf.Clamp(source.priority+priority,0,256);
         source.pitch = randomPitch ? Random.Range(0.9f, 1.1f) : 1f;   
+        if(source != GetPlayerAudioSource())
+        {
+            source.spatialBlend = 0.8f;
+        }
 
         source.Play();
     }

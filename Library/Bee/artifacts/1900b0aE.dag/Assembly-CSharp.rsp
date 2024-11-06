@@ -378,6 +378,7 @@
 "Assets/Scripts/Functional/ButtonController.cs"
 "Assets/Scripts/Functional/CodePanelController.cs"
 "Assets/Scripts/Functional/DoorController.cs"
+"Assets/Scripts/Functional/ShipAnimationController.cs"
 "Assets/Scripts/Interactable Ground Object/Holdable.cs"
 "Assets/Scripts/Interactable Ground Object/PickupObjectData.cs"
 "Assets/Scripts/Interactable Mechanic Objects/KeypadController.cs"
@@ -393,7 +394,6 @@
 "Assets/Scripts/Player/PlayerInventory.cs"
 "Assets/Scripts/Player/WallCollisionDetection.cs"
 "Assets/Scripts/Title Screen/TitleScreenManager.cs"
-"Assets/ShipAnimationController.cs"
 -langversion:9.0
 /deterministic
 /optimize+

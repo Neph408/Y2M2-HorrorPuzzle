@@ -36,7 +36,7 @@ public class OutlineAndTooltipOnHover : MonoBehaviour
     private void Awake()
     {
         ol = GetComponent<Outline>();
-        ol.OutlineMode = Outline.Mode.OutlineVisible;
+        ol.OutlineMode = Outline.Mode.OutlineAndSilhouette;
         ol.OutlineWidth = useCustomOutlineWidth ? customOutlineWidth : outlineWidth;
         ol.enabled = false;
         if(gameObject.GetComponent<PickupObjectData>() == null)
