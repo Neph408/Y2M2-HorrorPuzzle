@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using TreeEditor;
+
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -13,8 +13,8 @@ public class CameraController : MonoBehaviour
 
 
     private const float targetTime = 0.75f;
-    private Vector3 TransitionVector;
-    private Vector3 TransitionQuaternion;
+    private Vector3 transitionVector;
+    private Vector3 transitionQuaternion;
     private bool IsMoving = false;
 
     [SerializeField] private float rotationSpeed = 5f;
