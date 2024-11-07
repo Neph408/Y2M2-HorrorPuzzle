@@ -111,6 +111,9 @@ public class AudioTriggerVolume : MonoBehaviour
     private bool isWaitingForExtDelay = false;
     private float extDelayStartTimeStamp = 0f;
 
+    private bool entWasPlaying = false;
+    private bool extWasPlaying = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -165,6 +168,38 @@ public class AudioTriggerVolume : MonoBehaviour
             }
         }
 
+        if (gm.GetEscapeOpen())
+        {
+            if(targetEntryAudioSource != null)
+            {
+                if (targetEntryAudioSource.isPlaying)
+                {
+                    targetEntryAudioSource.Pause();
+                    entWasPlaying = true;
+                }
+            }
+            if (targetExitAudioSource != null)
+            {
+                if (targetExitAudioSource.isPlaying)
+                {
+                    targetExitAudioSource.Pause();
+                    entWasPlaying = true;
+                }
+            }
+        }
+        else
+        {
+            if (entWasPlaying)
+            {
+                targetEntryAudioSource.UnPause();
+                entWasPlaying = false;
+            }
+            if (extWasPlaying)
+            {
+                targetExitAudioSource.UnPause();
+                entWasPlaying = false;
+            }
+        }
 
     }
 

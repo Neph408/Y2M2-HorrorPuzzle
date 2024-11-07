@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject playerCameraSwivel;
     private AudioSource playerAudioSource;
     private InventoryManager inventoryManager;
+    private bool wasPlaying = false;
 
     private void Awake()
     {
@@ -33,9 +34,26 @@ public class PlayerController : MonoBehaviour
         hideMouse(!(gm.GetEscapeOpen() || gm.GetInventoryOpen() || gm.GetIsInKeypad()));
         CheckForMenuOpen();
 
+        if (gm.GetEscapeOpen())
+        {
+            if (playerAudioSource.isPlaying)
+            {
+                playerAudioSource.Pause();
+                wasPlaying = true;
+            }
+        }
+        else
+        {
+            if (wasPlaying)
+            {
+                playerAudioSource.UnPause();
+                wasPlaying = false;
+            }
+        }
+
         //tempDropItem();
     }
-
+    /*
     void tempDropItem()
     {
         if(Input.GetKeyDown(KeyCode.Q) && inventoryManager.CheckForOccSlot())
@@ -43,7 +61,7 @@ public class PlayerController : MonoBehaviour
             inventoryManager.Drop(inventoryManager.GetFirstOccupiedSlot());
         }
     }
-
+    */
 
     public GameObject GetCameraSwivel()
     {

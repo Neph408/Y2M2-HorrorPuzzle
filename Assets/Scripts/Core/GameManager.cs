@@ -191,6 +191,7 @@ public class GameManager : MonoBehaviour
     public void OpenEscapeMenu(bool isTemporaryHide = false)
     {
         SetEscapeMenuVisibility(true, isTemporaryHide);
+
         gamePaused = 0;
     }
 
@@ -203,6 +204,7 @@ public class GameManager : MonoBehaviour
     private void SetEscapeMenuVisibility(bool val, bool isTemporaryHide = false)// the actually, and actually, actually method, works 40% of the time, 70% of the time
     {
         escapeCanvas.SetActive(val);
+        Time.timeScale = val ? 0f : 1f;
         if (!isTemporaryHide)
         {
             isEscapeOpen = val;

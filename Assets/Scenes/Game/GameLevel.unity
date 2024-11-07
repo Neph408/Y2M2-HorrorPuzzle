@@ -22396,7 +22396,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607952567}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.782}
+  m_LocalPosition: {x: 0, y: 0, z: -0.748}
   m_LocalScale: {x: 0.013695984, y: 0.034010388, z: 0.034010388}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22427,13 +22427,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'controls are in f1>controls
+  m_text: 'controls are in esc>controls
 
-    (its f1 because escape is borked in the
-    unity player, its supposed to be esc)
-
-    you can press e to pickup, hold e
-    to hold the object
+    you can press e to pickup, hold e to
+    hold the object
 
     if you somehow delete a something, congrats'
   m_isRightToLeft: 0

@@ -22,6 +22,8 @@ public class CustomAudioTrigger : MonoBehaviour
     [SerializeField] private Color entrySubtitleColour = Color.magenta;
     [SerializeField] private bool entryUsesTypewriterStyle = true;
     [SerializeField] private float entrySubLineBreakDelay = 1f;
+
+    private bool wasPlaying = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +33,25 @@ public class CustomAudioTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (gm.GetEscapeOpen())
+        {
+            if (targetEntryAudioSource != null)
+            {
+                if (targetEntryAudioSource.isPlaying)
+                {
+                    targetEntryAudioSource.Pause();
+                    wasPlaying = true;
+                }
+            }
+        }
+        else
+        {
+            if (wasPlaying)
+            {
+                targetEntryAudioSource.UnPause();
+                wasPlaying = false;
+            }
+        }
     }
 
     public void PlayAudio()

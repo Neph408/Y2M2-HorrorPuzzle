@@ -47,7 +47,7 @@ public class KeypadController : MonoBehaviour
     [SerializeField] private AudioClip audio_Failure;
     [SerializeField] private AudioClip audio_RemoveInput;
 
-
+    private bool wasPlaying = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -99,6 +99,24 @@ public class KeypadController : MonoBehaviour
             displayController.SetInactiveText();
             if (IsInteractable) { lightController.SetInactiveLights(); }
             
+        }
+
+
+        if (gm.GetEscapeOpen())
+        {
+            if (keypadAudioSource.isPlaying)
+            {
+                keypadAudioSource.Pause();
+                wasPlaying = true;
+            }
+        }
+        else
+        {
+            if (wasPlaying)
+            {
+                keypadAudioSource.UnPause();
+                wasPlaying = false;
+            }
         }
     }
 

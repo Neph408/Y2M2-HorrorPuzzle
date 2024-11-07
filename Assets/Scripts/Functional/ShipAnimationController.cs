@@ -13,6 +13,7 @@ public class ShipAnimationController : MonoBehaviour
     [SerializeField] private float autoEndDuration = 5f;
     private float timeOfRun = 0;
 
+    private bool wasPlaying = false;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,23 @@ public class ShipAnimationController : MonoBehaviour
         if(Time.time - timeOfRun > autoEndDuration && rb.isKinematic == false)
         {
             rb.isKinematic = true;
+        }
+
+        if(gm.GetEscapeOpen())
+        {
+            if(audioSource.isPlaying)
+            {
+                audioSource.Pause();
+                wasPlaying = true;
+            }
+        }
+        else
+        {
+            if(wasPlaying)
+            {
+                audioSource.UnPause();
+                wasPlaying = false;
+            }
         }
     }
 
