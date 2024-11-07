@@ -23,12 +23,6 @@ public class InventoryManager : MonoBehaviour
         gameManager.GetInventoryMenuController().AssignInventoryManager(this);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public int GetInventorySize()
     { 
         return playerInventory.GetInventorySize(); 
@@ -39,11 +33,6 @@ public class InventoryManager : MonoBehaviour
         playerInventory.AddToInventory(item);
         gameManager.UpdateInventoryDisplay(playerInventory.GetInventory());
     }
-
-    /*
-    public bool CheckForSpace()
-        { return playerInventory.CheckForSpace(); }
-    */
 
     public bool CheckForSpace()
     {
@@ -85,6 +74,8 @@ public class InventoryManager : MonoBehaviour
         GameObject objToGen = Resources.Load(item.GetObjPath()).GameObject();
 
         // NNED TO ADD VERTICAL OFFSET PER OBJECTY TO ENSURE OBJ IS NOT PLACED IN GROUND
+        // this is like, if i can find the time sorta deal
+        // aint necessary, just would look better
         RaycastHit hit;
         Vector3 dropPoint;
         if(Physics.Raycast(transform.position, playerController.GetCameraSwivel().transform.forward, out hit, interactCaster.getInteractDistance(), placementRayCastLayerMask))

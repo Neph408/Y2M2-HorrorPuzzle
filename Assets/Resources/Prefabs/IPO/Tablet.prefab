@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayName: Tablet
-  displayDescription: Its a tablet
+  displayDescription: It's a tablet. It seems to be locked
   displaySpriteSmall: {fileID: 21300000, guid: 663178b2c6632e3418d1491916f9a990, type: 3}
   displaySpriteLarge: {fileID: 21300000, guid: 663178b2c6632e3418d1491916f9a990, type: 3}
   prefabAsset: Prefabs\IPO\Tablet

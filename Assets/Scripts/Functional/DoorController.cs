@@ -13,6 +13,8 @@ public class DoorController : MonoBehaviour
     [SerializeField] private GameObject doorIndicator;
     [SerializeField] private AudioClip openSound;
     [SerializeField] private AudioClip closeSound;
+    [SerializeField] private AudioClip unlockSound;
+    [SerializeField] private AudioClip lockSound;
 
     [SerializeField] private bool defaultState = false;
 
@@ -124,5 +126,13 @@ public class DoorController : MonoBehaviour
     public void SetDoorEnabled(bool val)
     {
         doorEnabled = val;
+        if(val)
+        {
+            gameManager.PlayAudioClip(doordioSource, GameManager.audioType.SFX, unlockSound, false);
+        }
+        else
+        {
+            gameManager.PlayAudioClip(doordioSource, GameManager.audioType.SFX, lockSound, false);
+        }
     }
 }

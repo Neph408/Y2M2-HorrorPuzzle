@@ -13,13 +13,13 @@ public class PickupObjectData : MonoBehaviour
     private int objID;
 
     [SerializeField] private string displayName;
-    [SerializeField] private string displayDescription;
+    [SerializeField,TextArea] private string displayDescription;
     [SerializeField] private Sprite displaySpriteSmall;
     [SerializeField] private Sprite displaySpriteLarge;
     [SerializeField] private string prefabAsset;
     [SerializeField] private bool isReadable;
     [SerializeField] private Sprite readableSprite;
-    [SerializeField] private string readableString;
+    [SerializeField,TextArea] private string readableString;
 
 
     private void Awake()

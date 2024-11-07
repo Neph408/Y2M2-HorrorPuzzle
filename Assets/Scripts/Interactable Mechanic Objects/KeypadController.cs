@@ -165,7 +165,7 @@ public class KeypadController : MonoBehaviour
         /*
          * REMOVE WHEN DONE WITH PROTOTYPE
          */
-        if (Input.GetKeyDown(KeyCode.F7)) { currentInput = code; CheckInputAgainstCode(); }
+        //if (Input.GetKeyDown(KeyCode.F7)) { currentInput = code; CheckInputAgainstCode(); }
     }
 
 

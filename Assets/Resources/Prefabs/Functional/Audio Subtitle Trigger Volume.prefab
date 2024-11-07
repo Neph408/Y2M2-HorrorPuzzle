@@ -120,15 +120,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayHologramOfColliderInPlay: 0
   displayColor: {r: 0.6094339, g: 0.70758665, b: 1, a: 0.24705882}
-  useAudio: 1
-  targetAudioSource: {fileID: 0}
-  targetAudioFile: {fileID: 0}
-  useSubtitle: 0
-  subtitleString: '[Default Subtitle Text]'
-  subtitleTickDelay: 0.05
+  additionalEntryTriggerTags: []
+  additionalExitTriggerTags: []
+  useEntryAudio: 0
+  targetEntryAudioSource: {fileID: 0}
+  targetEntryAudioFile: {fileID: 0}
+  entryAudioCategory: 0
+  shouldEntryUseRandomPitch: 0
+  entryPriorityBoost: 0
+  entryAudioIsSingleTimeUse: 0
+  entryUsesSubtitle: 0
+  entrySubtitleString: 
+  entrySubtitleTickDelay: 0.05
+  entrySubtitleColour: {r: 1, g: 0, b: 1, a: 1}
+  entryUsesTypewriterStyle: 1
+  entrySubLineBreakDelay: 1
+  useTriggerOnEntryAudioFinish: 0
+  additionalTriggerOnEntryAudioFinish:
+    m_PersistentCalls:
+      m_Calls: []
+  useExitAudio: 0
+  targetExitAudioSource: {fileID: 0}
+  targetExitAudioFile: {fileID: 0}
+  exitAudioCategory: 0
+  shouldExitUseRandomPitch: 0
+  exitPriorityBoost: 0
+  exitAudioIsSingleTimeUse: 0
+  exitUsesSubtitle: 0
+  exitSubtitleString: 
+  exitSubtitleTickDelay: 0.05
+  exitSubtitleColour: {r: 1, g: 0, b: 1, a: 1}
+  exitUsesTypewriterStyle: 1
+  exitSubLineBreakDelay: 1
+  useTriggerOnExitAudioFinish: 0
+  additionalTriggerOnExitAudioFinish:
+    m_PersistentCalls:
+      m_Calls: []
+  entryAdditionalTriggersAreSingleTimeUse: 0
   additionalOnEnterEventTriggers:
     m_PersistentCalls:
       m_Calls: []
+  exitAdditionalTriggersAreSingleTimeUse: 0
   additionalOnExitEventTriggers:
+    m_PersistentCalls:
+      m_Calls: []
+  delayedEntryTriggersAreSingleTimeUse: 0
+  delayedEntryTriggerDelayDuration: 2
+  delayedEntryTriggerEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  delayedExitTriggersAreSingleTimeUse: 0
+  delayedExitTriggerDelayDuration: 2
+  delayedExitTriggerEvents:
     m_PersistentCalls:
       m_Calls: []

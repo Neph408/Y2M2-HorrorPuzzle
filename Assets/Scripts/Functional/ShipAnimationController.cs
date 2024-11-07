@@ -21,6 +21,7 @@ public class ShipAnimationController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         audioSource = GetComponentInChildren<AudioSource>();
         timeOfRun = -autoEndDuration * 2f;
+        
     }
 
     // Update is called once per frame
@@ -35,7 +36,7 @@ public class ShipAnimationController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("collided with " + collision.gameObject.tag);
+        //Debug.Log("collided with " + collision.gameObject.tag);
         if(rb.velocity.magnitude > soundSpeedGate)
         {
 

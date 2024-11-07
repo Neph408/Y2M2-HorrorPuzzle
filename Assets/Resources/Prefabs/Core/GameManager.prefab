@@ -815,7 +815,7 @@ MonoBehaviour:
   holdableCollisionDisableDistance: 10
   placeholderSpriteSmall: {fileID: 21300000, guid: 60ba320954c043c4a805bb40b686a62d, type: 3}
   placeholderSpriteLarge: {fileID: 21300000, guid: 60ba320954c043c4a805bb40b686a62d, type: 3}
-  placeholderReadableSprite: {fileID: 21300000, guid: 04261004367dc8940ad9d404e111c879, type: 3}
+  placeholderReadableSprite: {fileID: 21300000, guid: 60ba320954c043c4a805bb40b686a62d, type: 3}
   placeholderAudioClip: {fileID: 8300000, guid: 9274df8c4de2f58489f866d61416cca2, type: 3}
 --- !u!1 &1230649432827180636
 GameObject:
@@ -1417,10 +1417,10 @@ MonoBehaviour:
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMin: 12
+  m_fontSizeMax: 30
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2536,7 +2536,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a46c07479cc18f44b8fea49c05c9a437, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3467,7 +3467,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '[Display Description text]'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4714,7 +4714,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.5
+  m_fontSize: 27
   m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6713,9 +6713,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d343a29d8c258794f863ae06872b41a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emptySlotSprite: {fileID: 21300000, guid: 689789b7cc40c0c45a40592c1e1f9a06, type: 3}
-  emptySlotName: '[-]'
-  emptySlotDescription: '[---]'
+  emptySlotSprite: {fileID: 21300000, guid: ff433aead6dd6d349865d6ee1d961836, type: 3}
+  emptySlotName: Empty Slot
+  emptySlotDescription: 
 --- !u!1 &7254230203328999164
 GameObject:
   m_ObjectHideFlags: 0
@@ -7183,7 +7183,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '[Display Name]'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

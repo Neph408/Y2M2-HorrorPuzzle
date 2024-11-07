@@ -25,6 +25,10 @@ public class Holdable : MonoBehaviour
     private LayerMask maskAll = ~0; 
     private LayerMask maskNone = 0;
 
+    [SerializeField,Tooltip("Takes priority")] private bool useDefaultColouring = true;
+    [SerializeField,Tooltip("Default Colouring Takes Priority")] private bool useCustomColouring = false;
+    [SerializeField] private Color customColour = Color.white;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,18 +37,22 @@ public class Holdable : MonoBehaviour
         oatoh = gameObject.GetComponent<OutlineAndTooltipOnHover>();
 
 
-        if(GetComponent<PickupObjectData>() == null && GetComponent<MeshRenderer>() != null)
+        if(useDefaultColouring)
         {
-            GetComponent<MeshRenderer>().material.color = Color.red;
+            if (GetComponent<PickupObjectData>() == null && GetComponent<MeshRenderer>() != null)
+            {
+                GetComponent<MeshRenderer>().material.color = Color.red;
+            }
+            else if (GetComponent<PickupObjectData>() != null && GetComponent<MeshRenderer>() != null)
+            {
+                GetComponent<MeshRenderer>().material.color = GetComponent<PickupObjectData>().GetIsReadable() ? Color.blue : Color.green;
+            }
         }
-        else if(GetComponent<PickupObjectData>().GetIsReadable() && GetComponent<MeshRenderer>() != null)
+        else if(useCustomColouring && GetComponent<MeshRenderer>() != null)
         {
-            GetComponent<MeshRenderer>().material.color = Color.blue;
+            GetComponent<MeshRenderer>().material.color = customColour; 
         }
-        else if (GetComponent<MeshRenderer>() != null)
-        {
-            GetComponent<MeshRenderer>().material.color = Color.green;
-        }
+
     }
 
     // Update is called once per frame

@@ -180,6 +180,8 @@ MonoBehaviour:
   doorIndicator: {fileID: 5196127346697948363}
   openSound: {fileID: 8300000, guid: 2ed16c4e586e6a944984e9fb62b67d2d, type: 3}
   closeSound: {fileID: 8300000, guid: 2ed16c4e586e6a944984e9fb62b67d2d, type: 3}
+  unlockSound: {fileID: 8300000, guid: b7c6f5b8cf4226c42b8945283e3659fd, type: 3}
+  lockSound: {fileID: 8300000, guid: 691bdd31afe618343acfcf031eac9cca, type: 3}
   defaultState: 0
   doorEnabled: 1
 --- !u!1 &5196127346697948363
