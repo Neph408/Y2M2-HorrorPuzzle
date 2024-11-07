@@ -7,6 +7,7 @@ public class SubtitleController : MonoBehaviour
 {
     GameManager gm;
     private TextMeshProUGUI subtitleText;
+    [SerializeField] private GameObject subContainer;
     private string subtitleToShow = "";
     private string currentDisplaySubtitle = "";
     private int positionInQueue;
@@ -24,7 +25,7 @@ public class SubtitleController : MonoBehaviour
     {
         gm = GameManager.Instance;
         subtitleText = GetComponentInChildren<TextMeshProUGUI>();
-        subtitleText.enabled = false;
+        subContainer.SetActive(false);
     }
 
     // Update is called once per frame
@@ -79,7 +80,7 @@ public class SubtitleController : MonoBehaviour
 
     private void HideSubtitles()
     {
-        subtitleText.enabled = false;
+        subContainer.SetActive(false);
     }
 
     public void SetCurrentSubtitleString(string subtitleString, float internalDelay = 0.5f, Color? subtitleColourOverride = null, bool isTypewriterStyle = true, float breakDelay = 1f)
@@ -87,7 +88,7 @@ public class SubtitleController : MonoBehaviour
         if(isTypewriterStyle)
         {
             isWriting = true;
-            subtitleText.enabled = true;
+            subContainer.SetActive(true);
             Debug.Log("Set subs to [[" + subtitleString + "]] with typewriter enabled");
             if (subtitleColourOverride != null)
             {
@@ -106,7 +107,7 @@ public class SubtitleController : MonoBehaviour
         }
         else
         {
-            subtitleText.enabled = true;
+            subContainer.SetActive(true);
             Debug.Log("Set subs to " + subtitleString + " with typewriter disabled");
             if (subtitleColourOverride != null)
             {
