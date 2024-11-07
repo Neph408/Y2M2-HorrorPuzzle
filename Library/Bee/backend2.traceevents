@@ -1,374 +1,368 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1730975577952156, "dur":54, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1730975577952239, "dur":22062, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1730975577974307, "dur":115, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1730975577974479, "dur":271, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1730975577974901, "dur":80, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.ecm" }}
-,{ "pid":12345, "tid":0, "ts":1730975577975027, "dur":76, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.vis" }}
-,{ "pid":12345, "tid":0, "ts":1730975577975312, "dur":79, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.iws.sse" }}
-,{ "pid":12345, "tid":0, "ts":1730975577976991, "dur":63, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":0, "ts":1730975577977275, "dur":64, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":0, "ts":1730975577977412, "dur":61, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":0, "ts":1730975577977731, "dur":63, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1730975577977897, "dur":63, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1730975577978215, "dur":61, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1730975577978807, "dur":61, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1730975577978962, "dur":108, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1730975577979262, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1730975577979499, "dur":55, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":0, "ts":1730975577979782, "dur":65, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":0, "ts":1730975577974769, "dur":6104, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1730975577980877, "dur":231152, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1730975578212030, "dur":108, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1730975578212218, "dur":1578, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1730975577975264, "dur":5619, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1730975577980885, "dur":6926, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1730975577995008, "dur":972, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
-,{ "pid":12345, "tid":1, "ts":1730975577995984, "dur":105, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1730975577996158, "dur":15798, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":1, "ts":1730975578011958, "dur":99, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":1, "ts":1730975578012212, "dur":396, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\5killi84\\Documents\\GitHub\\Y2M2-HorrorPuzzle\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":1, "ts":1730975578012610, "dur":247, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\5killi84\\Documents\\GitHub\\Y2M2-HorrorPuzzle\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1730975578012859, "dur":291, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\5killi84\\Documents\\GitHub\\Y2M2-HorrorPuzzle\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":1, "ts":1730975578013151, "dur":344, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\5killi84\\Documents\\GitHub\\Y2M2-HorrorPuzzle\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":1, "ts":1730975578013497, "dur":516, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\5killi84\\Documents\\GitHub\\Y2M2-HorrorPuzzle\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1730975578014014, "dur":105, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\5killi84\\Documents\\GitHub\\Y2M2-HorrorPuzzle\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":1, "ts":1730975578014120, "dur":300, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\5killi84\\Documents\\GitHub\\Y2M2-HorrorPuzzle\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":1, "ts":1730975578014456, "dur":106, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Player3bc2d8f9-inputdata.json" }}
-,{ "pid":12345, "tid":1, "ts":1730975577995983, "dur":18668, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1730975578014950, "dur":50, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1730975578015339, "dur":189410, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1730975578211019, "dur":124, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1730975578211018, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1730975578211157, "dur":827, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/boot.config" }}
-,{ "pid":12345, "tid":2, "ts":1730975577975522, "dur":5399, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1730975577980922, "dur":753, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1730975577981675, "dur":685, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1730975577982360, "dur":5524, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1730975577987896, "dur":96, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
-,{ "pid":12345, "tid":2, "ts":1730975577987885, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":2, "ts":1730975578000567, "dur":1079, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":2, "ts":1730975578001738, "dur":1238, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype.exe" }}
-,{ "pid":12345, "tid":2, "ts":1730975578003113, "dur":2164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":2, "ts":1730975578005331, "dur":4666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":2, "ts":1730975578010062, "dur":1557, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":2, "ts":1730975578011672, "dur":10782, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":2, "ts":1730975578022600, "dur":2115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":2, "ts":1730975578024760, "dur":2473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1730975578027280, "dur":5360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1730975578041740, "dur":61, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1730975578033268, "dur":8557, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1730975578041886, "dur":11230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1730975578053164, "dur":3153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1730975578056394, "dur":3122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1730975578059568, "dur":3975, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1730975578063590, "dur":2939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":2, "ts":1730975578066573, "dur":3958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":2, "ts":1730975578070600, "dur":7586, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":2, "ts":1730975578078244, "dur":7976, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/resources.assets" }}
-,{ "pid":12345, "tid":2, "ts":1730975578086310, "dur":4644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/level1.resS" }}
-,{ "pid":12345, "tid":2, "ts":1730975578091001, "dur":3624, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1730975578095291, "dur":21216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/ef/efb2efb5eb4afa0cf4c22e3054b107b4.iws.sse" }}
-,{ "pid":12345, "tid":2, "ts":1730975578116594, "dur":10946, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e7/e74094057b889156815efa8f9019f9df.iws.sse" }}
-,{ "pid":12345, "tid":2, "ts":1730975578128273, "dur":2411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e1/e1d0db08438044d2e250ba142142fd8a.rgb" }}
-,{ "pid":12345, "tid":2, "ts":1730975578130730, "dur":2214, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e1/e1a66a895b602ce455b1bab6b5e237f9.caw" }}
-,{ "pid":12345, "tid":2, "ts":1730975578132992, "dur":1866, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/c2/c202124dce91f2546ddb820a1b9569eb.ecm" }}
-,{ "pid":12345, "tid":2, "ts":1730975578134905, "dur":6466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/b7/b7d304f029aff67f25278ca0363ba259.caw" }}
-,{ "pid":12345, "tid":2, "ts":1730975578141435, "dur":5713, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/82/82b1a3ce1269dd15ba099820425adacf.caw" }}
-,{ "pid":12345, "tid":2, "ts":1730975578147836, "dur":115, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1730975578148399, "dur":1410, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2f/2f6164af9ae5e5fee896d5693c73e615.vis" }}
-,{ "pid":12345, "tid":2, "ts":1730975578149970, "dur":1118, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2f/2f6164af9ae5e5fee896d5693c73e615.caw" }}
-,{ "pid":12345, "tid":2, "ts":1730975578151901, "dur":1843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.caw" }}
-,{ "pid":12345, "tid":2, "ts":1730975578153874, "dur":3612, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2b/2b98ea2b7b09d35ad8dc186b03482aa5.iws.sse" }}
-,{ "pid":12345, "tid":2, "ts":1730975578157539, "dur":1450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.iws.sse" }}
-,{ "pid":12345, "tid":2, "ts":1730975578159080, "dur":1263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/0f/0fcf98119c8c0dc996ccd2fdf27f6731.rsc.sse" }}
-,{ "pid":12345, "tid":2, "ts":1730975578160388, "dur":1034, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/0f/0fcf98119c8c0dc996ccd2fdf27f6731.ecm" }}
-,{ "pid":12345, "tid":2, "ts":1730975578161465, "dur":50537, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1730975577975386, "dur":5502, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1730975577980890, "dur":744, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1730975577981635, "dur":666, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1730975577982302, "dur":5585, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1730975577987896, "dur":94, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
-,{ "pid":12345, "tid":3, "ts":1730975577987890, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1730975577999856, "dur":4117, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1730975578004132, "dur":3252, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578007441, "dur":1761, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578009252, "dur":1641, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578010947, "dur":9651, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578020650, "dur":1501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578022202, "dur":1366, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578023621, "dur":4009, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578027687, "dur":3293, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578031026, "dur":4351, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578035433, "dur":3901, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578039388, "dur":1236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578040669, "dur":3963, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578044713, "dur":2482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578047252, "dur":3594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578050913, "dur":2604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578053563, "dur":2665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578056292, "dur":3929, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578060271, "dur":2568, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1730975578062884, "dur":3511, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1730975578066509, "dur":3296, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":3, "ts":1730975578069855, "dur":20264, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":3, "ts":1730975578090161, "dur":2873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/level0" }}
-,{ "pid":12345, "tid":3, "ts":1730975578095098, "dur":20892, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/ef/efb2efb5eb4afa0cf4c22e3054b107b4.rsc.sse" }}
-,{ "pid":12345, "tid":3, "ts":1730975578116532, "dur":11288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e7/e74094057b889156815efa8f9019f9df.vis" }}
-,{ "pid":12345, "tid":3, "ts":1730975578128264, "dur":1511, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e1/e1d0db08438044d2e250ba142142fd8a.iws.sse" }}
-,{ "pid":12345, "tid":3, "ts":1730975578133924, "dur":72, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1730975578129825, "dur":4178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e1/e1a66a895b602ce455b1bab6b5e237f9.rsc.sse" }}
-,{ "pid":12345, "tid":3, "ts":1730975578134113, "dur":2259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/b7/b7d304f029aff67f25278ca0363ba259.iws.sse" }}
-,{ "pid":12345, "tid":3, "ts":1730975578136415, "dur":2305, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/ae/aefb69c82f4086e516613010a0e78c2f.ecm" }}
-,{ "pid":12345, "tid":3, "ts":1730975578138768, "dur":1426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/8f/8feff29d54946a5afe1f0f5f2385bb18.ecm" }}
-,{ "pid":12345, "tid":3, "ts":1730975578140431, "dur":2330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/82/82b1a3ce1269dd15ba099820425adacf.rsc.sse" }}
-,{ "pid":12345, "tid":3, "ts":1730975578142875, "dur":945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/5d/5d4c93c86a1c4fd236656ef01d822646.rgb" }}
-,{ "pid":12345, "tid":3, "ts":1730975578143884, "dur":3439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/5d/5d4c93c86a1c4fd236656ef01d822646.ecm" }}
-,{ "pid":12345, "tid":3, "ts":1730975578147398, "dur":1396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/51/51f62fcdad7244c51d3c6f053a53018b.caw" }}
-,{ "pid":12345, "tid":3, "ts":1730975578148877, "dur":1767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2f/2f6164af9ae5e5fee896d5693c73e615.ecm" }}
-,{ "pid":12345, "tid":3, "ts":1730975578151831, "dur":4039, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.iws.sse" }}
-,{ "pid":12345, "tid":3, "ts":1730975578156661, "dur":1951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.rsc.sse" }}
-,{ "pid":12345, "tid":3, "ts":1730975578158941, "dur":2907, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/0f/0fcf98119c8c0dc996ccd2fdf27f6731.vis" }}
-,{ "pid":12345, "tid":3, "ts":1730975578161883, "dur":50117, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1730975577975492, "dur":5424, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1730975577980918, "dur":743, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1730975577981662, "dur":790, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1730975577982453, "dur":5386, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1730975577987840, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1730975577988718, "dur":2711, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/app.info" }}
-,{ "pid":12345, "tid":4, "ts":1730975577991434, "dur":81, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1730975577991433, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1730975577991889, "dur":921, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1730975577992856, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1730975577993285, "dur":1041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1730975577994374, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1730975577994495, "dur":1191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1730975577995749, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1730975577996811, "dur":1304, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1730975577998198, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1730975577999572, "dur":2070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1730975578001823, "dur":53, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1730975578002555, "dur":3092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578005701, "dur":2124, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578007895, "dur":1272, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578009233, "dur":1962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578011387, "dur":10937, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578022430, "dur":2317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578029972, "dur":696, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1730975578024797, "dur":5888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578030765, "dur":2289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578033099, "dur":4884, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578038053, "dur":6258, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578044362, "dur":1898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578046411, "dur":2409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578048895, "dur":3631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578052588, "dur":2290, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578054924, "dur":2116, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578057115, "dur":2542, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578059710, "dur":2031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578061795, "dur":5042, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1730975578066883, "dur":9339, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1730975578076316, "dur":13582, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1730975578089950, "dur":2969, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/level0.resS" }}
-,{ "pid":12345, "tid":4, "ts":1730975578095183, "dur":21128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/ef/efb2efb5eb4afa0cf4c22e3054b107b4.vis" }}
-,{ "pid":12345, "tid":4, "ts":1730975578116716, "dur":11586, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e7/e74094057b889156815efa8f9019f9df.rsc.sse" }}
-,{ "pid":12345, "tid":4, "ts":1730975578128386, "dur":1745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e1/e1d0db08438044d2e250ba142142fd8a.ecm" }}
-,{ "pid":12345, "tid":4, "ts":1730975578130185, "dur":2531, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e1/e1a66a895b602ce455b1bab6b5e237f9.rgb" }}
-,{ "pid":12345, "tid":4, "ts":1730975578132919, "dur":2345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/c2/c202124dce91f2546ddb820a1b9569eb.iws.sse" }}
-,{ "pid":12345, "tid":4, "ts":1730975578135657, "dur":1439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/ae/aefb69c82f4086e516613010a0e78c2f.vis" }}
-,{ "pid":12345, "tid":4, "ts":1730975578137153, "dur":1487, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/ae/aefb69c82f4086e516613010a0e78c2f.caw" }}
-,{ "pid":12345, "tid":4, "ts":1730975578138700, "dur":1218, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/8f/8feff29d54946a5afe1f0f5f2385bb18.rgb" }}
-,{ "pid":12345, "tid":4, "ts":1730975578140334, "dur":1970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/82/82b1a3ce1269dd15ba099820425adacf.vis" }}
-,{ "pid":12345, "tid":4, "ts":1730975578149432, "dur":50, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1730975578143075, "dur":6416, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/5d/5d4c93c86a1c4fd236656ef01d822646.rsc.sse" }}
-,{ "pid":12345, "tid":4, "ts":1730975578150544, "dur":2611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.rsc.sse" }}
-,{ "pid":12345, "tid":4, "ts":1730975578153200, "dur":9062, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2b/2b98ea2b7b09d35ad8dc186b03482aa5.rgb" }}
-,{ "pid":12345, "tid":4, "ts":1730975578162474, "dur":49551, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1730975577975634, "dur":5320, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1730975577980956, "dur":704, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1730975577981660, "dur":679, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1730975577982339, "dur":5544, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1730975577987893, "dur":125, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":5, "ts":1730975577987883, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":5, "ts":1730975578001390, "dur":14213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":5, "ts":1730975578015657, "dur":9872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":5, "ts":1730975578029278, "dur":740, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1730975578025593, "dur":4455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1730975578030117, "dur":2852, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1730975578033023, "dur":145, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1730975578033170, "dur":4419, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1730975578037808, "dur":9165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1730975578047020, "dur":7905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1730975578055010, "dur":6312, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1730975578061443, "dur":6367, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1730975578067931, "dur":16474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":5, "ts":1730975578084499, "dur":7215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/level2.resS" }}
-,{ "pid":12345, "tid":5, "ts":1730975578091986, "dur":2776, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":5, "ts":1730975578095318, "dur":21284, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/ef/efb2efb5eb4afa0cf4c22e3054b107b4.caw" }}
-,{ "pid":12345, "tid":5, "ts":1730975578116648, "dur":10922, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e7/e74094057b889156815efa8f9019f9df.ecm" }}
-,{ "pid":12345, "tid":5, "ts":1730975578128000, "dur":1121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e1/e1d0db08438044d2e250ba142142fd8a.vis" }}
-,{ "pid":12345, "tid":5, "ts":1730975578129165, "dur":2683, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e1/e1a66a895b602ce455b1bab6b5e237f9.vis" }}
-,{ "pid":12345, "tid":5, "ts":1730975578131936, "dur":1662, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/c2/c202124dce91f2546ddb820a1b9569eb.rsc.sse" }}
-,{ "pid":12345, "tid":5, "ts":1730975578134144, "dur":1684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/b7/b7d304f029aff67f25278ca0363ba259.rsc.sse" }}
-,{ "pid":12345, "tid":5, "ts":1730975578135919, "dur":4974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/ae/aefb69c82f4086e516613010a0e78c2f.rgb" }}
-,{ "pid":12345, "tid":5, "ts":1730975578140935, "dur":3756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/82/82b1a3ce1269dd15ba099820425adacf.ecm" }}
-,{ "pid":12345, "tid":5, "ts":1730975578144738, "dur":2171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/5d/5d4c93c86a1c4fd236656ef01d822646.caw" }}
-,{ "pid":12345, "tid":5, "ts":1730975578146954, "dur":1539, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/51/51f62fcdad7244c51d3c6f053a53018b.iws.sse" }}
-,{ "pid":12345, "tid":5, "ts":1730975578148568, "dur":1343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2f/2f6164af9ae5e5fee896d5693c73e615.rgb" }}
-,{ "pid":12345, "tid":5, "ts":1730975578150447, "dur":2108, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.vis" }}
-,{ "pid":12345, "tid":5, "ts":1730975578152917, "dur":1566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2b/2b98ea2b7b09d35ad8dc186b03482aa5.vis" }}
-,{ "pid":12345, "tid":5, "ts":1730975578154552, "dur":2117, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2b/2b98ea2b7b09d35ad8dc186b03482aa5.caw" }}
-,{ "pid":12345, "tid":5, "ts":1730975578156741, "dur":1341, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.rgb" }}
-,{ "pid":12345, "tid":5, "ts":1730975578158128, "dur":1090, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.ecm" }}
-,{ "pid":12345, "tid":5, "ts":1730975578159309, "dur":1040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/0f/0fcf98119c8c0dc996ccd2fdf27f6731.rgb" }}
-,{ "pid":12345, "tid":5, "ts":1730975578160392, "dur":1380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/0f/0fcf98119c8c0dc996ccd2fdf27f6731.caw" }}
-,{ "pid":12345, "tid":5, "ts":1730975578161849, "dur":50169, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1730975577975683, "dur":5275, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1730975577980961, "dur":716, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1730975577981678, "dur":425, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1730975577982103, "dur":5782, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1730975577987886, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":6, "ts":1730975577990695, "dur":950, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":6, "ts":1730975577991684, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1730975577992029, "dur":1040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1730975577993106, "dur":67, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
-,{ "pid":12345, "tid":6, "ts":1730975577993105, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":6, "ts":1730975577993439, "dur":946, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":6, "ts":1730975577994436, "dur":67, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1730975577994435, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1730975577994513, "dur":2016, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1730975577996592, "dur":74, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
-,{ "pid":12345, "tid":6, "ts":1730975577996591, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":6, "ts":1730975577997016, "dur":886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":6, "ts":1730975577997969, "dur":98, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1730975577997968, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1730975577998092, "dur":1547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1730975577999682, "dur":73, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975577999680, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578000124, "dur":1580, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578001748, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":6, "ts":1730975578002195, "dur":14401, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":6, "ts":1730975578016650, "dur":5067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578021765, "dur":1178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578022985, "dur":3892, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578029459, "dur":871, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1730975578026967, "dur":3371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578030436, "dur":2369, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578032859, "dur":6459, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578039407, "dur":1403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578040869, "dur":4027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578044984, "dur":1750, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578046783, "dur":4308, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578051175, "dur":3048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578054320, "dur":3408, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578065809, "dur":124, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1730975578057808, "dur":8133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1730975578066011, "dur":20966, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1730975578087023, "dur":6201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/level1" }}
-,{ "pid":12345, "tid":6, "ts":1730975578117497, "dur":921, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/ef/efb2efb5eb4afa0cf4c22e3054b107b4.rgb" }}
-,{ "pid":12345, "tid":6, "ts":1730975578127316, "dur":3217, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e7/e74094057b889156815efa8f9019f9df.caw" }}
-,{ "pid":12345, "tid":6, "ts":1730975578130576, "dur":2376, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e1/e1a66a895b602ce455b1bab6b5e237f9.ecm" }}
-,{ "pid":12345, "tid":6, "ts":1730975578132998, "dur":1705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/c2/c202124dce91f2546ddb820a1b9569eb.caw" }}
-,{ "pid":12345, "tid":6, "ts":1730975578134784, "dur":1279, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/b7/b7d304f029aff67f25278ca0363ba259.ecm" }}
-,{ "pid":12345, "tid":6, "ts":1730975578136109, "dur":1959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/ae/aefb69c82f4086e516613010a0e78c2f.iws.sse" }}
-,{ "pid":12345, "tid":6, "ts":1730975578138128, "dur":53, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1730975578138227, "dur":1286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/8f/8feff29d54946a5afe1f0f5f2385bb18.rsc.sse" }}
-,{ "pid":12345, "tid":6, "ts":1730975578139561, "dur":1200, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/8f/8feff29d54946a5afe1f0f5f2385bb18.caw" }}
-,{ "pid":12345, "tid":6, "ts":1730975578140815, "dur":4331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/82/82b1a3ce1269dd15ba099820425adacf.iws.sse" }}
-,{ "pid":12345, "tid":6, "ts":1730975578145313, "dur":1879, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/51/51f62fcdad7244c51d3c6f053a53018b.rsc.sse" }}
-,{ "pid":12345, "tid":6, "ts":1730975578147389, "dur":1199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/51/51f62fcdad7244c51d3c6f053a53018b.ecm" }}
-,{ "pid":12345, "tid":6, "ts":1730975578148634, "dur":1719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2f/2f6164af9ae5e5fee896d5693c73e615.iws.sse" }}
-,{ "pid":12345, "tid":6, "ts":1730975578151897, "dur":3730, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.ecm" }}
-,{ "pid":12345, "tid":6, "ts":1730975578155997, "dur":6172, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.vis" }}
-,{ "pid":12345, "tid":6, "ts":1730975578162209, "dur":49806, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1730975577975831, "dur":5133, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1730975577980965, "dur":717, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1730975577981682, "dur":6213, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1730975577987895, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":7, "ts":1730975578000889, "dur":3603, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":7, "ts":1730975578004571, "dur":2817, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578007485, "dur":1748, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578009291, "dur":1438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578010790, "dur":2014, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578012912, "dur":7953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578020959, "dur":1490, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578024339, "dur":73, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1730975578022499, "dur":1922, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578024525, "dur":3495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578029814, "dur":708, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1730975578028081, "dur":2453, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578030580, "dur":5154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578035784, "dur":5942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578045992, "dur":50, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1730975578041809, "dur":4248, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578046565, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.PropertiesModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578046657, "dur":54, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1730975578046757, "dur":4558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.PropertiesModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578051368, "dur":2524, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578053982, "dur":3403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578059815, "dur":65, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1730975578057443, "dur":2444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578059969, "dur":2512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578062601, "dur":72, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578062600, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578062684, "dur":64944, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":7, "ts":1730975578128318, "dur":2196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e1/e1d0db08438044d2e250ba142142fd8a.rsc.sse" }}
-,{ "pid":12345, "tid":7, "ts":1730975578130561, "dur":2806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e1/e1a66a895b602ce455b1bab6b5e237f9.iws.sse" }}
-,{ "pid":12345, "tid":7, "ts":1730975578133898, "dur":7815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/b7/b7d304f029aff67f25278ca0363ba259.vis" }}
-,{ "pid":12345, "tid":7, "ts":1730975578142062, "dur":1038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/5d/5d4c93c86a1c4fd236656ef01d822646.vis" }}
-,{ "pid":12345, "tid":7, "ts":1730975578143144, "dur":7107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/5d/5d4c93c86a1c4fd236656ef01d822646.iws.sse" }}
-,{ "pid":12345, "tid":7, "ts":1730975578152770, "dur":1455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.rgb" }}
-,{ "pid":12345, "tid":7, "ts":1730975578154354, "dur":4056, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2b/2b98ea2b7b09d35ad8dc186b03482aa5.ecm" }}
-,{ "pid":12345, "tid":7, "ts":1730975578158471, "dur":1092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.caw" }}
-,{ "pid":12345, "tid":7, "ts":1730975578159610, "dur":2060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/0f/0fcf98119c8c0dc996ccd2fdf27f6731.iws.sse" }}
-,{ "pid":12345, "tid":7, "ts":1730975578161735, "dur":50286, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1730975577975912, "dur":5056, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1730975577980968, "dur":705, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1730975577981674, "dur":673, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1730975577982348, "dur":5538, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1730975577987887, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":8, "ts":1730975577993925, "dur":1120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":8, "ts":1730975577995082, "dur":165, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":8, "ts":1730975577995260, "dur":1815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":8, "ts":1730975577997117, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1730975577997224, "dur":911, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1730975577998169, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":8, "ts":1730975577998241, "dur":1638, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":8, "ts":1730975577999950, "dur":75, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":8, "ts":1730975577999949, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 3/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":8, "ts":1730975578000624, "dur":24852, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":8, "ts":1730975578029383, "dur":936, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1730975578025540, "dur":4788, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1730975578030388, "dur":4093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1730975578034535, "dur":2579, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1730975578037162, "dur":3336, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1730975578040546, "dur":4067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1730975578044660, "dur":2721, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1730975578047461, "dur":5240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1730975578052763, "dur":3614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1730975578056424, "dur":3403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1730975578059875, "dur":2439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1730975578062364, "dur":3326, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1730975578065738, "dur":4798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/sharedassets1.resource" }}
-,{ "pid":12345, "tid":8, "ts":1730975578070750, "dur":3139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":8, "ts":1730975578073976, "dur":10960, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/resources.resource" }}
-,{ "pid":12345, "tid":8, "ts":1730975578085001, "dur":6318, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/level2" }}
-,{ "pid":12345, "tid":8, "ts":1730975578091361, "dur":3284, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":8, "ts":1730975578095222, "dur":21163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/ef/efb2efb5eb4afa0cf4c22e3054b107b4.ecm" }}
-,{ "pid":12345, "tid":8, "ts":1730975578128071, "dur":67, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1730975578116732, "dur":11418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e7/e74094057b889156815efa8f9019f9df.rgb" }}
-,{ "pid":12345, "tid":8, "ts":1730975578128593, "dur":2137, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/e1/e1d0db08438044d2e250ba142142fd8a.caw" }}
-,{ "pid":12345, "tid":8, "ts":1730975578131134, "dur":909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/c2/c202124dce91f2546ddb820a1b9569eb.vis" }}
-,{ "pid":12345, "tid":8, "ts":1730975578132144, "dur":1763, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/c2/c202124dce91f2546ddb820a1b9569eb.rgb" }}
-,{ "pid":12345, "tid":8, "ts":1730975578134104, "dur":1244, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/b7/b7d304f029aff67f25278ca0363ba259.rgb" }}
-,{ "pid":12345, "tid":8, "ts":1730975578135701, "dur":1663, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/ae/aefb69c82f4086e516613010a0e78c2f.rsc.sse" }}
-,{ "pid":12345, "tid":8, "ts":1730975578137698, "dur":974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/8f/8feff29d54946a5afe1f0f5f2385bb18.vis" }}
-,{ "pid":12345, "tid":8, "ts":1730975578138728, "dur":1741, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/8f/8feff29d54946a5afe1f0f5f2385bb18.iws.sse" }}
-,{ "pid":12345, "tid":8, "ts":1730975578140566, "dur":4158, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/82/82b1a3ce1269dd15ba099820425adacf.rgb" }}
-,{ "pid":12345, "tid":8, "ts":1730975578145212, "dur":1103, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/51/51f62fcdad7244c51d3c6f053a53018b.vis" }}
-,{ "pid":12345, "tid":8, "ts":1730975578146404, "dur":1520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/51/51f62fcdad7244c51d3c6f053a53018b.rgb" }}
-,{ "pid":12345, "tid":8, "ts":1730975578148333, "dur":4633, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2f/2f6164af9ae5e5fee896d5693c73e615.rsc.sse" }}
-,{ "pid":12345, "tid":8, "ts":1730975578153060, "dur":6249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 3/HorrorPuzzlePrototype_Data/GI/level1/2b/2b98ea2b7b09d35ad8dc186b03482aa5.rsc.sse" }}
-,{ "pid":12345, "tid":8, "ts":1730975578160466, "dur":51542, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1730975578215521, "dur":1166, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1730977012524052, "dur":99, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1730977012524183, "dur":21370, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1730977012545558, "dur":111, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1730977012545727, "dur":264, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1730977012546122, "dur":82, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/0f/0fcf98119c8c0dc996ccd2fdf27f6731.vis" }}
+,{ "pid":12345, "tid":0, "ts":1730977012546244, "dur":61, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.iws.sse" }}
+,{ "pid":12345, "tid":0, "ts":1730977012546556, "dur":63, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.iws.sse" }}
+,{ "pid":12345, "tid":0, "ts":1730977012546661, "dur":71, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.vis" }}
+,{ "pid":12345, "tid":0, "ts":1730977012546793, "dur":79, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2f/2f6164af9ae5e5fee896d5693c73e615.rsc.sse" }}
+,{ "pid":12345, "tid":0, "ts":1730977012546905, "dur":83, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/51/51f62fcdad7244c51d3c6f053a53018b.ecm" }}
+,{ "pid":12345, "tid":0, "ts":1730977012547098, "dur":67, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/5d/5d4c93c86a1c4fd236656ef01d822646.ecm" }}
+,{ "pid":12345, "tid":0, "ts":1730977012547197, "dur":68, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/5d/5d4c93c86a1c4fd236656ef01d822646.rsc.sse" }}
+,{ "pid":12345, "tid":0, "ts":1730977012547520, "dur":67, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/8f/8feff29d54946a5afe1f0f5f2385bb18.vis" }}
+,{ "pid":12345, "tid":0, "ts":1730977012547715, "dur":73, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/b7/b7d304f029aff67f25278ca0363ba259.rgb" }}
+,{ "pid":12345, "tid":0, "ts":1730977012547932, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/c2/c202124dce91f2546ddb820a1b9569eb.rgb" }}
+,{ "pid":12345, "tid":0, "ts":1730977012548009, "dur":57, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/c2/c202124dce91f2546ddb820a1b9569eb.vis" }}
+,{ "pid":12345, "tid":0, "ts":1730977012549200, "dur":68, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":0, "ts":1730977012550215, "dur":56, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1730977012551448, "dur":69, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":0, "ts":1730977012551676, "dur":64, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":0, "ts":1730977012551868, "dur":65, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":0, "ts":1730977012546012, "dur":6235, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1730977012552250, "dur":233076, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1730977012785326, "dur":72, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1730977012785550, "dur":1623, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1730977012546593, "dur":5695, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1730977012552289, "dur":703, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1730977012552993, "dur":652, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1730977012553645, "dur":5769, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1730977012559415, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":1, "ts":1730977012571323, "dur":871, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":1, "ts":1730977012572234, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
+,{ "pid":12345, "tid":1, "ts":1730977012572233, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1730977012572588, "dur":1337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1730977012573962, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1730977012574390, "dur":914, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1730977012575340, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1730977012575780, "dur":10571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1730977012586418, "dur":5587, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":1, "ts":1730977012592080, "dur":12553, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1730977012604699, "dur":4136, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1730977012608892, "dur":1530, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1730977012610476, "dur":2498, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1730977012613030, "dur":4077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1730977012617216, "dur":3233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1730977012620497, "dur":2090, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1730977012622641, "dur":2288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1730977012624989, "dur":3500, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1730977012628877, "dur":3988, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1730977012632951, "dur":1397, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1730977012634391, "dur":5968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":1, "ts":1730977012640468, "dur":1845, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/resources.resource" }}
+,{ "pid":12345, "tid":1, "ts":1730977012642371, "dur":6023, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/level2.resS" }}
+,{ "pid":12345, "tid":1, "ts":1730977012648829, "dur":3968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/level1" }}
+,{ "pid":12345, "tid":1, "ts":1730977012652890, "dur":3787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1730977012658393, "dur":5543, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/ef/efb2efb5eb4afa0cf4c22e3054b107b4.iws.sse" }}
+,{ "pid":12345, "tid":1, "ts":1730977012664035, "dur":8868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e7/e74094057b889156815efa8f9019f9df.rgb" }}
+,{ "pid":12345, "tid":1, "ts":1730977012673006, "dur":5609, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e1/e1d0db08438044d2e250ba142142fd8a.rgb" }}
+,{ "pid":12345, "tid":1, "ts":1730977012678683, "dur":2522, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e1/e1a66a895b602ce455b1bab6b5e237f9.rsc.sse" }}
+,{ "pid":12345, "tid":1, "ts":1730977012681279, "dur":1839, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/c2/c202124dce91f2546ddb820a1b9569eb.rsc.sse" }}
+,{ "pid":12345, "tid":1, "ts":1730977012683169, "dur":5385, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/c2/c202124dce91f2546ddb820a1b9569eb.caw" }}
+,{ "pid":12345, "tid":1, "ts":1730977012688627, "dur":2092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/b7/b7d304f029aff67f25278ca0363ba259.caw" }}
+,{ "pid":12345, "tid":1, "ts":1730977012690775, "dur":5230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/ae/aefb69c82f4086e516613010a0e78c2f.ecm" }}
+,{ "pid":12345, "tid":1, "ts":1730977012697804, "dur":3611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/82/82b1a3ce1269dd15ba099820425adacf.vis" }}
+,{ "pid":12345, "tid":1, "ts":1730977012701978, "dur":4126, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/51/51f62fcdad7244c51d3c6f053a53018b.vis" }}
+,{ "pid":12345, "tid":1, "ts":1730977012706528, "dur":1062, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.vis" }}
+,{ "pid":12345, "tid":1, "ts":1730977012708315, "dur":2217, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.rgb" }}
+,{ "pid":12345, "tid":1, "ts":1730977012710586, "dur":1334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2b/2b98ea2b7b09d35ad8dc186b03482aa5.ecm" }}
+,{ "pid":12345, "tid":1, "ts":1730977012711997, "dur":6778, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.iws.sse" }}
+,{ "pid":12345, "tid":1, "ts":1730977012718818, "dur":66510, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1730977012546940, "dur":5361, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1730977012552303, "dur":706, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1730977012553009, "dur":643, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1730977012553653, "dur":5760, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1730977012559422, "dur":88, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1730977012559414, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1730977012571102, "dur":1068, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1730977012572213, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1730977012572772, "dur":887, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1730977012573695, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1730977012573766, "dur":1371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1730977012575219, "dur":1237, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype.exe" }}
+,{ "pid":12345, "tid":2, "ts":1730977012576894, "dur":2442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012579463, "dur":5973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012585493, "dur":3057, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012588653, "dur":62, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1730977012588719, "dur":5050, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012593867, "dur":5194, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012599144, "dur":3516, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012602808, "dur":4854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012607708, "dur":1724, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012609480, "dur":1348, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012610879, "dur":3401, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012614373, "dur":4716, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012619157, "dur":2554, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012621762, "dur":2226, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012624034, "dur":1930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012626017, "dur":1929, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012628157, "dur":2908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012631186, "dur":1704, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012632935, "dur":99, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012632933, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012633044, "dur":65231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":2, "ts":1730977012698604, "dur":3188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/82/82b1a3ce1269dd15ba099820425adacf.ecm" }}
+,{ "pid":12345, "tid":2, "ts":1730977012702193, "dur":1702, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/51/51f62fcdad7244c51d3c6f053a53018b.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1730977012704199, "dur":1050, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2f/2f6164af9ae5e5fee896d5693c73e615.vis" }}
+,{ "pid":12345, "tid":2, "ts":1730977012705319, "dur":2864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2f/2f6164af9ae5e5fee896d5693c73e615.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1730977012708572, "dur":2046, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.iws.sse" }}
+,{ "pid":12345, "tid":2, "ts":1730977012710745, "dur":1336, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2b/2b98ea2b7b09d35ad8dc186b03482aa5.caw" }}
+,{ "pid":12345, "tid":2, "ts":1730977012712146, "dur":3186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.ecm" }}
+,{ "pid":12345, "tid":2, "ts":1730977012715411, "dur":2545, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/0f/0fcf98119c8c0dc996ccd2fdf27f6731.ecm" }}
+,{ "pid":12345, "tid":2, "ts":1730977012717990, "dur":67338, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1730977012547029, "dur":5277, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1730977012552308, "dur":712, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1730977012553021, "dur":665, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1730977012553686, "dur":5725, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1730977012559421, "dur":93, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1730977012559411, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1730977012576836, "dur":12616, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1730977012589526, "dur":2307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":3, "ts":1730977012591880, "dur":14252, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1730977012606184, "dur":2358, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1730977012608608, "dur":2218, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1730977012610876, "dur":2857, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1730977012613865, "dur":3307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1730977012619369, "dur":53, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1730977012617247, "dur":2196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1730977012619509, "dur":2408, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1730977012621969, "dur":2147, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1730977012624185, "dur":2384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1730977012626617, "dur":2010, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1730977012628672, "dur":3167, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1730977012631887, "dur":2934, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1730977012634887, "dur":27598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1730977012663240, "dur":974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e7/e74094057b889156815efa8f9019f9df.vis" }}
+,{ "pid":12345, "tid":3, "ts":1730977012664262, "dur":9446, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e7/e74094057b889156815efa8f9019f9df.iws.sse" }}
+,{ "pid":12345, "tid":3, "ts":1730977012673754, "dur":6083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e1/e1d0db08438044d2e250ba142142fd8a.ecm" }}
+,{ "pid":12345, "tid":3, "ts":1730977012679881, "dur":3018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e1/e1a66a895b602ce455b1bab6b5e237f9.ecm" }}
+,{ "pid":12345, "tid":3, "ts":1730977012682946, "dur":5671, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/c2/c202124dce91f2546ddb820a1b9569eb.ecm" }}
+,{ "pid":12345, "tid":3, "ts":1730977012689174, "dur":1399, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/ae/aefb69c82f4086e516613010a0e78c2f.rsc.sse" }}
+,{ "pid":12345, "tid":3, "ts":1730977012690645, "dur":5074, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/ae/aefb69c82f4086e516613010a0e78c2f.iws.sse" }}
+,{ "pid":12345, "tid":3, "ts":1730977012695809, "dur":3003, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/8f/8feff29d54946a5afe1f0f5f2385bb18.ecm" }}
+,{ "pid":12345, "tid":3, "ts":1730977012698875, "dur":2357, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/82/82b1a3ce1269dd15ba099820425adacf.caw" }}
+,{ "pid":12345, "tid":3, "ts":1730977012701294, "dur":4488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/5d/5d4c93c86a1c4fd236656ef01d822646.ecm" }}
+,{ "pid":12345, "tid":3, "ts":1730977012705844, "dur":3287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2f/2f6164af9ae5e5fee896d5693c73e615.caw" }}
+,{ "pid":12345, "tid":3, "ts":1730977012709223, "dur":1830, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2b/2b98ea2b7b09d35ad8dc186b03482aa5.rsc.sse" }}
+,{ "pid":12345, "tid":3, "ts":1730977012711929, "dur":3106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.rsc.sse" }}
+,{ "pid":12345, "tid":3, "ts":1730977012715531, "dur":2991, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/0f/0fcf98119c8c0dc996ccd2fdf27f6731.iws.sse" }}
+,{ "pid":12345, "tid":3, "ts":1730977012718570, "dur":66754, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1730977012546714, "dur":5579, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1730977012552294, "dur":740, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1730977012553034, "dur":655, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1730977012553689, "dur":5727, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1730977012559417, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":4, "ts":1730977012567685, "dur":1248, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":4, "ts":1730977012568971, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1730977012569173, "dur":1164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1730977012570378, "dur":73, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
+,{ "pid":12345, "tid":4, "ts":1730977012570376, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1730977012570782, "dur":958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1730977012571779, "dur":76, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1730977012571778, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1730977012571903, "dur":1117, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1730977012573083, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1730977012573198, "dur":1273, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1730977012574554, "dur":71, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012574553, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012575025, "dur":1412, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012576925, "dur":3451, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012580432, "dur":1532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012582082, "dur":4170, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012586338, "dur":5203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012591665, "dur":8352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012600125, "dur":6764, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012606952, "dur":1913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012608910, "dur":1859, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012610830, "dur":2588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012613488, "dur":2670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012616207, "dur":1699, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012617954, "dur":2764, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012620767, "dur":4476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012625318, "dur":1801, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012627188, "dur":2073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012629370, "dur":2283, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012631703, "dur":2518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1730977012634331, "dur":1268, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":4, "ts":1730977012635684, "dur":4853, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1730977012640609, "dur":16065, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1730977012658107, "dur":1897, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/ef/efb2efb5eb4afa0cf4c22e3054b107b4.rgb" }}
+,{ "pid":12345, "tid":4, "ts":1730977012662774, "dur":3044, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/ef/efb2efb5eb4afa0cf4c22e3054b107b4.ecm" }}
+,{ "pid":12345, "tid":4, "ts":1730977012665873, "dur":8015, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e7/e74094057b889156815efa8f9019f9df.caw" }}
+,{ "pid":12345, "tid":4, "ts":1730977012673937, "dur":6756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e1/e1d0db08438044d2e250ba142142fd8a.caw" }}
+,{ "pid":12345, "tid":4, "ts":1730977012680818, "dur":61, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1730977012681196, "dur":1210, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/c2/c202124dce91f2546ddb820a1b9569eb.vis" }}
+,{ "pid":12345, "tid":4, "ts":1730977012682454, "dur":6159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/c2/c202124dce91f2546ddb820a1b9569eb.rgb" }}
+,{ "pid":12345, "tid":4, "ts":1730977012689200, "dur":1325, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/ae/aefb69c82f4086e516613010a0e78c2f.vis" }}
+,{ "pid":12345, "tid":4, "ts":1730977012690629, "dur":5128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/ae/aefb69c82f4086e516613010a0e78c2f.rgb" }}
+,{ "pid":12345, "tid":4, "ts":1730977012695814, "dur":3476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/8f/8feff29d54946a5afe1f0f5f2385bb18.caw" }}
+,{ "pid":12345, "tid":4, "ts":1730977012699653, "dur":771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/5d/5d4c93c86a1c4fd236656ef01d822646.vis" }}
+,{ "pid":12345, "tid":4, "ts":1730977012700590, "dur":3068, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/5d/5d4c93c86a1c4fd236656ef01d822646.rsc.sse" }}
+,{ "pid":12345, "tid":4, "ts":1730977012704084, "dur":1445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/51/51f62fcdad7244c51d3c6f053a53018b.caw" }}
+,{ "pid":12345, "tid":4, "ts":1730977012705588, "dur":3032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2f/2f6164af9ae5e5fee896d5693c73e615.ecm" }}
+,{ "pid":12345, "tid":4, "ts":1730977012708998, "dur":901, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2b/2b98ea2b7b09d35ad8dc186b03482aa5.vis" }}
+,{ "pid":12345, "tid":4, "ts":1730977012709946, "dur":1028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2b/2b98ea2b7b09d35ad8dc186b03482aa5.rgb" }}
+,{ "pid":12345, "tid":4, "ts":1730977012711624, "dur":2916, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.vis" }}
+,{ "pid":12345, "tid":4, "ts":1730977012715394, "dur":1990, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/0f/0fcf98119c8c0dc996ccd2fdf27f6731.rsc.sse" }}
+,{ "pid":12345, "tid":4, "ts":1730977012717429, "dur":67883, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1730977012546555, "dur":5728, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1730977012552285, "dur":7082, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1730977012584992, "dur":1032, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":5, "ts":1730977012586028, "dur":136, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1730977012586272, "dur":210, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":5, "ts":1730977012586652, "dur":162, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\5killi84\\Documents\\GitHub\\Y2M2-HorrorPuzzle\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1730977012586815, "dur":185, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\5killi84\\Documents\\GitHub\\Y2M2-HorrorPuzzle\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":5, "ts":1730977012587001, "dur":235, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\5killi84\\Documents\\GitHub\\Y2M2-HorrorPuzzle\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":5, "ts":1730977012587237, "dur":312, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\5killi84\\Documents\\GitHub\\Y2M2-HorrorPuzzle\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1730977012587550, "dur":449, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\5killi84\\Documents\\GitHub\\Y2M2-HorrorPuzzle\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1730977012588000, "dur":110, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\5killi84\\Documents\\GitHub\\Y2M2-HorrorPuzzle\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":5, "ts":1730977012588111, "dur":336, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\5killi84\\Documents\\GitHub\\Y2M2-HorrorPuzzle\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":5, "ts":1730977012588487, "dur":110, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Player07723a56-inputdata.json" }}
+,{ "pid":12345, "tid":5, "ts":1730977012586027, "dur":2695, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1730977012589054, "dur":56, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1730977012591971, "dur":186014, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1730977012784285, "dur":131, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1730977012784284, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/HorrorPuzzlePrototype_Data/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1730977012784429, "dur":864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/boot.config" }}
+,{ "pid":12345, "tid":6, "ts":1730977012546812, "dur":5485, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1730977012552298, "dur":712, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1730977012553010, "dur":699, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1730977012553710, "dur":5700, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1730977012559411, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1730977012560298, "dur":2772, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/app.info" }}
+,{ "pid":12345, "tid":6, "ts":1730977012563072, "dur":66, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1730977012563071, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1730977012568105, "dur":862, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1730977012569002, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1730977012569516, "dur":1028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1730977012570581, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1730977012570898, "dur":951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1730977012571884, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1730977012571954, "dur":1163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1730977012573156, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1730977012573155, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1730977012573228, "dur":1317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1730977012574630, "dur":71, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012574629, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012575545, "dur":25059, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012600679, "dur":5045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012605825, "dur":2652, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012608528, "dur":1939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012610515, "dur":2123, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012612689, "dur":3604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012616401, "dur":2985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012619505, "dur":2407, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012621967, "dur":2680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012625107, "dur":2874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012628044, "dur":2186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012630327, "dur":2418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012632815, "dur":2323, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1730977012635384, "dur":3432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":6, "ts":1730977012638942, "dur":4785, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1730977012643869, "dur":5676, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/level1.resS" }}
+,{ "pid":12345, "tid":6, "ts":1730977012651381, "dur":65, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1730977012649605, "dur":1857, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/level0.resS" }}
+,{ "pid":12345, "tid":6, "ts":1730977012651531, "dur":8698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1730977012662732, "dur":3299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/ef/efb2efb5eb4afa0cf4c22e3054b107b4.caw" }}
+,{ "pid":12345, "tid":6, "ts":1730977012666350, "dur":924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e1/e1d0db08438044d2e250ba142142fd8a.vis" }}
+,{ "pid":12345, "tid":6, "ts":1730977012667356, "dur":11660, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e1/e1d0db08438044d2e250ba142142fd8a.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1730977012683514, "dur":158, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1730977012679063, "dur":4629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e1/e1a66a895b602ce455b1bab6b5e237f9.rgb" }}
+,{ "pid":12345, "tid":6, "ts":1730977012683879, "dur":1129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/b7/b7d304f029aff67f25278ca0363ba259.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1730977012685056, "dur":6152, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/b7/b7d304f029aff67f25278ca0363ba259.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1730977012691651, "dur":1235, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/8f/8feff29d54946a5afe1f0f5f2385bb18.vis" }}
+,{ "pid":12345, "tid":6, "ts":1730977012692990, "dur":5082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/8f/8feff29d54946a5afe1f0f5f2385bb18.rgb" }}
+,{ "pid":12345, "tid":6, "ts":1730977012698358, "dur":2126, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/82/82b1a3ce1269dd15ba099820425adacf.rgb" }}
+,{ "pid":12345, "tid":6, "ts":1730977012700585, "dur":859, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/5d/5d4c93c86a1c4fd236656ef01d822646.rgb" }}
+,{ "pid":12345, "tid":6, "ts":1730977012701973, "dur":2267, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/51/51f62fcdad7244c51d3c6f053a53018b.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1730977012704355, "dur":1937, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2f/2f6164af9ae5e5fee896d5693c73e615.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1730977012706728, "dur":1813, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1730977012708628, "dur":1566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.ecm" }}
+,{ "pid":12345, "tid":6, "ts":1730977012710342, "dur":1260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2b/2b98ea2b7b09d35ad8dc186b03482aa5.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1730977012711705, "dur":3185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.rgb" }}
+,{ "pid":12345, "tid":6, "ts":1730977012715399, "dur":1903, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/0f/0fcf98119c8c0dc996ccd2fdf27f6731.rgb" }}
+,{ "pid":12345, "tid":6, "ts":1730977012717338, "dur":67987, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1730977012547123, "dur":5216, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1730977012552341, "dur":702, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1730977012553043, "dur":460, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1730977012553503, "dur":5981, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1730977012559485, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1730977012592829, "dur":1146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1730977012594022, "dur":4760, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1730977012598844, "dur":3544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":7, "ts":1730977012605560, "dur":62, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1730977012602445, "dur":3190, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":7, "ts":1730977012605701, "dur":2321, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":7, "ts":1730977012608430, "dur":4764, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1730977012613412, "dur":2446, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1730977012615913, "dur":1861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1730977012617821, "dur":3065, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1730977012620984, "dur":2418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1730977012623474, "dur":2071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1730977012625622, "dur":1483, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1730977012627152, "dur":1919, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1730977012629120, "dur":2800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1730977012631984, "dur":3439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1730977012635507, "dur":4172, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1730977012639775, "dur":2511, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":7, "ts":1730977012642350, "dur":7587, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/resources.assets" }}
+,{ "pid":12345, "tid":7, "ts":1730977012650032, "dur":2575, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1730977012652702, "dur":2111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1730977012657954, "dur":7624, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/ef/efb2efb5eb4afa0cf4c22e3054b107b4.vis" }}
+,{ "pid":12345, "tid":7, "ts":1730977012665626, "dur":8885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e7/e74094057b889156815efa8f9019f9df.ecm" }}
+,{ "pid":12345, "tid":7, "ts":1730977012680221, "dur":197, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1730977012674654, "dur":5773, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e1/e1a66a895b602ce455b1bab6b5e237f9.vis" }}
+,{ "pid":12345, "tid":7, "ts":1730977012680509, "dur":2900, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e1/e1a66a895b602ce455b1bab6b5e237f9.caw" }}
+,{ "pid":12345, "tid":7, "ts":1730977012683722, "dur":948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/b7/b7d304f029aff67f25278ca0363ba259.vis" }}
+,{ "pid":12345, "tid":7, "ts":1730977012690224, "dur":169, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1730977012684754, "dur":5659, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/b7/b7d304f029aff67f25278ca0363ba259.rgb" }}
+,{ "pid":12345, "tid":7, "ts":1730977012691199, "dur":54, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1730977012691256, "dur":5227, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/ae/aefb69c82f4086e516613010a0e78c2f.caw" }}
+,{ "pid":12345, "tid":7, "ts":1730977012698563, "dur":2443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/82/82b1a3ce1269dd15ba099820425adacf.rsc.sse" }}
+,{ "pid":12345, "tid":7, "ts":1730977012701088, "dur":2081, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/5d/5d4c93c86a1c4fd236656ef01d822646.iws.sse" }}
+,{ "pid":12345, "tid":7, "ts":1730977012703837, "dur":8940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/51/51f62fcdad7244c51d3c6f053a53018b.iws.sse" }}
+,{ "pid":12345, "tid":7, "ts":1730977012712824, "dur":3149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/24/24bcecbead11e4853136854b0cc56bf9.caw" }}
+,{ "pid":12345, "tid":7, "ts":1730977012716785, "dur":1745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/0f/0fcf98119c8c0dc996ccd2fdf27f6731.caw" }}
+,{ "pid":12345, "tid":7, "ts":1730977012718573, "dur":66738, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1730977012547246, "dur":5126, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1730977012552373, "dur":718, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1730977012553091, "dur":6326, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1730977012559427, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
+,{ "pid":12345, "tid":8, "ts":1730977012559418, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Build/Build Final 4/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1730977012584355, "dur":3615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1730977012588022, "dur":2130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":8, "ts":1730977012590215, "dur":3830, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":8, "ts":1730977012594094, "dur":5519, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1730977012599703, "dur":7686, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":8, "ts":1730977012607445, "dur":4560, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1730977012612053, "dur":6083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1730977012618193, "dur":3168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1730977012621445, "dur":2019, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1730977012623541, "dur":2221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1730977012625811, "dur":2362, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1730977012628229, "dur":1859, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1730977012630201, "dur":2559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1730977012632818, "dur":2162, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1730977012635026, "dur":5179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":8, "ts":1730977012640330, "dur":1995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":8, "ts":1730977012642495, "dur":13334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/level2" }}
+,{ "pid":12345, "tid":8, "ts":1730977012657962, "dur":5882, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/ef/efb2efb5eb4afa0cf4c22e3054b107b4.rsc.sse" }}
+,{ "pid":12345, "tid":8, "ts":1730977012664048, "dur":9457, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e7/e74094057b889156815efa8f9019f9df.rsc.sse" }}
+,{ "pid":12345, "tid":8, "ts":1730977012673554, "dur":6191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e1/e1d0db08438044d2e250ba142142fd8a.iws.sse" }}
+,{ "pid":12345, "tid":8, "ts":1730977012679792, "dur":2830, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/e1/e1a66a895b602ce455b1bab6b5e237f9.iws.sse" }}
+,{ "pid":12345, "tid":8, "ts":1730977012682693, "dur":5422, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/c2/c202124dce91f2546ddb820a1b9569eb.iws.sse" }}
+,{ "pid":12345, "tid":8, "ts":1730977012688165, "dur":3074, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/b7/b7d304f029aff67f25278ca0363ba259.ecm" }}
+,{ "pid":12345, "tid":8, "ts":1730977012691656, "dur":1395, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/8f/8feff29d54946a5afe1f0f5f2385bb18.rsc.sse" }}
+,{ "pid":12345, "tid":8, "ts":1730977012693098, "dur":5168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/8f/8feff29d54946a5afe1f0f5f2385bb18.iws.sse" }}
+,{ "pid":12345, "tid":8, "ts":1730977012701070, "dur":281, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1730977012698631, "dur":2728, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/82/82b1a3ce1269dd15ba099820425adacf.iws.sse" }}
+,{ "pid":12345, "tid":8, "ts":1730977012701427, "dur":2091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/5d/5d4c93c86a1c4fd236656ef01d822646.caw" }}
+,{ "pid":12345, "tid":8, "ts":1730977012703837, "dur":1680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/51/51f62fcdad7244c51d3c6f053a53018b.ecm" }}
+,{ "pid":12345, "tid":8, "ts":1730977012708550, "dur":54, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1730977012705583, "dur":3028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2f/2f6164af9ae5e5fee896d5693c73e615.iws.sse" }}
+,{ "pid":12345, "tid":8, "ts":1730977012708663, "dur":5774, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/2e/2e88f1d0cdf7f6ea4cf7df5b2448ef42.caw" }}
+,{ "pid":12345, "tid":8, "ts":1730977012715367, "dur":3167, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Build/Build Final 4/HorrorPuzzlePrototype_Data/GI/level1/0f/0fcf98119c8c0dc996ccd2fdf27f6731.vis" }}
+,{ "pid":12345, "tid":8, "ts":1730977012718576, "dur":66737, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1730977012788904, "dur":1140, "ph":"X", "name": "ProfilerWriteOutput" }
 ,
