@@ -418,7 +418,7 @@ public class GameManager : MonoBehaviour
         source.pitch = randomPitch ? Random.Range(0.9f, 1.1f) : 1f;   
         if(source != GetPlayerAudioSource())
         {
-            source.spatialBlend = 0.8f;
+            source.spatialBlend = 1f;
         }
 
         source.Play();

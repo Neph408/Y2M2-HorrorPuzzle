@@ -17,7 +17,7 @@ public class CustomAudioTrigger : MonoBehaviour
     [Header("Subtitles (Subtitles will not play without accompying audio)")]
     [Space(5)]
     [SerializeField] private bool entryUsesSubtitle = false;
-    [SerializeField] private string entrySubtitleString = "";
+    [SerializeField,TextArea] private string entrySubtitleString = "";
     [SerializeField] private float entrySubtitleTickDelay = 0.05f;
     [SerializeField] private Color entrySubtitleColour = Color.magenta;
     [SerializeField] private bool entryUsesTypewriterStyle = true;
